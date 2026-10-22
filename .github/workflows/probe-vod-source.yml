@@ -14,3 +14,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run source availability probe
         run: python3 scripts/probe_vod_source.py
+      - name: Inspect date and link markup (diagnostic only)
+        run: python3 scripts/inspect_vod_markup.py
