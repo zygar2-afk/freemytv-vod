@@ -9,6 +9,7 @@ from html.parser import HTMLParser
 import json
 import re
 import urllib.request
+import urllib.parse
 
 import probe_vod_source as source
 
@@ -67,13 +68,16 @@ class CardInspector(HTMLParser):
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
         if tag == "div" and self.active is None and "card" in attrs.get("class", "").split():
-            self.active = {"text": [], "links": [], "imageAlts": []}
+            self.active = {"text": [], "links": [], "imageAlts": [], "filmwebLinks": []}
             self.card_depth = self.depth
         if self.active is not None:
             if tag == "a" and attrs.get("href"):
                 href = attrs["href"]
                 if href.startswith("/") and not href.startswith("//"):
                     self.active["links"].append(href[:130])
+                parsed = urllib.parse.urlsplit(href)
+                if parsed.scheme == "https" and parsed.hostname in ("filmweb.pl", "www.filmweb.pl"):
+                    self.active["filmwebLinks"].append(urllib.parse.urlunsplit(("https", parsed.netloc, parsed.path, "", ""))[:220])
             if tag == "img" and attrs.get("alt"):
                 self.active["imageAlts"].append(attrs["alt"][:100])
         if tag == "div":
@@ -142,6 +146,7 @@ def candidates_from_cards(cards):
             "listingRatingLabel": rating_label,
             "listingVotesLabel": votes_label,
             "outsideSubscriptionLabelPresent": outside_subscription,
+            "filmwebLinkCandidates": card["filmwebLinks"][:3],
             "ratingVerifiedByFilmweb": False,
             "editorialRecommendationVerified": False,
         })
@@ -198,6 +203,8 @@ def main():
         "candidateWithListingRating": sum(c["listingRatingLabel"] is not None for c in candidates),
         "candidateWithListingVotes": sum(c["listingVotesLabel"] is not None for c in candidates),
         "candidateMarkedOutsideSubscription": sum(c["outsideSubscriptionLabelPresent"] for c in candidates),
+        "cardsWithFilmwebLink": sum(bool(c["filmwebLinks"]) for c in cards.cards),
+        "distinctFilmwebLinks": len(set(link for card in cards.cards for link in card["filmwebLinks"])),
         "cardStructureSamples": cards.cards[:3],
         "unverifiedCandidateSamples": candidates[:4],
         "boundedCardMarkupSamples": card_markup,
