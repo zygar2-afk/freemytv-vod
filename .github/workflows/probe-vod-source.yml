@@ -16,3 +16,12 @@ jobs:
         run: python3 scripts/probe_vod_source.py
       - name: Inspect date and link markup (diagnostic only)
         run: python3 scripts/inspect_vod_markup.py
+      - name: Generate unverified weekly candidates
+        run: python3 scripts/build_experimental_candidates.py
+      - name: Upload non-production candidate JSON
+        uses: actions/upload-artifact@v4
+        with:
+          name: experimental-vod-candidates
+          path: out/experimental_vod_candidates.json
+          if-no-files-found: error
+          retention-days: 7
