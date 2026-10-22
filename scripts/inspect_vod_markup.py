@@ -153,6 +153,46 @@ def candidates_from_cards(cards):
     return records
 
 
+
+def audit_filmweb_links(candidates):
+    """Diagnose repeated movie IDs and contradictory titles, without URL fetching."""
+    grouped = collections.defaultdict(list)
+    missing = []
+    for row in candidates:
+        links = row["filmwebLinkCandidates"]
+        if len(links) != 1:
+            missing.append({"title": row["title"], "linkCount": len(links)})
+            continue
+        parsed = urllib.parse.urlsplit(links[0])
+        match = re.search(r"-([0-9]+)$", parsed.path)
+        if parsed.hostname not in ("filmweb.pl", "www.filmweb.pl") or not match:
+            missing.append({"title": row["title"], "reason": "No canonical film ID"})
+            continue
+        grouped[match.group(1)].append(row)
+    repeated = []
+    conflicts = []
+    for film_id, rows in grouped.items():
+        if len(rows) > 1:
+            repeated.append({
+                "filmwebId": film_id,
+                "titles": sorted(set(x["title"] for x in rows)),
+                "providers": sorted(set(x["provider"] for x in rows)),
+                "vodDates": sorted(set(x["vodAddedAt"] for x in rows)),
+                "cardCount": len(rows),
+            })
+        if len(set(x["title"].casefold().strip() for x in rows)) > 1:
+            conflicts.append(film_id)
+    return {
+        "canonicalFilmwebIdCount": len(grouped),
+        "repeatedFilmwebIds": len(repeated),
+        "duplicateCardsBeyondFirst": sum(len(rows) - 1 for rows in grouped.values()),
+        "conflictingTitleFilmwebIds": conflicts[:12],
+        "missingOrAmbiguousFilmwebIds": missing[:12],
+        "duplicateSamples": repeated[:8],
+        "independentlyVerifiedRatings": 0,
+    }
+
+
 def main():
     # This independently verifies the robots policy before accessing the listing.
     base = source.probe()
@@ -200,6 +240,7 @@ def main():
         "dateElementContexts": p.date_contexts,
         "cardCountSampled": len(cards.cards),
         "unverifiedCandidateCount": len(candidates),
+        "filmwebIdentityAudit": audit_filmweb_links(candidates),
         "candidateWithListingRating": sum(c["listingRatingLabel"] is not None for c in candidates),
         "candidateWithListingVotes": sum(c["listingVotesLabel"] is not None for c in candidates),
         "candidateMarkedOutsideSubscription": sum(c["outsideSubscriptionLabelPresent"] for c in candidates),
