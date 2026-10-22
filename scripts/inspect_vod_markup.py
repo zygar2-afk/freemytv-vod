@@ -54,6 +54,47 @@ class Inspector(HTMLParser):
             self.current_link = None
 
 
+
+class CardInspector(HTMLParser):
+    """Collect complete Bootstrap card text/links for manual structural QA."""
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.depth = 0
+        self.active = None
+        self.card_depth = -1
+        self.cards = []
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == "div" and self.active is None and "card" in attrs.get("class", "").split():
+            self.active = {"text": [], "links": [], "imageAlts": []}
+            self.card_depth = self.depth
+        if self.active is not None:
+            if tag == "a" and attrs.get("href"):
+                href = attrs["href"]
+                if href.startswith("/") and not href.startswith("//"):
+                    self.active["links"].append(href[:130])
+            if tag == "img" and attrs.get("alt"):
+                self.active["imageAlts"].append(attrs["alt"][:100])
+        if tag == "div":
+            self.depth += 1
+
+    def handle_data(self, text):
+        if self.active is not None:
+            normalized = " ".join(text.split())
+            if normalized and len(self.active["text"]) < 50:
+                self.active["text"].append(normalized[:150])
+
+    def handle_endtag(self, tag):
+        if tag == "div":
+            self.depth = max(0, self.depth - 1)
+            if self.active is not None and self.depth == self.card_depth:
+                if len(self.cards) < 4:
+                    self.cards.append(self.active)
+                self.active = None
+                self.card_depth = -1
+
+
 def main():
     # This independently verifies the robots policy before accessing the listing.
     base = source.probe()
@@ -75,6 +116,8 @@ def main():
         card_markup.append(" ".join(excerpt.split())[:1150])
     p = Inspector()
     p.feed(body.decode("utf-8", "replace"))
+    cards = CardInspector()
+    cards.feed(raw)
 
     dated_snippets = []
     for idx, part in enumerate(p.text):
@@ -95,6 +138,8 @@ def main():
         "tagCounts": {key: p.tags[key] for key in ("article", "time", "a", "h2", "h3")},
         "labelSections": len(dated_snippets),
         "dateElementContexts": p.date_contexts,
+        "cardCountSampled": len(cards.cards),
+        "cardStructureSamples": cards.cards[:3],
         "boundedCardMarkupSamples": card_markup,
         "perTitleDateLabelMatches": len(matches),
         "labelSectionsWithNearbyDate": sum(bool(s["dateCandidates"]) for s in dated_snippets),
