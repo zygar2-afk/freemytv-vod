@@ -85,6 +85,8 @@ def main():
             "page":page,"records":len(records),"uniqueTitles":len(seen),
             "firstDate":str(dates[0]),"lastDate":str(dates[-1]),
             "datesDescending":monotonic,"boundaryDescending":boundary_ok,
+            "dateInversions":[{"position":i+1,"before":str(dates[i]),"after":str(dates[i+1])}
+                              for i in range(len(dates)-1) if dates[i]<dates[i+1]][:8],
             "oldRecords":sum(x<threshold for x in dates),
             "futureDatedRecords":sum(x>today for x in dates),
         })
