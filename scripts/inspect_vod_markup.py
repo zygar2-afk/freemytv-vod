@@ -23,9 +23,13 @@ class Inspector(HTMLParser):
         self.links = []
         self.text = []
         self.current_link = None
+        self.date_contexts = []
+        self.tag_stack = []
 
     def handle_starttag(self, tag, attrs):
         self.tags[tag] += 1
+        if tag not in ("img", "br", "hr", "input", "meta", "link", "source", "wbr"):
+            self.tag_stack.append((tag, dict(attrs).get("class", "")[:90]))
         if tag == "a":
             attributes = dict(attrs)
             self.current_link = {"href": attributes.get("href", ""), "label": ""}
@@ -35,10 +39,16 @@ class Inspector(HTMLParser):
         if not normalized:
             return
         self.text.append(normalized)
+        if DATE_PATTERN.search(normalized) and len(self.date_contexts) < 5:
+            self.date_contexts.append({"dateText": normalized[:55], "ancestors": self.tag_stack[-7:]})
         if self.current_link is not None:
             self.current_link["label"] += " " + normalized
 
     def handle_endtag(self, tag):
+        for i in range(len(self.tag_stack) - 1, -1, -1):
+            if self.tag_stack[i][0] == tag:
+                del self.tag_stack[i:]
+                break
         if tag == "a" and self.current_link is not None:
             self.links.append(self.current_link)
             self.current_link = None
@@ -84,6 +94,7 @@ def main():
         "robotsAllowed": base["robotsAllowed"],
         "tagCounts": {key: p.tags[key] for key in ("article", "time", "a", "h2", "h3")},
         "labelSections": len(dated_snippets),
+        "dateElementContexts": p.date_contexts,
         "boundedCardMarkupSamples": card_markup,
         "perTitleDateLabelMatches": len(matches),
         "labelSectionsWithNearbyDate": sum(bool(s["dateCandidates"]) for s in dated_snippets),
