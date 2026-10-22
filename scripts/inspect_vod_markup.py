@@ -55,13 +55,14 @@ def main():
         body = response.read(source.MAX_BYTES + 1)
         if len(body) > source.MAX_BYTES:
             raise RuntimeError("Response exceeded size cap")
-    # Inspect markup around actual date values rather than labels split by HTML tags.
+    # Look specifically for per-title "Data dodania:", excluding the date filter.
+    # This is only a bounded structure probe; it does not assert a film identity.
     raw = body.decode("utf-8", "replace")
-    date_values = list(DATE_PATTERN.finditer(raw))
     card_markup = []
-    for match in date_values[:2]:
-        excerpt = raw[max(0, match.start() - 400):min(len(raw), match.end() + 400)]
-        card_markup.append(" ".join(excerpt.split())[:800])
+    matches = list(re.finditer(r"Data\\s+dodania\\s*:", raw, re.IGNORECASE))
+    for match in matches[:3]:
+        excerpt = raw[max(0, match.start() - 600):min(len(raw), match.end() + 550)]
+        card_markup.append(" ".join(excerpt.split())[:1150])
     p = Inspector()
     p.feed(body.decode("utf-8", "replace"))
 
@@ -84,6 +85,7 @@ def main():
         "tagCounts": {key: p.tags[key] for key in ("article", "time", "a", "h2", "h3")},
         "labelSections": len(dated_snippets),
         "boundedCardMarkupSamples": card_markup,
+        "perTitleDateLabelMatches": len(matches),
         "labelSectionsWithNearbyDate": sum(bool(s["dateCandidates"]) for s in dated_snippets),
         "nearbyDateSamples": dated_snippets[:5],
         "relativeLinkCount": len(detail_links),
