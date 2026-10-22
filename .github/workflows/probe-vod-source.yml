@@ -18,6 +18,8 @@ jobs:
         run: python3 scripts/inspect_vod_markup.py
       - name: Audit pagination and sorting (landing page only)
         run: python3 scripts/audit_vod_pagination.py
+      - name: Inspect at most four listing pages for weekly coverage
+        run: python3 scripts/probe_weekly_pagination.py
       - name: Generate unverified weekly candidates
         run: python3 scripts/build_experimental_candidates.py
       - name: Upload non-production candidate JSON
