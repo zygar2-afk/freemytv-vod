@@ -55,6 +55,14 @@ def main():
         body = response.read(source.MAX_BYTES + 1)
         if len(body) > source.MAX_BYTES:
             raise RuntimeError("Response exceeded size cap")
+    # Inspect a bounded sample of card-adjacent markup. URLs are not followed.
+    raw = body.decode("utf-8", "replace")
+    markers = list(re.finditer(r"Data\\s+dodania", raw, re.IGNORECASE))
+    card_markup = []
+    for marker in markers[1:3]:
+        excerpt = raw[max(0, marker.start() - 400):min(len(raw), marker.end() + 500)]
+        excerpt = re.sub(r"\\s+", " ", excerpt)
+        card_markup.append(excerpt[:950])
     p = Inspector()
     p.feed(body.decode("utf-8", "replace"))
 
@@ -76,6 +84,7 @@ def main():
         "robotsAllowed": base["robotsAllowed"],
         "tagCounts": {key: p.tags[key] for key in ("article", "time", "a", "h2", "h3")},
         "labelSections": len(dated_snippets),
+        "boundedCardMarkupSamples": card_markup,
         "labelSectionsWithNearbyDate": sum(bool(s["dateCandidates"]) for s in dated_snippets),
         "nearbyDateSamples": dated_snippets[:5],
         "relativeLinkCount": len(detail_links),
