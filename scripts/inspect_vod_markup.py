@@ -13,7 +13,7 @@ import urllib.request
 import probe_vod_source as source
 
 MAX_ITEMS = 12
-DATE_PATTERN = re.compile(r"(?:20[0-9]{2}[-./][0-9]{1,2}[-./][0-9]{1,2}|[0-9]{1,2}[-./][0-9]{1,2}[-./]20[0-9]{2})")
+DATE_PATTERN = re.compile(r"(?:20[0-9]{2}[ ./-]+[0-9]{1,2}[ ./-]+[0-9]{1,2}|[0-9]{1,2}[ ./-]+[0-9]{1,2}[ ./-]+20[0-9]{2})")
 
 
 class Inspector(HTMLParser):
