@@ -63,7 +63,8 @@ def main():
         if "data dodania" in part.casefold():
             neighbors = p.text[idx:idx + 5]
             matches = DATE_PATTERN.findall(" ".join(neighbors))
-            dated_snippets.append({"dateCandidates": matches[:3], "nextTextLengths": [len(t) for t in neighbors]})
+            dated_snippets.append({"dateCandidates": matches[:3], "nextTextLengths": [len(t) for t in neighbors],
+                                   "shortContext": [t[:72] for t in neighbors[:4]] if len(dated_snippets) < 5 else []})
     detail_links = []
     for link in p.links:
         href = link["href"]
@@ -76,7 +77,7 @@ def main():
         "tagCounts": {key: p.tags[key] for key in ("article", "time", "a", "h2", "h3")},
         "labelSections": len(dated_snippets),
         "labelSectionsWithNearbyDate": sum(bool(s["dateCandidates"]) for s in dated_snippets),
-        "nearbyDateSamples": dated_snippets[:MAX_ITEMS],
+        "nearbyDateSamples": dated_snippets[:5],
         "relativeLinkCount": len(detail_links),
         "relativeLinkPathSamples": detail_links[:MAX_ITEMS],
         "verifiedMovies": 0,
