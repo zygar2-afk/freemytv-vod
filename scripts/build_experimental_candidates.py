@@ -13,6 +13,7 @@ import zoneinfo
 
 from inspect_vod_markup import CardInspector, candidates_from_cards
 import probe_vod_source as source
+from probe_weekly_pagination import fetch, next_url, MAX_PAGES
 
 OUTPUT = pathlib.Path("out/experimental_vod_candidates.json")
 TOP_LIMIT = 20
@@ -41,22 +42,34 @@ def rating_from_listing(candidate):
 
 
 def build():
-    # Check source robots rules before a single bounded listing fetch.
-    source.probe()
-    req = urllib.request.Request(source.SOURCE, headers={
-        "User-Agent": source.USER_AGENT, "Accept": "text/html"
-    })
-    with urllib.request.urlopen(req, timeout=15) as response:
-        if "text/html" not in response.headers.get("Content-Type", "").lower():
-            raise RuntimeError("Unexpected content type")
-        body = response.read(source.MAX_BYTES + 1)
-        if len(body) > source.MAX_BYTES:
-            raise RuntimeError("Source HTML exceeds size cap")
-    parser = CardInspector()
-    parser.feed(body.decode("utf-8", "replace"))
     today = dt.datetime.now(zoneinfo.ZoneInfo("Europe/Warsaw")).date()
+    url = source.SOURCE
+    all_cards = []
+    pages_fetched = 0
+    stop_reason = "PAGE_LIMIT"
+    visited = set()
+    for page in range(1, MAX_PAGES + 1):
+        if url in visited:
+            stop_reason = "PAGINATION_LOOP"
+            break
+        visited.add(url)
+        html = fetch(url)
+        parser = CardInspector()
+        parser.feed(html)
+        if not parser.cards:
+            stop_reason = "EMPTY_PAGE"
+            break
+        all_cards.extend(parser.cards)
+        pages_fetched += 1
+        following = next_url(html, url, page)
+        if not following:
+            stop_reason = "NO_RECOGNIZED_NEXT_PAGE"
+            break
+        url = following
+    # The listing is not reliably date-sorted. Never equate the page cap,
+    # or a missing pagination link, with complete seven-day coverage.
     groups = {}
-    for candidate in candidates_from_cards(parser.cards):
+    for candidate in candidates_from_cards(all_cards):
         date = dt.date.fromisoformat(candidate["vodAddedAt"])
         if not 0 <= (today - date).days <= 6:
             continue
@@ -111,12 +124,15 @@ def build():
                   "maxItems": TOP_LIMIT, "minimumRating": MIN_RATING,
                   "minimumVotes": MIN_VOTES,
                   "ratingSource": "unverified nowoscivod.pl listing",
-                  "coverage": "first page only; incomplete for full 7 days",
-                  "eligibleFilmsOnFirstPage": len(eligible)
+                  "coverage": "bounded multi-page sample; full 7-day coverage unverified",
+                  "pagesFetched": pages_fetched, "pageLimit": MAX_PAGES,
+                  "stopReason": stop_reason,
+                  "sourceDateOrderVerified": False,
+                  "eligibleSampleFilms": len(eligible)
               }, "movies": movies}
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Experimental TOP {TOP_LIMIT}: {len(parser.cards)} listing cards, {len(eligible)} qualifying first-page films, {len(movies)} selected")
+    print(f"Experimental TOP {TOP_LIMIT}: {len(all_cards)} listing cards over {pages_fetched} pages, {len(eligible)} qualifying sample films, {len(movies)} selected")
     print(f"Saved {OUTPUT}; NOT a verified Filmweb recommendation feed")
 
 if __name__ == "__main__":
