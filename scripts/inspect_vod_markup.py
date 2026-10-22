@@ -55,14 +55,13 @@ def main():
         body = response.read(source.MAX_BYTES + 1)
         if len(body) > source.MAX_BYTES:
             raise RuntimeError("Response exceeded size cap")
-    # Inspect a bounded sample of card-adjacent markup. URLs are not followed.
+    # Inspect markup around actual date values rather than labels split by HTML tags.
     raw = body.decode("utf-8", "replace")
-    markers = list(re.finditer(r"Data\\s+dodania", raw, re.IGNORECASE))
+    date_values = list(DATE_PATTERN.finditer(raw))
     card_markup = []
-    for marker in markers[1:3]:
-        excerpt = raw[max(0, marker.start() - 400):min(len(raw), marker.end() + 500)]
-        excerpt = re.sub(r"\\s+", " ", excerpt)
-        card_markup.append(excerpt[:950])
+    for match in date_values[:2]:
+        excerpt = raw[max(0, match.start() - 400):min(len(raw), match.end() + 400)]
+        card_markup.append(" ".join(excerpt.split())[:800])
     p = Inspector()
     p.feed(body.decode("utf-8", "replace"))
 
