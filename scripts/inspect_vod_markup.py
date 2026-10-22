@@ -89,7 +89,7 @@ class CardInspector(HTMLParser):
         if tag == "div":
             self.depth = max(0, self.depth - 1)
             if self.active is not None and self.depth == self.card_depth:
-                if len(self.cards) < 4:
+                if len(self.cards) < 100:
                     self.cards.append(self.active)
                 self.active = None
                 self.card_depth = -1
@@ -151,6 +151,7 @@ def main():
     raw = body.decode("utf-8", "replace")
     card_markup = []
     matches = list(re.finditer(r"Data\\s+dodania\\s*:", raw, re.IGNORECASE))
+    per_title_label_count = len(matches)
     for match in matches[:3]:
         excerpt = raw[max(0, match.start() - 600):min(len(raw), match.end() + 550)]
         card_markup.append(" ".join(excerpt.split())[:1150])
@@ -179,10 +180,11 @@ def main():
         "labelSections": len(dated_snippets),
         "dateElementContexts": p.date_contexts,
         "cardCountSampled": len(cards.cards),
+        "unverifiedCandidateCount": len(candidates_from_cards(cards.cards)),
         "cardStructureSamples": cards.cards[:3],
         "unverifiedCandidateSamples": candidates_from_cards(cards.cards)[:4],
         "boundedCardMarkupSamples": card_markup,
-        "perTitleDateLabelMatches": len(matches),
+        "perTitleDateLabelMatches": per_title_label_count,
         "labelSectionsWithNearbyDate": sum(bool(s["dateCandidates"]) for s in dated_snippets),
         "nearbyDateSamples": dated_snippets[:5],
         "relativeLinkCount": len(detail_links),
