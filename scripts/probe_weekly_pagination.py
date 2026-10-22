@@ -47,7 +47,7 @@ def next_url(html,current,page_number):
         if p.scheme!="https" or p.hostname!="nowoscivod.pl" or p.path!="/filmy":
             continue
         q=parse_qs(p.query)
-        if q.get("page")==[str(page_number+1)] and q.get("directType")==["film"] and "film" in q.get("type[]",[]):
+        if q.get("page")==[str(page_number+1)] and q.get("directType")==["film"] and ("film" in q.get("type[]",[]) or "film" in q.get("type[0]",[])):
             return url
     return None
 
@@ -98,8 +98,9 @@ def main():
             stop_reason="PAST_7_DAY_BOUNDARY";break
         upcoming=next_url(html,url,page)
         if not upcoming:
-            completed=True
-            stop_reason="NO_NEXT_PAGE";break
+            # A full listing page can hide navigation behind a markup variation.
+            # Never treat an unrecognized link as proof of end-of-week coverage.
+            stop_reason="NO_RECOGNIZED_NEXT_PAGE";break
         url=upcoming
     result={
         "source":source.SOURCE,"pagesInspected":len(page_reports),
