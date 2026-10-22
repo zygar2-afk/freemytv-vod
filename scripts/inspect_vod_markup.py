@@ -105,6 +105,14 @@ def candidates_from_cards(cards):
         title = images[0].strip() if images else ""
         platform = ""
         added = ""
+        rating_label = None
+        votes_label = None
+        outside_subscription = "Poza abonamentem" in text
+        for item in text:
+            if item.startswith("Ocena:"):
+                rating_label = item[:40]
+            elif "ocen)" in item and item.startswith("("):
+                votes_label = item[:60]
         for i, item in enumerate(text[:-1]):
             if item == "Platforma:":
                 platform = text[i + 1]
@@ -131,6 +139,11 @@ def candidates_from_cards(cards):
             "vodAddedAt": iso_date,
             "source": source.SOURCE,
             "status": "CANDIDATE_UNVERIFIED",
+            "listingRatingLabel": rating_label,
+            "listingVotesLabel": votes_label,
+            "outsideSubscriptionLabelPresent": outside_subscription,
+            "ratingVerifiedByFilmweb": False,
+            "editorialRecommendationVerified": False,
         })
     return records
 
@@ -173,6 +186,7 @@ def main():
         # Retain relative URLs only, no page content or external trackers.
         if href.startswith("/") and not href.startswith("//") and link["label"].strip():
             detail_links.append({"path": href[:120], "labelLength": len(link["label"].strip())})
+    candidates = candidates_from_cards(cards.cards)
     print(json.dumps({
         "source": source.SOURCE,
         "robotsAllowed": base["robotsAllowed"],
@@ -180,9 +194,12 @@ def main():
         "labelSections": len(dated_snippets),
         "dateElementContexts": p.date_contexts,
         "cardCountSampled": len(cards.cards),
-        "unverifiedCandidateCount": len(candidates_from_cards(cards.cards)),
+        "unverifiedCandidateCount": len(candidates),
+        "candidateWithListingRating": sum(c["listingRatingLabel"] is not None for c in candidates),
+        "candidateWithListingVotes": sum(c["listingVotesLabel"] is not None for c in candidates),
+        "candidateMarkedOutsideSubscription": sum(c["outsideSubscriptionLabelPresent"] for c in candidates),
         "cardStructureSamples": cards.cards[:3],
-        "unverifiedCandidateSamples": candidates_from_cards(cards.cards)[:4],
+        "unverifiedCandidateSamples": candidates[:4],
         "boundedCardMarkupSamples": card_markup,
         "perTitleDateLabelMatches": per_title_label_count,
         "labelSectionsWithNearbyDate": sum(bool(s["dateCandidates"]) for s in dated_snippets),
