@@ -95,6 +95,46 @@ class CardInspector(HTMLParser):
                 self.card_depth = -1
 
 
+
+def candidates_from_cards(cards):
+    """Extract tentative listing records, not validated Filmweb recommendations."""
+    records = []
+    for card in cards:
+        text = card["text"]
+        images = card["imageAlts"]
+        title = images[0].strip() if images else ""
+        platform = ""
+        added = ""
+        for i, item in enumerate(text[:-1]):
+            if item == "Platforma:":
+                platform = text[i + 1]
+            elif item == "Data dodania:":
+                added = text[i + 1]
+        match = DATE_PATTERN.fullmatch(added.strip())
+        if not (title and platform and match):
+            continue
+        parts = re.split(r"[ ./-]+", added.strip())
+        iso_date = ""
+        if len(parts) == 3:
+            if len(parts[0]) == 4:
+                year, month, day = parts
+            else:
+                day, month, year = parts
+            try:
+                import datetime
+                iso_date = datetime.date(int(year), int(month), int(day)).isoformat()
+            except ValueError:
+                continue
+        records.append({
+            "title": title,
+            "provider": platform,
+            "vodAddedAt": iso_date,
+            "source": source.SOURCE,
+            "status": "CANDIDATE_UNVERIFIED",
+        })
+    return records
+
+
 def main():
     # This independently verifies the robots policy before accessing the listing.
     base = source.probe()
@@ -140,6 +180,7 @@ def main():
         "dateElementContexts": p.date_contexts,
         "cardCountSampled": len(cards.cards),
         "cardStructureSamples": cards.cards[:3],
+        "unverifiedCandidateSamples": candidates_from_cards(cards.cards)[:4],
         "boundedCardMarkupSamples": card_markup,
         "perTitleDateLabelMatches": len(matches),
         "labelSectionsWithNearbyDate": sum(bool(s["dateCandidates"]) for s in dated_snippets),
