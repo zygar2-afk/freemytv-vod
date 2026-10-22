@@ -1,0 +1,44 @@
+
+name: Update Polish VOD recommendations
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vod-feed-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate verified VOD feed
+        run: python scripts/build_feed.py
+
+      - name: Publish updated JSON
+        run: |
+          if git diff --quiet -- vod_recommendations.json; then
+            echo "No changes to publish."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add vod_recommendations.json
+          git commit -m "Update VOD recommendations"
+          git push
