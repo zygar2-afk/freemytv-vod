@@ -31,6 +31,7 @@ def build(today,getter=request):
         movies.append({"tmdbId":id,"title":m.get("title") or m.get("original_title") or "",
           "releaseDate":date,"posterPath":m.get("backdrop_path") or m.get("poster_path"),
           "popularityTMDB":float(m.get("popularity") or 0),"rating":float(m.get("vote_average") or 0),
+          "genreIds":m.get("genre_ids") or [],
           "providersPL":names,"tmdbUrl":f"https://www.themoviedb.org/movie/{id}",
           "status":"POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
           "caveat":"TMDB popularity is not viewing figures; provider availability may lag."})
