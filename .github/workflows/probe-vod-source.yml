@@ -30,7 +30,12 @@ jobs:
           git add data/tmdb_movies_popular_pl.json
           if ! git diff --cached --quiet; then
             git commit -m 'Refresh popular TMDB movies [skip ci]'
-            git push origin HEAD:feature/vod-source-probe
+            for attempt in 1 2 3; do
+              git fetch origin feature/vod-source-probe
+              git rebase origin/feature/vod-source-probe
+              if git push origin HEAD:feature/vod-source-probe; then break; fi
+              if [ "$attempt" = 3 ]; then exit 1; fi
+            done
           fi
       - name: Upload movie feed
         uses: actions/upload-artifact@v4
@@ -59,7 +64,12 @@ jobs:
           git add data/tmdb_series_platform_top10_pl.json
           if ! git diff --cached --quiet; then
             git commit -m 'Refresh platform series TOP 10 [skip ci]'
-            git push origin HEAD:feature/vod-source-probe
+            for attempt in 1 2 3; do
+              git fetch origin feature/vod-source-probe
+              git rebase origin/feature/vod-source-probe
+              if git push origin HEAD:feature/vod-source-probe; then break; fi
+              if [ "$attempt" = 3 ]; then exit 1; fi
+            done
           fi
       - name: Upload TOP 10
         uses: actions/upload-artifact@v4
@@ -111,7 +121,12 @@ jobs:
           git add data/tmdb_series_21d.json
           if ! git diff --cached --quiet; then
             git commit -m 'Refresh TMDB series candidates [skip ci]'
-            git push origin HEAD:feature/vod-source-probe
+            for attempt in 1 2 3; do
+              git fetch origin feature/vod-source-probe
+              git rebase origin/feature/vod-source-probe
+              if git push origin HEAD:feature/vod-source-probe; then break; fi
+              if [ "$attempt" = 3 ]; then exit 1; fi
+            done
           fi
   probe:
     runs-on: ubuntu-latest
@@ -197,7 +212,12 @@ jobs:
           git add data/experimental_vod_top10.json
           if ! git diff --cached --quiet; then
             git commit -m 'Refresh experimental TOP 10 VOD JSON [skip ci]'
-            git push origin HEAD:feature/vod-source-probe
+            for attempt in 1 2 3; do
+              git fetch origin feature/vod-source-probe
+              git rebase origin/feature/vod-source-probe
+              if git push origin HEAD:feature/vod-source-probe; then break; fi
+              if [ "$attempt" = 3 ]; then exit 1; fi
+            done
           fi
       - name: Upload combined TOP 10 JSON
         uses: actions/upload-artifact@v4
