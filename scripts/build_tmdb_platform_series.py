@@ -9,12 +9,13 @@ import zoneinfo
 from build_tmdb_series import request
 
 OUT = pathlib.Path("out/tmdb_series_platform_top10_pl.json")
-PLATFORMS = {"Netflix", "SkyShowtime", "HBO Max"}
+PLATFORMS = {"Netflix", "SkyShowtime", "HBO Max", "Apple TV+"}
 def normalize_provider(name):
     s = (name or "").casefold().replace(" ", "")
     if "netflix" in s: return "Netflix"
     if "skyshowtime" in s: return "SkyShowtime"
     if s in ("hbomax", "max"): return "HBO Max"
+    if s in ("appletvplus", "appletv+"): return "Apple TV+"
     return None
 
 def build(today, getter=request):
@@ -47,7 +48,7 @@ def build(today, getter=request):
             "status":"POPULAR_NOW_NOT_OFFICIAL_VIEWS"})
     results.sort(key=lambda x:(x["popularityTMDB"],x["rating"]), reverse=True)
     return {"region":"PL","source":"TMDB","category":"platform_series_popular_now",
-        "platforms":["Netflix","SkyShowtime","HBO Max"], "rankingMetric":"TMDB popularity; not platform viewing figures",
+        "platforms":["Netflix","SkyShowtime","HBO Max","Apple TV+"], "rankingMetric":"TMDB popularity; not platform viewing figures",
         "datePL":today.isoformat(),"generatedAt":dt.datetime.now(dt.timezone.utc).isoformat(),
         "series":results[:30],"candidateCount":len(results)}
 
