@@ -19,10 +19,14 @@ from build_experimental_candidates import rating_from_listing
 
 OUT = pathlib.Path("out/experimental_vod_top10.json")
 TOP = 10
-MIN_RATING = 7.0
-MIN_VOTES = 100
+FILM_MIN_RATING = 5.0
+FILM_MIN_VOTES = 20
+SERIES_MIN_RATING = 7.0
+SERIES_MIN_VOTES = 100
 
 def collect(url, media_type, page_limit, today):
+    min_rating = FILM_MIN_RATING if media_type == "film" else SERIES_MIN_RATING
+    min_votes = FILM_MIN_VOTES if media_type == "film" else SERIES_MIN_VOTES
     grouped = {}
     pages = []
     visited = set()
@@ -73,7 +77,7 @@ def collect(url, media_type, page_limit, today):
             if rating is None:
                 audit["ratingMissing"] += 1
                 continue
-            if rating["rating"] < MIN_RATING or rating["votesApprox"] < MIN_VOTES:
+            if rating["rating"] < min_rating or rating["votesApprox"] < min_votes:
                 audit["belowThreshold"] += 1
                 continue
             audit["qualified"] += 1
@@ -106,8 +110,8 @@ def collect(url, media_type, page_limit, today):
     selected = [
         value for value in grouped.values()
         if not value.get("conflict") and value["providers"]
-        and value["listingRating"]["rating"] >= MIN_RATING
-        and value["listingRating"]["votesApprox"] >= MIN_VOTES
+        and value["listingRating"]["rating"] >= min_rating
+        and value["listingRating"]["votesApprox"] >= min_votes
     ]
     # Popularity proxy: count of votes first, rating as the tiebreaker.
     selected.sort(key=lambda x:(x["listingRating"]["votesApprox"],
@@ -131,7 +135,8 @@ def main():
         "selection":{
             "periodDays":7,"topPerCategory":TOP,
             "popularityProxy":"approximate listing votes (not actual VOD views)",
-            "minRating":MIN_RATING,"minimumVotes":MIN_VOTES,
+            "filmMinimumRating":FILM_MIN_RATING,"filmMinimumVotes":FILM_MIN_VOTES,
+            "seriesMinimumRating":SERIES_MIN_RATING,"seriesMinimumVotes":SERIES_MIN_VOTES,
             "productionYearRequired":today.year,
             "productionReleaseInPastWeekVerified":False,
             "rankingIsComplete":False,"ratingsVerifiedOnFilmweb":False,
