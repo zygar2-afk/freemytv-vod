@@ -21,8 +21,8 @@ OUT = pathlib.Path("out/experimental_vod_top10.json")
 TOP = 10
 FILM_MIN_RATING = 5.0
 FILM_MIN_VOTES = 20
-SERIES_MIN_RATING = 7.0
-SERIES_MIN_VOTES = 100
+SERIES_MIN_RATING = 5.0
+SERIES_MIN_VOTES = 20
 
 def collect(url, media_type, page_limit, today):
     min_rating = FILM_MIN_RATING if media_type == "film" else SERIES_MIN_RATING
