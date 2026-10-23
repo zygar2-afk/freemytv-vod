@@ -1,7 +1,7 @@
 {
   "region": "PL",
   "windowDays": 21,
-  "generatedAt": "2026-10-23T15:03:25.270489+00:00",
+  "generatedAt": "2026-10-23T15:03:41.268788+00:00",
   "source": "TMDB",
   "rankingMetric": "TMDB popularity, not streaming views",
   "seasonSpecificPolishAvailabilityVerified": false,
