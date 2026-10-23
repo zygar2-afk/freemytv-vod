@@ -38,6 +38,35 @@ jobs:
           name: tmdb-movies-popular-pl
           path: out/tmdb_movies_popular_pl.json
           retention-days: 7
+  tmdb-platform-series:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unit-test Polish platform ranking
+        run: python3 -m unittest discover -s scripts -p test_tmdb_platform_series.py -v
+      - name: Build real platform series TOP 10
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
+        run: python3 scripts/build_tmdb_platform_series.py
+      - name: Publish platform series JSON
+        run: |
+          mkdir -p data
+          cp out/tmdb_series_platform_top10_pl.json data/tmdb_series_platform_top10_pl.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/tmdb_series_platform_top10_pl.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh platform series TOP 10 [skip ci]'
+            git push origin HEAD:feature/vod-source-probe
+          fi
+      - name: Upload TOP 10
+        uses: actions/upload-artifact@v4
+        with:
+          name: tmdb-platform-series-top10
+          path: out/tmdb_series_platform_top10_pl.json
+          retention-days: 7
   tmdb-series:
     runs-on: ubuntu-latest
     timeout-minutes: 5
