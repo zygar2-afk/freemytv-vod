@@ -16,6 +16,7 @@ import probe_vod_source as source
 from inspect_vod_markup import CardInspector, candidates_from_cards
 from probe_weekly_pagination import fetch, next_url, MAX_PAGES
 from build_experimental_candidates import rating_from_listing
+from probe_series_source import next_series_url
 
 OUT = pathlib.Path("out/experimental_vod_top10.json")
 TOP = 10
@@ -23,8 +24,11 @@ FILM_MIN_RATING = 5.0
 FILM_MIN_VOTES = 20
 SERIES_MIN_RATING = 5.0
 SERIES_MIN_VOTES = 20
+MOVIE_WINDOW_DAYS = 7
+SERIES_WINDOW_DAYS = 21
 
 def collect(url, media_type, page_limit, today):
+    days = MOVIE_WINDOW_DAYS if media_type == "film" else SERIES_WINDOW_DAYS
     min_rating = FILM_MIN_RATING if media_type == "film" else SERIES_MIN_RATING
     min_votes = FILM_MIN_VOTES if media_type == "film" else SERIES_MIN_VOTES
     grouped = {}
@@ -51,7 +55,7 @@ def collect(url, media_type, page_limit, today):
                 added = dt.date.fromisoformat(row["vodAddedAt"])
             except (KeyError, ValueError):
                 continue
-            if not 0 <= (today - added).days <= 6:
+            if not 0 <= (today - added).days < days:
                 continue
             audit["recent"] += 1
             links = row.get("filmwebLinkCandidates", [])
@@ -103,7 +107,8 @@ def collect(url, media_type, page_limit, today):
             if row["vodAddedAt"] not in value["datesAdded"]:
                 value["datesAdded"].append(row["vodAddedAt"])
         if page < page_limit:
-            upcoming = next_url(html, url, page) if media_type == "film" else None
+            upcoming = (next_url(html, url, page) if media_type == "film"
+                        else next_series_url(html, url, page + 1))
             # Series pagination URL is not yet validated: do not guess it.
             if not upcoming:
                 stop = "SERIES_PAGINATION_UNVERIFIED" if media_type == "series" else "NO_RECOGNIZED_NEXT_PAGE"
@@ -122,7 +127,7 @@ def collect(url, media_type, page_limit, today):
         value["providers"].sort(key=lambda p:(p["name"],p["vodAddedAt"]))
         value["datesAdded"].sort()
     return selected[:TOP], {
-        "pages":pages, "stoppedBecause":stop,
+        "windowDays":days, "pages":pages, "stoppedBecause":stop,
         "eligibleInSample":len(selected), "filterAudit":audit,
         "fullSevenDayCoverageVerified":False,
     }
@@ -130,13 +135,14 @@ def collect(url, media_type, page_limit, today):
 def main():
     today = dt.datetime.now(zoneinfo.ZoneInfo("Europe/Warsaw")).date()
     movies, movie_meta = collect(source.SOURCE,"film",MAX_PAGES,today)
-    shows, show_meta = collect("https://nowoscivod.pl/seriale","series",1,today)
+    shows, show_meta = collect("https://nowoscivod.pl/seriale","series",MAX_PAGES,today)
     data = {
         "region":"PL", "generatedAt":dt.datetime.now(dt.timezone.utc).isoformat(),
         "todayWarsaw":today.isoformat(), "productionReady":False,
         "selection":{
-            "periodDays":7,"topPerCategory":TOP,
-            "popularityProxy":"approximate listing votes (not actual VOD views)",
+            "filmPeriodDays":MOVIE_WINDOW_DAYS,"seriesPeriodDays":SERIES_WINDOW_DAYS,
+            "topPerCategory":TOP,
+            "popularityProxy":"approximate historical listing votes; NOT trending growth or VOD watch counts",
             "filmMinimumRating":FILM_MIN_RATING,"filmMinimumVotes":FILM_MIN_VOTES,
             "seriesMinimumRating":SERIES_MIN_RATING,"seriesMinimumVotes":SERIES_MIN_VOTES,
             "filmProductionYearRequired":today.year,
@@ -154,6 +160,6 @@ def main():
     print(f"Film sample: {movie_meta['pages']} Series sample: {show_meta['pages']}")
     print("Film filter audit:", json.dumps(movie_meta["filterAudit"], ensure_ascii=False))
     print("Series filter audit:", json.dumps(show_meta["filterAudit"], ensure_ascii=False))
-    print("Incomplete 7-day source coverage; no production publication.")
+    print("Incomplete 7/21-day source coverage; no production publication.")
 if __name__=="__main__":
     main()
