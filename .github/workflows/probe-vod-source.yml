@@ -35,6 +35,13 @@ jobs:
         run: python3 scripts/build_experimental_candidates.py
       - name: Generate combined TOP 10 films and series (experimental)
         run: python3 scripts/build_top10_films_series.py
+      - name: Upload TOP 10 candidates for evidence review
+        uses: actions/upload-artifact@v4
+        with:
+          name: top10-candidates-needing-premiere-evidence
+          path: out/experimental_vod_top10.json
+          if-no-files-found: error
+          retention-days: 7
       - name: Require nonempty film and series lists before publication
         run: |
           python3 - <<'PY'
