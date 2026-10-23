@@ -10,7 +10,8 @@ from build_tmdb_series import request
 
 OUT = pathlib.Path("out/tmdb_series_platform_top10_pl.json")
 PLATFORMS = {"Netflix", "SkyShowtime", "HBO Max", "Apple TV+"}
-def normalize_provider(name):
+def normalize_provider(name, provider_id=None):
+    if provider_id == 350: return "Apple TV+"
     s = (name or "").casefold().replace(" ", "")
     if "netflix" in s: return "Netflix"
     if "skyshowtime" in s: return "SkyShowtime"
@@ -34,7 +35,7 @@ def build(today, getter=request):
     for id,show in candidates.items():
         pl=getter(f"/tv/{id}/watch/providers").get("results",{}).get("PL",{})
         providers=sorted({mapped for p in pl.get("flatrate",[])
-                  if (mapped:=normalize_provider(p.get("provider_name")))})
+                  if (mapped:=normalize_provider(p.get("provider_name"), p.get("provider_id")))})
         if not providers: continue
         title=(show.get("name") or show.get("original_name") or "").strip()
         if not title: continue
