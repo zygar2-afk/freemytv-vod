@@ -188,8 +188,85 @@
       "tmdbUrl": "https://www.themoviedb.org/movie/1440050",
       "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
       "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 1288069,
+      "title": "Tenzing",
+      "releaseDate": "2026-10-09",
+      "posterPath": "/6GXqVvL20Y0MpyVP30WoI2NPK69.jpg",
+      "popularityTMDB": 103.1168,
+      "rating": 8.309,
+      "genreIds": [
+        18,
+        36
+      ],
+      "providersPL": [
+        "Apple TV",
+        "Apple TV Amazon Channel"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1288069",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 1339274,
+      "title": "Nie zostawiaj dzieci samych",
+      "releaseDate": "2026-05-14",
+      "posterPath": "/flo7Xmyxz2wDUjr5Ff0VrxaVwlY.jpg",
+      "popularityTMDB": 91.8801,
+      "rating": 6.828,
+      "genreIds": [
+        27,
+        18,
+        53
+      ],
+      "providersPL": [
+        "Bloody Movies Amazon Channel",
+        "CDA Premium"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1339274",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 1381078,
+      "title": "Miłość twojego życia",
+      "releaseDate": "2026-10-07",
+      "posterPath": "/4hneB0UFKOZAGJHqJ3VhDcG72uH.jpg",
+      "popularityTMDB": 82.3971,
+      "rating": 6.772,
+      "genreIds": [
+        10749,
+        18
+      ],
+      "providersPL": [
+        "Amazon Prime Video"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1381078",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 1380417,
+      "title": "Ponad prawem",
+      "releaseDate": "2026-09-02",
+      "posterPath": "/1jANqIbqrWJZb8GM5Kb3L6U8iHi.jpg",
+      "popularityTMDB": 58.7306,
+      "rating": 6.5,
+      "genreIds": [
+        53,
+        36,
+        80,
+        18
+      ],
+      "providersPL": [
+        "Polsat Box Go"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1380417",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
     }
   ],
   "candidateCount": 14,
-  "generatedAt": "2026-10-23T15:23:05.145276+00:00"
+  "generatedAt": "2026-10-23T15:31:37.589232+00:00"
 }
