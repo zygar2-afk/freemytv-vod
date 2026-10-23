@@ -53,6 +53,13 @@ def collect(url, media_type, page_limit, today):
             m = re.search(r"-([0-9]+)$",urllib.parse.urlsplit(links[0]).path)
             if not m:
                 continue
+            # Require a production released in the current calendar year; this
+            # is a conservative safeguard against old catalog additions, not
+            # proof of a premiere within the past seven days.
+            year_match = re.search(r"-(19[0-9]{2}|20[0-9]{2})-[0-9]+$",
+                                   urllib.parse.unquote(urllib.parse.urlsplit(links[0]).path))
+            if not year_match or int(year_match.group(1)) != today.year:
+                continue
             rating = rating_from_listing(row)
             if rating is None:
                 continue
@@ -110,6 +117,8 @@ def main():
             "periodDays":7,"topPerCategory":TOP,
             "popularityProxy":"approximate listing votes (not actual VOD views)",
             "minRating":MIN_RATING,"minimumVotes":MIN_VOTES,
+            "productionYearRequired":today.year,
+            "productionReleaseInPastWeekVerified":False,
             "rankingIsComplete":False,"ratingsVerifiedOnFilmweb":False,
         },
         "movies":movies, "series":shows,
