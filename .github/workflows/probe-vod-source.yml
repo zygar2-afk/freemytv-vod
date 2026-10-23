@@ -24,6 +24,15 @@ jobs:
         run: python3 scripts/probe_series_source.py
       - name: Generate unverified weekly candidates
         run: python3 scripts/build_experimental_candidates.py
+      - name: Generate combined TOP 10 films and series (experimental)
+        run: python3 scripts/build_top10_films_series.py
+      - name: Upload combined TOP 10 JSON
+        uses: actions/upload-artifact@v4
+        with:
+          name: experimental-top10-films-series
+          path: out/experimental_vod_top10.json
+          if-no-files-found: error
+          retention-days: 7
       - name: Upload non-production candidate JSON
         uses: actions/upload-artifact@v4
         with:
