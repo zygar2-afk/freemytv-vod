@@ -10,6 +10,11 @@
       "posterPath": "/r08LxMJCbf1SiJIWeyH9aJmdqwC.jpg",
       "popularityTMDB": 1227.7402,
       "rating": 8.468,
+      "genreIds": [
+        878,
+        28,
+        12
+      ],
       "providersPL": [
         "Polsat Box Go"
       ],
@@ -24,6 +29,10 @@
       "posterPath": "/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
       "popularityTMDB": 1019.0916,
       "rating": 8.635,
+      "genreIds": [
+        878,
+        12
+      ],
       "providersPL": [
         "Amazon Prime Video"
       ],
@@ -38,6 +47,9 @@
       "posterPath": "/nGau0KBOaRILSK5MqFcuTfv7GMl.jpg",
       "popularityTMDB": 272.829,
       "rating": 7.285,
+      "genreIds": [
+        53
+      ],
       "providersPL": [
         "Polsat Box Go"
       ],
@@ -52,6 +64,10 @@
       "posterPath": "/p40lmrdI4blcAPZQMTPaiy5v5Ym.jpg",
       "popularityTMDB": 239.7157,
       "rating": 7.7,
+      "genreIds": [
+        27,
+        53
+      ],
       "providersPL": [
         "Polsat Box Go"
       ],
@@ -66,6 +82,11 @@
       "posterPath": "/jdJsnhHfkIi3J7jwfiCFT4gXNx5.jpg",
       "popularityTMDB": 234.439,
       "rating": 7.76,
+      "genreIds": [
+        28,
+        35,
+        12
+      ],
       "providersPL": [
         "Apple TV",
         "Apple TV Amazon Channel"
@@ -81,6 +102,10 @@
       "posterPath": "/dgUDj84BWtW6EZzee8BkgKnjDhh.jpg",
       "popularityTMDB": 225.5783,
       "rating": 6.979,
+      "genreIds": [
+        28,
+        53
+      ],
       "providersPL": [
         "Amazon Prime Video"
       ],
@@ -95,6 +120,10 @@
       "posterPath": "/tzoarEu7TsG959upiELyYPm5kO9.jpg",
       "popularityTMDB": 166.5319,
       "rating": 6.963,
+      "genreIds": [
+        53,
+        18
+      ],
       "providersPL": [
         "Netflix"
       ],
@@ -109,6 +138,12 @@
       "posterPath": "/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
       "popularityTMDB": 108.2164,
       "rating": 8.277,
+      "genreIds": [
+        16,
+        10751,
+        35,
+        12
+      ],
       "providersPL": [
         "Disney Plus"
       ],
@@ -123,6 +158,12 @@
       "posterPath": "/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
       "popularityTMDB": 107.4465,
       "rating": 7.501,
+      "genreIds": [
+        10751,
+        14,
+        35,
+        12
+      ],
       "providersPL": [
         "Disney Plus"
       ],
@@ -137,6 +178,10 @@
       "posterPath": "/dgqBcgTzaUiSLvKJPDF9AbdFEMO.jpg",
       "popularityTMDB": 107.2055,
       "rating": 7.1,
+      "genreIds": [
+        35,
+        10751
+      ],
       "providersPL": [
         "Polsat Box Go"
       ],
@@ -146,5 +191,5 @@
     }
   ],
   "candidateCount": 14,
-  "generatedAt": "2026-10-23T15:03:58.099177+00:00"
+  "generatedAt": "2026-10-23T15:13:54.465579+00:00"
 }
