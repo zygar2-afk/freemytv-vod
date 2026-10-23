@@ -1,0 +1,150 @@
+{
+  "region": "PL",
+  "source": "TMDB",
+  "category": "popular_movies_now",
+  "movies": [
+    {
+      "tmdbId": 969681,
+      "title": "Spider-Man: Całkiem nowy dzień",
+      "releaseDate": "2026-07-29",
+      "posterPath": "/r08LxMJCbf1SiJIWeyH9aJmdqwC.jpg",
+      "popularityTMDB": 1227.7402,
+      "rating": 8.468,
+      "providersPL": [
+        "Polsat Box Go"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/969681",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 687163,
+      "title": "Projekt Hail Mary",
+      "releaseDate": "2026-03-15",
+      "posterPath": "/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
+      "popularityTMDB": 1019.0916,
+      "rating": 8.635,
+      "providersPL": [
+        "Amazon Prime Video"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/687163",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 1101412,
+      "title": "Nie patrz w dół 2",
+      "releaseDate": "2026-09-01",
+      "posterPath": "/nGau0KBOaRILSK5MqFcuTfv7GMl.jpg",
+      "popularityTMDB": 272.829,
+      "rating": 7.285,
+      "providersPL": [
+        "Polsat Box Go"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1101412",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 1291595,
+      "title": "Naznaczony: Wyjście z mrocznego wymiaru",
+      "releaseDate": "2026-08-19",
+      "posterPath": "/p40lmrdI4blcAPZQMTPaiy5v5Ym.jpg",
+      "popularityTMDB": 239.7157,
+      "rating": 7.7,
+      "providersPL": [
+        "Polsat Box Go"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1291595",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 1148365,
+      "title": "Matchbox: film",
+      "releaseDate": "2026-10-05",
+      "posterPath": "/jdJsnhHfkIi3J7jwfiCFT4gXNx5.jpg",
+      "popularityTMDB": 234.439,
+      "rating": 7.76,
+      "providersPL": [
+        "Apple TV",
+        "Apple TV Amazon Channel"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1148365",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 1561726,
+      "title": "Plan doskonały",
+      "releaseDate": "2026-10-16",
+      "posterPath": "/dgUDj84BWtW6EZzee8BkgKnjDhh.jpg",
+      "popularityTMDB": 225.5783,
+      "rating": 6.979,
+      "providersPL": [
+        "Amazon Prime Video"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1561726",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 1236045,
+      "title": "Zwierzęta",
+      "releaseDate": "2026-10-09",
+      "posterPath": "/tzoarEu7TsG959upiELyYPm5kO9.jpg",
+      "popularityTMDB": 166.5319,
+      "rating": 6.963,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1236045",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 1084244,
+      "title": "Toy Story 5",
+      "releaseDate": "2026-06-17",
+      "posterPath": "/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
+      "popularityTMDB": 108.2164,
+      "rating": 8.277,
+      "providersPL": [
+        "Disney Plus"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1084244",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 1108427,
+      "title": "Vaiana",
+      "releaseDate": "2026-07-08",
+      "posterPath": "/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
+      "popularityTMDB": 107.4465,
+      "rating": 7.501,
+      "providersPL": [
+        "Disney Plus"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1108427",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 1440050,
+      "title": "Żywiciel rodziny",
+      "releaseDate": "2026-05-29",
+      "posterPath": "/dgqBcgTzaUiSLvKJPDF9AbdFEMO.jpg",
+      "popularityTMDB": 107.2055,
+      "rating": 7.1,
+      "providersPL": [
+        "Polsat Box Go"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1440050",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    }
+  ],
+  "candidateCount": 14,
+  "generatedAt": "2026-10-23T15:03:58.099177+00:00"
+}
