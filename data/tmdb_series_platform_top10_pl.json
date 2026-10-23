@@ -6,27 +6,239 @@
     "Netflix",
     "SkyShowtime",
     "HBO Max",
-    "Apple TV+"
+    "Apple TV+",
+    "Prime Video"
   ],
   "rankingMetric": "TMDB popularity; not platform viewing figures",
   "datePL": "2026-10-23",
-  "generatedAt": "2026-10-23T15:38:40.329544+00:00",
+  "generatedAt": "2026-10-23T15:52:20.390313+00:00",
   "series": [
     {
-      "tmdbId": 247718,
-      "title": "Strefa gangsterów",
-      "firstAirDate": "2025-03-30",
+      "tmdbId": 1396,
+      "title": "Breaking Bad",
+      "firstAirDate": "2008-01-20",
       "providersPL": [
+        "Netflix"
+      ],
+      "posterPath": "/tsRy63Mu5cu8etL1X7ZLyf7UP1M.jpg",
+      "genreIds": [
+        18,
+        80
+      ],
+      "rating": 9.0,
+      "popularityTMDB": 1745.5519,
+      "tmdbUrl": "https://www.themoviedb.org/tv/1396",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 2734,
+      "title": "Prawo i porządek: Sekcja specjalna",
+      "firstAirDate": "1999-09-20",
+      "providersPL": [
+        "Netflix",
+        "Prime Video",
         "SkyShowtime"
       ],
-      "posterPath": "/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
+      "posterPath": "/xhK9YCxNwnE0OB1SWvCY39heHQI.jpg",
+      "genreIds": [
+        80,
+        18,
+        9648
+      ],
+      "rating": 7.961,
+      "popularityTMDB": 421.2688,
+      "tmdbUrl": "https://www.themoviedb.org/tv/2734",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 5920,
+      "title": "Mentalista",
+      "firstAirDate": "2008-09-23",
+      "providersPL": [
+        "HBO Max",
+        "Netflix",
+        "Prime Video"
+      ],
+      "posterPath": "/rJFqKcmMSttdNP58l0dVzY2NcTA.jpg",
+      "genreIds": [
+        80,
+        18,
+        9648
+      ],
+      "rating": 8.419,
+      "popularityTMDB": 366.7552,
+      "tmdbUrl": "https://www.themoviedb.org/tv/5920",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 15226,
+      "title": "सीआईडी",
+      "firstAirDate": "1998-01-21",
+      "providersPL": [
+        "Netflix"
+      ],
+      "posterPath": "/1gZrOa2E9DOohEvSLLBJqus2zGu.jpg",
+      "genreIds": [
+        10759,
+        80,
+        18,
+        9648
+      ],
+      "rating": 5.75,
+      "popularityTMDB": 325.7031,
+      "tmdbUrl": "https://www.themoviedb.org/tv/15226",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 4656,
+      "title": "Raw",
+      "firstAirDate": "1993-01-11",
+      "providersPL": [
+        "Netflix"
+      ],
+      "posterPath": "/ykWWT8FAChBffNxcDzoJMCK9LBb.jpg",
+      "genreIds": [
+        10764
+      ],
+      "rating": 6.778,
+      "popularityTMDB": 243.3381,
+      "tmdbUrl": "https://www.themoviedb.org/tv/4656",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 1911,
+      "title": "Kości",
+      "firstAirDate": "2005-09-13",
+      "providersPL": [
+        "Netflix"
+      ],
+      "posterPath": "/aSye04zKzWtUP3U6Cl4bOXc5Ih9.jpg",
       "genreIds": [
         80,
         18
       ],
-      "rating": 8.541,
-      "popularityTMDB": 249.5892,
-      "tmdbUrl": "https://www.themoviedb.org/tv/247718",
+      "rating": 8.176,
+      "popularityTMDB": 238.7667,
+      "tmdbUrl": "https://www.themoviedb.org/tv/1911",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 79744,
+      "title": "Rekrut",
+      "firstAirDate": "2018-10-16",
+      "providersPL": [
+        "Netflix"
+      ],
+      "posterPath": "/6iNWfGVCEfASDdlNb05TP5nG0ll.jpg",
+      "genreIds": [
+        80,
+        18,
+        35
+      ],
+      "rating": 8.537,
+      "popularityTMDB": 231.2716,
+      "tmdbUrl": "https://www.themoviedb.org/tv/79744",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 2316,
+      "title": "Biuro",
+      "firstAirDate": "2005-03-24",
+      "providersPL": [
+        "Netflix",
+        "Prime Video",
+        "SkyShowtime"
+      ],
+      "posterPath": "/9vMzIrMIncPmtalcxh1MOrgcE6C.jpg",
+      "genreIds": [
+        35
+      ],
+      "rating": 8.586,
+      "popularityTMDB": 200.0623,
+      "tmdbUrl": "https://www.themoviedb.org/tv/2316",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 1408,
+      "title": "Dr House",
+      "firstAirDate": "2004-11-16",
+      "providersPL": [
+        "Netflix",
+        "Prime Video",
+        "SkyShowtime"
+      ],
+      "posterPath": "/r0Q6eeN9L1ORL9QsV0Sg8ZV3vnv.jpg",
+      "genreIds": [
+        18
+      ],
+      "rating": 8.561,
+      "popularityTMDB": 199.7569,
+      "tmdbUrl": "https://www.themoviedb.org/tv/1408",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 46952,
+      "title": "Czarna lista",
+      "firstAirDate": "2013-09-23",
+      "providersPL": [
+        "Netflix"
+      ],
+      "posterPath": "/2eIlCirgcvEwmCSYh2wDfz5Sxvz.jpg",
+      "genreIds": [
+        18,
+        80,
+        9648
+      ],
+      "rating": 7.6,
+      "popularityTMDB": 190.4156,
+      "tmdbUrl": "https://www.themoviedb.org/tv/46952",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 83631,
+      "title": "Co robimy w ukryciu",
+      "firstAirDate": "2019-03-27",
+      "providersPL": [
+        "HBO Max"
+      ],
+      "posterPath": "/mKikck71CvVISUSTLk29fwRbH4y.jpg",
+      "genreIds": [
+        35,
+        10765
+      ],
+      "rating": 8.003,
+      "popularityTMDB": 3682.2016,
+      "tmdbUrl": "https://www.themoviedb.org/tv/83631",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 1622,
+      "title": "Nie z tego świata",
+      "firstAirDate": "2005-09-13",
+      "providersPL": [
+        "HBO Max",
+        "Prime Video"
+      ],
+      "posterPath": "/lirPqYLTtd6XZqGn4cS1wiesTq0.jpg",
+      "genreIds": [
+        18,
+        9648,
+        10765
+      ],
+      "rating": 8.316,
+      "popularityTMDB": 287.1097,
+      "tmdbUrl": "https://www.themoviedb.org/tv/1622",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
     },
@@ -49,60 +261,387 @@
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
     },
     {
-      "tmdbId": 312359,
-      "title": "Dragon Ball Super: Beerus",
-      "firstAirDate": "2026-10-11",
-      "providersPL": [
-        "Netflix"
-      ],
-      "posterPath": "/8phLVFEXOe02JgFmH9ldn3j4tXW.jpg",
-      "genreIds": [
-        16,
-        10759,
-        10765
-      ],
-      "rating": 9.71,
-      "popularityTMDB": 170.4193,
-      "tmdbUrl": "https://www.themoviedb.org/tv/312359",
-      "availabilityScope": "series-level subscription listing in Poland",
-      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
-    },
-    {
-      "tmdbId": 300146,
-      "title": "Zamiana z dziedziczką",
-      "firstAirDate": "2026-10-16",
-      "providersPL": [
-        "Netflix"
-      ],
-      "posterPath": "/YndvGwqwroUDVltBWmnOuTvJke.jpg",
-      "genreIds": [
-        18
-      ],
-      "rating": 8.167,
-      "popularityTMDB": 107.2749,
-      "tmdbUrl": "https://www.themoviedb.org/tv/300146",
-      "availabilityScope": "series-level subscription listing in Poland",
-      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
-    },
-    {
-      "tmdbId": 95350,
-      "title": "Latarnie",
-      "firstAirDate": "2026-08-16",
+      "tmdbId": 1399,
+      "title": "Gra o tron",
+      "firstAirDate": "2011-04-17",
       "providersPL": [
         "HBO Max"
       ],
-      "posterPath": "/6gqezQJ2mkm4jreWwLyOZy2Vf6i.jpg",
+      "posterPath": "/zZqpAXxVSBtxV9qPBcscfXBcL2w.jpg",
+      "genreIds": [
+        10765,
+        18,
+        10759
+      ],
+      "rating": 8.475,
+      "popularityTMDB": 210.2193,
+      "tmdbUrl": "https://www.themoviedb.org/tv/1399",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 34307,
+      "title": "Niepokorni",
+      "firstAirDate": "2011-01-09",
+      "providersPL": [
+        "HBO Max",
+        "Netflix",
+        "Prime Video"
+      ],
+      "posterPath": "/3w1iNNuMiFVDDUyycJoSAFksjc7.jpg",
       "genreIds": [
         18,
-        9648,
+        35
+      ],
+      "rating": 8.167,
+      "popularityTMDB": 175.5724,
+      "tmdbUrl": "https://www.themoviedb.org/tv/34307",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 60625,
+      "title": "Rick i Morty",
+      "firstAirDate": "2013-12-02",
+      "providersPL": [
+        "HBO Max",
+        "Netflix"
+      ],
+      "posterPath": "/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
+      "genreIds": [
+        16,
+        35,
+        10765,
+        10759
+      ],
+      "rating": 8.679,
+      "popularityTMDB": 166.3655,
+      "tmdbUrl": "https://www.themoviedb.org/tv/60625",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 1402,
+      "title": "The Walking Dead",
+      "firstAirDate": "2010-10-31",
+      "providersPL": [
+        "HBO Max",
+        "Netflix"
+      ],
+      "posterPath": "/rAOjnEFTuNysY7bot8zonhImGMh.jpg",
+      "genreIds": [
+        10759,
+        18,
         10765
       ],
-      "rating": 8.233,
-      "popularityTMDB": 92.3504,
-      "tmdbUrl": "https://www.themoviedb.org/tv/95350",
+      "rating": 8.079,
+      "popularityTMDB": 157.4571,
+      "tmdbUrl": "https://www.themoviedb.org/tv/1402",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 1398,
+      "title": "Rodzina Soprano",
+      "firstAirDate": "1999-01-10",
+      "providersPL": [
+        "HBO Max"
+      ],
+      "posterPath": "/lNpkvX2s8LGB0mjGODMT4o6Up7j.jpg",
+      "genreIds": [
+        80,
+        18
+      ],
+      "rating": 8.677,
+      "popularityTMDB": 145.4836,
+      "tmdbUrl": "https://www.themoviedb.org/tv/1398",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 15260,
+      "title": "Pora na przygodę!",
+      "firstAirDate": "2010-04-05",
+      "providersPL": [
+        "HBO Max"
+      ],
+      "posterPath": "/d8rse1RgMzXwmZvBpDvcG1VUO2Y.jpg",
+      "genreIds": [
+        16,
+        35,
+        10765
+      ],
+      "rating": 8.506,
+      "popularityTMDB": 141.0789,
+      "tmdbUrl": "https://www.themoviedb.org/tv/15260",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 549,
+      "title": "Prawo i porządek",
+      "firstAirDate": "1990-09-13",
+      "providersPL": [
+        "Prime Video",
+        "SkyShowtime"
+      ],
+      "posterPath": "/hrfP9BQ4mOMZOa8nHbFJLSDHBLz.jpg",
+      "genreIds": [
+        80,
+        18
+      ],
+      "rating": 7.285,
+      "popularityTMDB": 1412.7416,
+      "tmdbUrl": "https://www.themoviedb.org/tv/549",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 4614,
+      "title": "Agenci NCIS",
+      "firstAirDate": "2003-09-23",
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "posterPath": "/c1aBrG5s5xFa6Tbnihu2Hhj4t2q.jpg",
+      "genreIds": [
+        80,
+        18,
+        10759
+      ],
+      "rating": 7.613,
+      "popularityTMDB": 357.3448,
+      "tmdbUrl": "https://www.themoviedb.org/tv/4614",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 247718,
+      "title": "Strefa gangsterów",
+      "firstAirDate": "2025-03-30",
+      "providersPL": [
+        "Prime Video",
+        "SkyShowtime"
+      ],
+      "posterPath": "/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
+      "genreIds": [
+        80,
+        18
+      ],
+      "rating": 8.541,
+      "popularityTMDB": 249.5892,
+      "tmdbUrl": "https://www.themoviedb.org/tv/247718",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 18053,
+      "title": "Siostra Jackie",
+      "firstAirDate": "2009-06-08",
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "posterPath": "/lyybuNTSkI4vJZdccpinuj7vxCU.jpg",
+      "genreIds": [
+        18,
+        35
+      ],
+      "rating": 7.094,
+      "popularityTMDB": 238.9781,
+      "tmdbUrl": "https://www.themoviedb.org/tv/18053",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 153312,
+      "title": "Król Tulsy",
+      "firstAirDate": "2022-11-13",
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "posterPath": "/mNHRGO1gFpR2CYZdANe72kcKq7G.jpg",
+      "genreIds": [
+        80,
+        18,
+        35
+      ],
+      "rating": 8.3,
+      "popularityTMDB": 232.9265,
+      "tmdbUrl": "https://www.themoviedb.org/tv/153312",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 80748,
+      "title": "FBI",
+      "firstAirDate": "2018-09-25",
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "posterPath": "/j9nU0GHNakbQhoFCDE61OrvMjTC.jpg",
+      "genreIds": [
+        80,
+        10759,
+        18
+      ],
+      "rating": 7.92,
+      "popularityTMDB": 171.0389,
+      "tmdbUrl": "https://www.themoviedb.org/tv/80748",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 113962,
+      "title": "Special Ops: Lioness",
+      "firstAirDate": "2023-07-23",
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "posterPath": "/mU7l9UaEItxHbg2YBNs0sHjoFVY.jpg",
+      "genreIds": [
+        18,
+        10768
+      ],
+      "rating": 8.267,
+      "popularityTMDB": 150.4727,
+      "tmdbUrl": "https://www.themoviedb.org/tv/113962",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 108978,
+      "title": "Reacher",
+      "firstAirDate": "2022-02-03",
+      "providersPL": [
+        "Prime Video"
+      ],
+      "posterPath": "/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
+      "genreIds": [
+        10759,
+        80
+      ],
+      "rating": 8.131,
+      "popularityTMDB": 341.7609,
+      "tmdbUrl": "https://www.themoviedb.org/tv/108978",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 288673,
+      "title": "Carrie",
+      "firstAirDate": "2026-10-07",
+      "providersPL": [
+        "Prime Video"
+      ],
+      "posterPath": "/9yCJtipMeDe8uAdSJKvw8BnYfRz.jpg",
+      "genreIds": [
+        9648,
+        18,
+        10765
+      ],
+      "rating": 8.348,
+      "popularityTMDB": 222.2513,
+      "tmdbUrl": "https://www.themoviedb.org/tv/288673",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 44006,
+      "title": "Chicago Fire",
+      "firstAirDate": "2012-10-10",
+      "providersPL": [
+        "Prime Video"
+      ],
+      "posterPath": "/otaBZzLIqrKdXcovbAvVONJCnb4.jpg",
+      "genreIds": [
+        18
+      ],
+      "rating": 8.411,
+      "popularityTMDB": 194.3197,
+      "tmdbUrl": "https://www.themoviedb.org/tv/44006",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 95480,
+      "title": "Kulawe konie",
+      "firstAirDate": "2022-04-01",
+      "providersPL": [
+        "Apple TV+"
+      ],
+      "posterPath": "/gPQppUnLx9vqPDLz3WwZ2HJsNbt.jpg",
+      "genreIds": [
+        80,
+        18,
+        9648
+      ],
+      "rating": 8.061,
+      "popularityTMDB": 276.8724,
+      "tmdbUrl": "https://www.themoviedb.org/tv/95480",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 97546,
+      "title": "Ted Lasso",
+      "firstAirDate": "2020-08-14",
+      "providersPL": [
+        "Apple TV+"
+      ],
+      "posterPath": "/nE94ejEbzNCU48bW1oju0dqBONz.jpg",
+      "genreIds": [
+        18,
+        35
+      ],
+      "rating": 8.364,
+      "popularityTMDB": 161.7316,
+      "tmdbUrl": "https://www.themoviedb.org/tv/97546",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 125988,
+      "title": "Silos",
+      "firstAirDate": "2023-05-04",
+      "providersPL": [
+        "Apple TV+"
+      ],
+      "posterPath": "/4XccmjsOmQZw8S2iW1wvlvmb5v1.jpg",
+      "genreIds": [
+        10765,
+        18
+      ],
+      "rating": 8.226,
+      "popularityTMDB": 118.7531,
+      "tmdbUrl": "https://www.themoviedb.org/tv/125988",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 196322,
+      "title": "Mroczna materia",
+      "firstAirDate": "2024-05-07",
+      "providersPL": [
+        "Apple TV+"
+      ],
+      "posterPath": "/wFEAy4xRes1eeclsu7Z73Vzz7ET.jpg",
+      "genreIds": [
+        10765,
+        18
+      ],
+      "rating": 7.8,
+      "popularityTMDB": 75.2774,
+      "tmdbUrl": "https://www.themoviedb.org/tv/196322",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
     }
   ],
-  "candidateCount": 5
+  "candidateCount": 78,
+  "perPlatformCounts": {
+    "Netflix": 10,
+    "HBO Max": 10,
+    "SkyShowtime": 10,
+    "Prime Video": 10,
+    "Apple TV+": 4
+  }
 }
