@@ -1,0 +1,193 @@
+{
+  "region": "PL",
+  "source": "TMDB",
+  "category": "platform_series_popular_now",
+  "platforms": [
+    "Netflix",
+    "SkyShowtime",
+    "HBO Max"
+  ],
+  "rankingMetric": "TMDB popularity; not platform viewing figures",
+  "datePL": "2026-10-23",
+  "generatedAt": "2026-10-23T15:23:10.452912+00:00",
+  "series": [
+    {
+      "tmdbId": 83631,
+      "title": "Co robimy w ukryciu",
+      "providersPL": [
+        "HBO Max"
+      ],
+      "posterPath": "/mKikck71CvVISUSTLk29fwRbH4y.jpg",
+      "genreIds": [
+        35,
+        10765
+      ],
+      "rating": 8.003,
+      "popularityTMDB": 3682.2016,
+      "tmdbUrl": "https://www.themoviedb.org/tv/83631",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 1396,
+      "title": "Breaking Bad",
+      "providersPL": [
+        "Netflix"
+      ],
+      "posterPath": "/tsRy63Mu5cu8etL1X7ZLyf7UP1M.jpg",
+      "genreIds": [
+        18,
+        80
+      ],
+      "rating": 9.0,
+      "popularityTMDB": 1745.5519,
+      "tmdbUrl": "https://www.themoviedb.org/tv/1396",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 549,
+      "title": "Prawo i porządek",
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "posterPath": "/hrfP9BQ4mOMZOa8nHbFJLSDHBLz.jpg",
+      "genreIds": [
+        80,
+        18
+      ],
+      "rating": 7.285,
+      "popularityTMDB": 1412.7416,
+      "tmdbUrl": "https://www.themoviedb.org/tv/549",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 2734,
+      "title": "Prawo i porządek: Sekcja specjalna",
+      "providersPL": [
+        "Netflix",
+        "SkyShowtime"
+      ],
+      "posterPath": "/xhK9YCxNwnE0OB1SWvCY39heHQI.jpg",
+      "genreIds": [
+        80,
+        18,
+        9648
+      ],
+      "rating": 7.961,
+      "popularityTMDB": 421.2688,
+      "tmdbUrl": "https://www.themoviedb.org/tv/2734",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 5920,
+      "title": "Mentalista",
+      "providersPL": [
+        "HBO Max",
+        "Netflix"
+      ],
+      "posterPath": "/rJFqKcmMSttdNP58l0dVzY2NcTA.jpg",
+      "genreIds": [
+        80,
+        18,
+        9648
+      ],
+      "rating": 8.419,
+      "popularityTMDB": 366.7552,
+      "tmdbUrl": "https://www.themoviedb.org/tv/5920",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 4614,
+      "title": "Agenci NCIS",
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "posterPath": "/c1aBrG5s5xFa6Tbnihu2Hhj4t2q.jpg",
+      "genreIds": [
+        80,
+        18,
+        10759
+      ],
+      "rating": 7.613,
+      "popularityTMDB": 357.3448,
+      "tmdbUrl": "https://www.themoviedb.org/tv/4614",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 15226,
+      "title": "सीआईडी",
+      "providersPL": [
+        "Netflix"
+      ],
+      "posterPath": "/1gZrOa2E9DOohEvSLLBJqus2zGu.jpg",
+      "genreIds": [
+        10759,
+        80,
+        18,
+        9648
+      ],
+      "rating": 5.75,
+      "popularityTMDB": 325.7031,
+      "tmdbUrl": "https://www.themoviedb.org/tv/15226",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 1622,
+      "title": "Nie z tego świata",
+      "providersPL": [
+        "HBO Max"
+      ],
+      "posterPath": "/lirPqYLTtd6XZqGn4cS1wiesTq0.jpg",
+      "genreIds": [
+        18,
+        9648,
+        10765
+      ],
+      "rating": 8.316,
+      "popularityTMDB": 287.1097,
+      "tmdbUrl": "https://www.themoviedb.org/tv/1622",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 247718,
+      "title": "Strefa gangsterów",
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "posterPath": "/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
+      "genreIds": [
+        80,
+        18
+      ],
+      "rating": 8.541,
+      "popularityTMDB": 249.5892,
+      "tmdbUrl": "https://www.themoviedb.org/tv/247718",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 4656,
+      "title": "Raw",
+      "providersPL": [
+        "Netflix"
+      ],
+      "posterPath": "/ykWWT8FAChBffNxcDzoJMCK9LBb.jpg",
+      "genreIds": [
+        10764
+      ],
+      "rating": 6.778,
+      "popularityTMDB": 243.3381,
+      "tmdbUrl": "https://www.themoviedb.org/tv/4656",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    }
+  ],
+  "candidateCount": 40
+}
