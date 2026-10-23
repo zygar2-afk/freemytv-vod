@@ -12,8 +12,7 @@ def build(today,getter=request):
     for path,params in [
        ("/trending/movie/week",{"language":"pl-PL"}),
        ("/movie/now_playing",{"language":"pl-PL","region":"PL","page":1}),
-       ("/movie/popular",{"language":"pl-PL","page":1}),
-       ("/movie/popular",{"language":"pl-PL","page":2}),
+       *[("/movie/popular",{"language":"pl-PL","page":i}) for i in range(1,9)],
     ]:
         for m in getter(path,params).get("results",[]):
             if m.get("id"):
@@ -24,7 +23,7 @@ def build(today,getter=request):
         try: age=(today-dt.date.fromisoformat(date)).days
         except ValueError: continue
         # Up to a year old, NOT labeled as a new VOD premiere.
-        if age<0 or age>365: continue
+        if age<0 or age>1095: continue
         pl=getter(f"/movie/{id}/watch/providers").get("results",{}).get("PL",{})
         names=sorted({p.get("provider_name") for p in pl.get("flatrate",[]) if p.get("provider_name")})
         if not names: continue
