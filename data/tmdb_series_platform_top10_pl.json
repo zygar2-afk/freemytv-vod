@@ -10,7 +10,7 @@
   ],
   "rankingMetric": "TMDB popularity; not platform viewing figures",
   "datePL": "2026-10-23",
-  "generatedAt": "2026-10-23T15:33:19.406461+00:00",
+  "generatedAt": "2026-10-23T15:35:02.382887+00:00",
   "series": [
     {
       "tmdbId": 83631,
@@ -153,6 +153,24 @@
       "rating": 8.316,
       "popularityTMDB": 287.1097,
       "tmdbUrl": "https://www.themoviedb.org/tv/1622",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 95480,
+      "title": "Kulawe konie",
+      "providersPL": [
+        "Apple TV+"
+      ],
+      "posterPath": "/gPQppUnLx9vqPDLz3WwZ2HJsNbt.jpg",
+      "genreIds": [
+        80,
+        18,
+        9648
+      ],
+      "rating": 8.061,
+      "popularityTMDB": 276.8724,
+      "tmdbUrl": "https://www.themoviedb.org/tv/95480",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
     },
@@ -510,42 +528,22 @@
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
     },
     {
-      "tmdbId": 1402,
-      "title": "The Walking Dead",
+      "tmdbId": 97546,
+      "title": "Ted Lasso",
       "providersPL": [
-        "HBO Max",
-        "Netflix"
+        "Apple TV+"
       ],
-      "posterPath": "/rAOjnEFTuNysY7bot8zonhImGMh.jpg",
+      "posterPath": "/nE94ejEbzNCU48bW1oju0dqBONz.jpg",
       "genreIds": [
-        10759,
         18,
-        10765
+        35
       ],
-      "rating": 8.079,
-      "popularityTMDB": 157.4571,
-      "tmdbUrl": "https://www.themoviedb.org/tv/1402",
-      "availabilityScope": "series-level subscription listing in Poland",
-      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
-    },
-    {
-      "tmdbId": 65334,
-      "title": "Miraculum: Biedronka i Czarny Kot",
-      "providersPL": [
-        "Netflix"
-      ],
-      "posterPath": "/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
-      "genreIds": [
-        10759,
-        16,
-        10762
-      ],
-      "rating": 8.1,
-      "popularityTMDB": 156.5546,
-      "tmdbUrl": "https://www.themoviedb.org/tv/65334",
+      "rating": 8.364,
+      "popularityTMDB": 161.7316,
+      "tmdbUrl": "https://www.themoviedb.org/tv/97546",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
     }
   ],
-  "candidateCount": 40
+  "candidateCount": 43
 }
