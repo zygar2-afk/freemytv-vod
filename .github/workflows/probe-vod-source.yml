@@ -28,6 +28,17 @@ jobs:
         run: python3 scripts/build_experimental_candidates.py
       - name: Generate combined TOP 10 films and series (experimental)
         run: python3 scripts/build_top10_films_series.py
+      - name: Require nonempty film and series lists before publication
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path('out/experimental_vod_top10.json').read_text(encoding='utf-8'))
+          films, series = len(data.get('movies', [])), len(data.get('series', []))
+          print(f'Publish gate: films={films}, series={series}')
+          if films == 0 or series == 0:
+              raise SystemExit('BLOCKED: refusing to publish empty film or series list')
+          PY
       - name: Publish experimental JSON on this branch
         run: |
           mkdir -p data
