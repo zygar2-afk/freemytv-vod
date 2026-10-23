@@ -16,12 +16,27 @@ jobs:
       - uses: actions/checkout@v4
       - name: Unit tests using mocked TMDB responses
         run: python3 -m unittest discover -s scripts -p test_tmdb_series.py -v
+      - name: Check TMDB credentials
+        id: tmdb_auth
+        env:
+          TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+        run: |
+          if [[ -n "$TMDB_READ_TOKEN" || -n "$TMDB_API_KEY" ]]; then
+            echo 'available=true' >> "$GITHUB_OUTPUT"
+            echo 'TMDB credentials available; live integration enabled'
+          else
+            echo 'available=false' >> "$GITHUB_OUTPUT"
+            echo 'TMDB credentials not configured; only offline unit tests can run'
+          fi
       - name: Discover real TMDB recent seasons
+        if: steps.tmdb_auth.outputs.available == 'true'
         env:
           TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
         run: python3 scripts/build_tmdb_series.py
       - name: Upload verified-date series candidates
+        if: steps.tmdb_auth.outputs.available == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: tmdb-series-21-days
