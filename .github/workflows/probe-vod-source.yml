@@ -42,6 +42,35 @@ jobs:
           path: out/experimental_vod_top10.json
           if-no-files-found: error
           retention-days: 7
+      - name: Validate and publish separately labeled new-to-VOD serials
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          import sys
+          sys.path.insert(0, 'scripts')
+          from validate_weekly_premieres import validate
+          import datetime as dt
+          import zoneinfo
+          source = json.loads(Path('out/experimental_vod_top10.json').read_text(encoding='utf-8'))
+          separate = {k: source[k] for k in ('region', 'generatedAt', 'todayWarsaw')}
+          separate['movies'] = []
+          separate['series'] = source['series']
+          separate['seriesLabel'] = 'Nowo dodane na VOD (21 dni); nowe sezony niepotwierdzone'
+          separate['productionReady'] = False
+          issues = validate(separate, dt.datetime.now(zoneinfo.ZoneInfo('Europe/Warsaw')).date())
+          if issues or not separate['series']:
+              raise SystemExit('Series check BLOCKED: ' + repr(issues[:6]))
+          Path('out/experimental_series_new_on_vod.json').write_text(json.dumps(separate, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          print('Series new-to-VOD candidates:', len(separate['series']))
+          PY
+      - name: Upload newly-added series sample
+        uses: actions/upload-artifact@v4
+        with:
+          name: experimental-series-new-on-vod
+          path: out/experimental_series_new_on_vod.json
+          if-no-files-found: error
+          retention-days: 7
       - name: Require nonempty film and series lists before publication
         run: |
           python3 - <<'PY'
