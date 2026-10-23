@@ -39,6 +39,8 @@ jobs:
           if films == 0 or series == 0:
               raise SystemExit('BLOCKED: refusing to publish empty film or series list')
           PY
+      - name: Require evidenced premieres before publication
+        run: python3 scripts/validate_weekly_premieres.py out/experimental_vod_top10.json
       - name: Publish experimental JSON on this branch
         run: |
           mkdir -p data
