@@ -209,6 +209,24 @@
       "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
     },
     {
+      "tmdbId": 755898,
+      "title": "Wojna światów",
+      "releaseDate": "2025-07-29",
+      "posterPath": "/iZLqwEwUViJdSkGVjePGhxYzbDb.jpg",
+      "popularityTMDB": 102.5806,
+      "rating": 4.045,
+      "genreIds": [
+        878,
+        53
+      ],
+      "providersPL": [
+        "Amazon Prime Video"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/755898",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
       "tmdbId": 1339274,
       "title": "Nie zostawiaj dzieci samych",
       "releaseDate": "2026-05-14",
@@ -229,12 +247,30 @@
       "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
     },
     {
+      "tmdbId": 1288445,
+      "title": "Buntownik",
+      "releaseDate": "2026-08-19",
+      "posterPath": "/e2QAGrEmbpmZpMymDRkDisJkvg9.jpg",
+      "popularityTMDB": 90.2262,
+      "rating": 7.619,
+      "genreIds": [
+        28,
+        53
+      ],
+      "providersPL": [
+        "Polsat Box Go"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1288445",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
       "tmdbId": 1381078,
       "title": "Miłość twojego życia",
       "releaseDate": "2026-10-07",
       "posterPath": "/4hneB0UFKOZAGJHqJ3VhDcG72uH.jpg",
       "popularityTMDB": 82.3971,
-      "rating": 6.772,
+      "rating": 6.7,
       "genreIds": [
         10749,
         18
@@ -243,6 +279,160 @@
         "Amazon Prime Video"
       ],
       "tmdbUrl": "https://www.themoviedb.org/movie/1381078",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 1389172,
+      "title": "Relacja na żywo",
+      "releaseDate": "2026-10-09",
+      "posterPath": "/faJB8DXU0LXwq5ebMLj5drz8S4N.jpg",
+      "popularityTMDB": 81.8131,
+      "rating": 7.1,
+      "genreIds": [
+        80,
+        53
+      ],
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1389172",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 1375646,
+      "title": "Kolonia",
+      "releaseDate": "2026-05-21",
+      "posterPath": "/iGViga8sDCET1S6GfwOlAbuhSGQ.jpg",
+      "popularityTMDB": 75.0986,
+      "rating": 8.1,
+      "genreIds": [
+        27,
+        28,
+        878
+      ],
+      "providersPL": [
+        "CDA Premium"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1375646",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 1083381,
+      "title": "Backrooms. Bez wyjścia",
+      "releaseDate": "2026-05-27",
+      "posterPath": "/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
+      "popularityTMDB": 71.8624,
+      "rating": 7.017,
+      "genreIds": [
+        27,
+        9648,
+        878
+      ],
+      "providersPL": [
+        "Polsat Box Go"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1083381",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 980431,
+      "title": "Awatar Aang: Ostatni władca wiatru",
+      "releaseDate": "2026-07-24",
+      "posterPath": "/ezbrL1dMymKQZw7mDEWa2ZTzN7d.jpg",
+      "popularityTMDB": 67.9426,
+      "rating": 9.0,
+      "genreIds": [
+        16,
+        12,
+        14,
+        28
+      ],
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/980431",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 83533,
+      "title": "Avatar: Ogień i popiół",
+      "releaseDate": "2025-12-17",
+      "posterPath": "/u8DU5fkLoM5tTRukzPC31oGPxaQ.jpg",
+      "popularityTMDB": 66.6736,
+      "rating": 7.646,
+      "genreIds": [
+        878,
+        12,
+        14
+      ],
+      "providersPL": [
+        "Disney Plus"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/83533",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 1084242,
+      "title": "Zwierzogród 2",
+      "releaseDate": "2025-11-26",
+      "posterPath": "/lgotja3xMoJZbynwHfcQcJAEMWH.jpg",
+      "popularityTMDB": 65.8,
+      "rating": 7.668,
+      "genreIds": [
+        16,
+        12,
+        35,
+        9648,
+        10751
+      ],
+      "providersPL": [
+        "Disney Plus"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1084242",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 1233413,
+      "title": "Grzesznicy",
+      "releaseDate": "2025-04-16",
+      "posterPath": "/nAxGnGHOsfzufThz20zgmRwKur3.jpg",
+      "popularityTMDB": 62.8079,
+      "rating": 7.513,
+      "genreIds": [
+        27,
+        28,
+        53
+      ],
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1233413",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 693134,
+      "title": "Diuna: Część druga",
+      "releaseDate": "2024-02-27",
+      "posterPath": "/eZ239CUp1d6OryZEBPnO2n87gMG.jpg",
+      "popularityTMDB": 61.0291,
+      "rating": 8.142,
+      "genreIds": [
+        878,
+        12
+      ],
+      "providersPL": [
+        "HBO Max",
+        "Player"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/693134",
       "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
       "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
     },
@@ -265,8 +455,126 @@
       "tmdbUrl": "https://www.themoviedb.org/movie/1380417",
       "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
       "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 1228710,
+      "title": "Gwiezdne wojny: Mandalorian i Grogu",
+      "releaseDate": "2026-05-20",
+      "posterPath": "/ysLlsAxwgNSxBWHCgTKJrmjxpRQ.jpg",
+      "popularityTMDB": 51.7723,
+      "rating": 7.462,
+      "genreIds": [
+        28,
+        12,
+        878
+      ],
+      "providersPL": [
+        "Disney Plus"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1228710",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 1130948,
+      "title": "Jak przycinać róże",
+      "releaseDate": "2026-04-23",
+      "posterPath": "/vcZ3UUVmFNk90DBSrTBlTKCdbbE.jpg",
+      "popularityTMDB": 49.5675,
+      "rating": 5.713,
+      "genreIds": [
+        35,
+        18,
+        53
+      ],
+      "providersPL": [
+        "MUBI",
+        "MUBI Amazon Channel"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1130948",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 911430,
+      "title": "F1: Film",
+      "releaseDate": "2025-06-25",
+      "posterPath": "/lkDYN0whyE82mcM20rwtwjbniKF.jpg",
+      "popularityTMDB": 49.3338,
+      "rating": 7.83,
+      "genreIds": [
+        28,
+        18
+      ],
+      "providersPL": [
+        "Apple TV",
+        "Apple TV Amazon Channel"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/911430",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 533535,
+      "title": "Deadpool & Wolverine",
+      "releaseDate": "2024-07-24",
+      "posterPath": "/by8z9Fe8y7p4jo2YlW2SZDnptyT.jpg",
+      "popularityTMDB": 48.8902,
+      "rating": 7.59,
+      "genreIds": [
+        28,
+        35,
+        878
+      ],
+      "providersPL": [
+        "Disney Plus"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/533535",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 1022789,
+      "title": "W głowie się nie mieści 2",
+      "releaseDate": "2024-06-11",
+      "posterPath": "/p5ozvmdgsmbWe0H8Xk7Rc8SCwAB.jpg",
+      "popularityTMDB": 47.8486,
+      "rating": 7.539,
+      "genreIds": [
+        16,
+        12,
+        35,
+        10751
+      ],
+      "providersPL": [
+        "Disney Plus"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1022789",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 1327819,
+      "title": "Hopnięci",
+      "releaseDate": "2026-03-04",
+      "posterPath": "/u53UYu5XG2hNgWGvs3xGhAVzypl.jpg",
+      "popularityTMDB": 46.5635,
+      "rating": 8.129,
+      "genreIds": [
+        16,
+        12,
+        35,
+        10751,
+        878
+      ],
+      "providersPL": [
+        "Disney Plus"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1327819",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
     }
   ],
-  "candidateCount": 14,
-  "generatedAt": "2026-10-23T15:31:57.250850+00:00"
+  "candidateCount": 38,
+  "generatedAt": "2026-10-23T15:33:15.102383+00:00"
 }
