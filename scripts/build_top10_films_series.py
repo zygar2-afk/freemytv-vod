@@ -71,8 +71,10 @@ def collect(url, media_type, page_limit, today):
                 continue
             if int(year_match.group(1)) != today.year:
                 audit["yearOlder"] += 1
-                continue
-            audit["yearCurrent"] += 1
+                if media_type == "film":
+                    continue
+            else:
+                audit["yearCurrent"] += 1
             rating = rating_from_listing(row)
             if rating is None:
                 audit["ratingMissing"] += 1
@@ -137,7 +139,9 @@ def main():
             "popularityProxy":"approximate listing votes (not actual VOD views)",
             "filmMinimumRating":FILM_MIN_RATING,"filmMinimumVotes":FILM_MIN_VOTES,
             "seriesMinimumRating":SERIES_MIN_RATING,"seriesMinimumVotes":SERIES_MIN_VOTES,
-            "productionYearRequired":today.year,
+            "filmProductionYearRequired":today.year,
+            "seriesProductionYearRequired":None,
+            "seriesNewSeasonReleaseIndependentlyVerified":False,
             "productionReleaseInPastWeekVerified":False,
             "rankingIsComplete":False,"ratingsVerifiedOnFilmweb":False,
         },
