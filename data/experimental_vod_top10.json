@@ -1,6 +1,6 @@
 {
   "region": "PL",
-  "generatedAt": "2026-10-23T12:54:11.353159+00:00",
+  "generatedAt": "2026-10-23T12:59:59.789151+00:00",
   "todayWarsaw": "2026-10-23",
   "productionReady": false,
   "selection": {
@@ -9,318 +9,13 @@
     "popularityProxy": "approximate listing votes (not actual VOD views)",
     "minRating": 7.0,
     "minimumVotes": 100,
+    "productionYearRequired": 2026,
+    "productionReleaseInPastWeekVerified": false,
     "rankingIsComplete": false,
     "ratingsVerifiedOnFilmweb": false
   },
-  "movies": [
-    {
-      "filmwebId": "992",
-      "filmwebUrl": "https://www.filmweb.pl/film/Terminator+2%3A+Dzie%C5%84+s%C4%85du-1991-992",
-      "mediaType": "film",
-      "title": "Terminator 2: Dzień sądu",
-      "providers": [
-        {
-          "name": "FilmBox+",
-          "vodAddedAt": "2026-10-23",
-          "outsideSubscriptionLabelPresent": false
-        }
-      ],
-      "datesAdded": [
-        "2026-10-23"
-      ],
-      "listingRating": {
-        "rating": 7.6,
-        "votesApprox": 287000,
-        "source": "nowoscivod_listing",
-        "verifiedOnFilmweb": false
-      },
-      "ratingVerifiedByFilmweb": false,
-      "editorialRecommendationVerified": false,
-      "status": "CANDIDATE_UNVERIFIED"
-    },
-    {
-      "filmwebId": "11843",
-      "filmwebUrl": "https://www.filmweb.pl/film/W%C5%9Bciek%C5%82e+psy-1992-11843",
-      "mediaType": "film",
-      "title": "Wściekłe psy",
-      "providers": [
-        {
-          "name": "Prime Video",
-          "vodAddedAt": "2026-10-22",
-          "outsideSubscriptionLabelPresent": false
-        }
-      ],
-      "datesAdded": [
-        "2026-10-22"
-      ],
-      "listingRating": {
-        "rating": 7.9,
-        "votesApprox": 233000,
-        "source": "nowoscivod_listing",
-        "verifiedOnFilmweb": false
-      },
-      "ratingVerifiedByFilmweb": false,
-      "editorialRecommendationVerified": false,
-      "status": "CANDIDATE_UNVERIFIED"
-    },
-    {
-      "filmwebId": "470384",
-      "filmwebUrl": "https://www.filmweb.pl/film/Dom+z%C5%82y-2009-470384",
-      "mediaType": "film",
-      "title": "Dom zły",
-      "providers": [
-        {
-          "name": "Canal+ Online",
-          "vodAddedAt": "2026-10-21",
-          "outsideSubscriptionLabelPresent": false
-        }
-      ],
-      "datesAdded": [
-        "2026-10-21"
-      ],
-      "listingRating": {
-        "rating": 7.4,
-        "votesApprox": 189000,
-        "source": "nowoscivod_listing",
-        "verifiedOnFilmweb": false
-      },
-      "ratingVerifiedByFilmweb": false,
-      "editorialRecommendationVerified": false,
-      "status": "CANDIDATE_UNVERIFIED"
-    },
-    {
-      "filmwebId": "1205",
-      "filmwebUrl": "https://www.filmweb.pl/film/Eroica-1957-1205",
-      "mediaType": "film",
-      "title": "Eroica",
-      "providers": [
-        {
-          "name": "Ninateka",
-          "vodAddedAt": "2026-10-22",
-          "outsideSubscriptionLabelPresent": false
-        }
-      ],
-      "datesAdded": [
-        "2026-10-22"
-      ],
-      "listingRating": {
-        "rating": 7.7,
-        "votesApprox": 14000,
-        "source": "nowoscivod_listing",
-        "verifiedOnFilmweb": false
-      },
-      "ratingVerifiedByFilmweb": false,
-      "editorialRecommendationVerified": false,
-      "status": "CANDIDATE_UNVERIFIED"
-    },
-    {
-      "filmwebId": "466907",
-      "filmwebUrl": "https://www.filmweb.pl/film/%C5%9Awiat%C5%82a+sceny%3A+chwytaj+szans%C4%99-2008-466907",
-      "mediaType": "film",
-      "title": "Światła sceny: chwytaj szansę",
-      "providers": [
-        {
-          "name": "Netflix",
-          "vodAddedAt": "2026-10-21",
-          "outsideSubscriptionLabelPresent": false
-        }
-      ],
-      "datesAdded": [
-        "2026-10-21"
-      ],
-      "listingRating": {
-        "rating": 7.0,
-        "votesApprox": 8000,
-        "source": "nowoscivod_listing",
-        "verifiedOnFilmweb": false
-      },
-      "ratingVerifiedByFilmweb": false,
-      "editorialRecommendationVerified": false,
-      "status": "CANDIDATE_UNVERIFIED"
-    },
-    {
-      "filmwebId": "10088399",
-      "filmwebUrl": "https://www.filmweb.pl/film/Drugie+%C5%BCycie-2025-10088399",
-      "mediaType": "film",
-      "title": "Drugie życie",
-      "providers": [
-        {
-          "name": "HBO Max",
-          "vodAddedAt": "2026-10-21",
-          "outsideSubscriptionLabelPresent": false
-        },
-        {
-          "name": "Play Now",
-          "vodAddedAt": "2026-10-21",
-          "outsideSubscriptionLabelPresent": false
-        }
-      ],
-      "datesAdded": [
-        "2026-10-21"
-      ],
-      "listingRating": {
-        "rating": 7.2,
-        "votesApprox": 1900,
-        "source": "nowoscivod_listing",
-        "verifiedOnFilmweb": false
-      },
-      "ratingVerifiedByFilmweb": false,
-      "editorialRecommendationVerified": false,
-      "status": "CANDIDATE_UNVERIFIED"
-    }
-  ],
-  "series": [
-    {
-      "filmwebId": "855446",
-      "filmwebUrl": "https://www.filmweb.pl/serial/Lupin-2021-855446",
-      "mediaType": "series",
-      "title": "Lupin",
-      "providers": [
-        {
-          "name": "Netflix",
-          "vodAddedAt": "2026-10-23",
-          "outsideSubscriptionLabelPresent": false
-        }
-      ],
-      "datesAdded": [
-        "2026-10-23"
-      ],
-      "listingRating": {
-        "rating": 7.2,
-        "votesApprox": 76000,
-        "source": "nowoscivod_listing",
-        "verifiedOnFilmweb": false
-      },
-      "ratingVerifiedByFilmweb": false,
-      "editorialRecommendationVerified": false,
-      "status": "CANDIDATE_UNVERIFIED"
-    },
-    {
-      "filmwebId": "794373",
-      "filmwebUrl": "https://www.filmweb.pl/serial/Kruk-2018-794373",
-      "mediaType": "series",
-      "title": "Kruk",
-      "providers": [
-        {
-          "name": "Disney+",
-          "vodAddedAt": "2026-10-21",
-          "outsideSubscriptionLabelPresent": false
-        }
-      ],
-      "datesAdded": [
-        "2026-10-21"
-      ],
-      "listingRating": {
-        "rating": 8.0,
-        "votesApprox": 43000,
-        "source": "nowoscivod_listing",
-        "verifiedOnFilmweb": false
-      },
-      "ratingVerifiedByFilmweb": false,
-      "editorialRecommendationVerified": false,
-      "status": "CANDIDATE_UNVERIFIED"
-    },
-    {
-      "filmwebId": "10049727",
-      "filmwebUrl": "https://www.filmweb.pl/serial/Matki+pingwin%C3%B3w-2024-10049727",
-      "mediaType": "series",
-      "title": "Matki pingwinów",
-      "providers": [
-        {
-          "name": "Netflix",
-          "vodAddedAt": "2026-10-21",
-          "outsideSubscriptionLabelPresent": false
-        }
-      ],
-      "datesAdded": [
-        "2026-10-21"
-      ],
-      "listingRating": {
-        "rating": 7.5,
-        "votesApprox": 23000,
-        "source": "nowoscivod_listing",
-        "verifiedOnFilmweb": false
-      },
-      "ratingVerifiedByFilmweb": false,
-      "editorialRecommendationVerified": false,
-      "status": "CANDIDATE_UNVERIFIED"
-    },
-    {
-      "filmwebId": "10014831",
-      "filmwebUrl": "https://www.filmweb.pl/serial/Tulsa+King-2022-10014831",
-      "mediaType": "series",
-      "title": "Tulsa King",
-      "providers": [
-        {
-          "name": "SkyShowtime",
-          "vodAddedAt": "2026-10-22",
-          "outsideSubscriptionLabelPresent": false
-        }
-      ],
-      "datesAdded": [
-        "2026-10-22"
-      ],
-      "listingRating": {
-        "rating": 7.4,
-        "votesApprox": 17000,
-        "source": "nowoscivod_listing",
-        "verifiedOnFilmweb": false
-      },
-      "ratingVerifiedByFilmweb": false,
-      "editorialRecommendationVerified": false,
-      "status": "CANDIDATE_UNVERIFIED"
-    },
-    {
-      "filmwebId": "853374",
-      "filmwebUrl": "https://www.filmweb.pl/serial/Lista+%C5%9Bmierci-2022-853374",
-      "mediaType": "series",
-      "title": "Lista śmierci",
-      "providers": [
-        {
-          "name": "Prime Video",
-          "vodAddedAt": "2026-10-22",
-          "outsideSubscriptionLabelPresent": false
-        }
-      ],
-      "datesAdded": [
-        "2026-10-22"
-      ],
-      "listingRating": {
-        "rating": 7.2,
-        "votesApprox": 8700,
-        "source": "nowoscivod_listing",
-        "verifiedOnFilmweb": false
-      },
-      "ratingVerifiedByFilmweb": false,
-      "editorialRecommendationVerified": false,
-      "status": "CANDIDATE_UNVERIFIED"
-    },
-    {
-      "filmwebId": "778966",
-      "filmwebUrl": "https://www.filmweb.pl/serial/Sprawiedliwi+Wydzia%C5%82+kryminalny-2016-778966",
-      "mediaType": "series",
-      "title": "Sprawiedliwi - Wydział kryminalny",
-      "providers": [
-        {
-          "name": "POLSAT BOX GO",
-          "vodAddedAt": "2026-10-21",
-          "outsideSubscriptionLabelPresent": false
-        }
-      ],
-      "datesAdded": [
-        "2026-10-21"
-      ],
-      "listingRating": {
-        "rating": 7.4,
-        "votesApprox": 3300,
-        "source": "nowoscivod_listing",
-        "verifiedOnFilmweb": false
-      },
-      "ratingVerifiedByFilmweb": false,
-      "editorialRecommendationVerified": false,
-      "status": "CANDIDATE_UNVERIFIED"
-    }
-  ],
+  "movies": [],
+  "series": [],
   "diagnostics": {
     "films": {
       "pages": [
@@ -346,7 +41,7 @@
         }
       ],
       "stoppedBecause": "PAGE_LIMIT",
-      "eligibleInSample": 6,
+      "eligibleInSample": 0,
       "fullSevenDayCoverageVerified": false
     },
     "series": {
@@ -358,7 +53,7 @@
         }
       ],
       "stoppedBecause": "PAGE_LIMIT",
-      "eligibleInSample": 6,
+      "eligibleInSample": 0,
       "fullSevenDayCoverageVerified": false
     }
   }
