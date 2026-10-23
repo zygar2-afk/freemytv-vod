@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Top 10 TMDB popularity among TV series available via PL subscriptions.
+"""Top 30 TMDB popularity among TV series available via PL subscriptions.
 Not an official Netflix/Max/SkyShowtime viewing chart.
 """
 import datetime as dt
@@ -49,7 +49,7 @@ def build(today, getter=request):
     return {"region":"PL","source":"TMDB","category":"platform_series_popular_now",
         "platforms":["Netflix","SkyShowtime","HBO Max"], "rankingMetric":"TMDB popularity; not platform viewing figures",
         "datePL":today.isoformat(),"generatedAt":dt.datetime.now(dt.timezone.utc).isoformat(),
-        "series":results[:10],"candidateCount":len(results)}
+        "series":results[:30],"candidateCount":len(results)}
 
 def main():
     today=dt.datetime.now(zoneinfo.ZoneInfo("Europe/Warsaw")).date()
