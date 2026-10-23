@@ -24,6 +24,13 @@ jobs:
         run: python3 scripts/probe_weekly_pagination.py
       - name: Inspect series listing (diagnostic only)
         run: python3 scripts/probe_series_source.py
+      - name: Upload unrated series review queue (not for TCL)
+        uses: actions/upload-artifact@v4
+        with:
+          name: experimental-series-needs-review
+          path: out/experimental_series_needs_review.json
+          if-no-files-found: error
+          retention-days: 7
       - name: Generate unverified weekly candidates
         run: python3 scripts/build_experimental_candidates.py
       - name: Generate combined TOP 10 films and series (experimental)
