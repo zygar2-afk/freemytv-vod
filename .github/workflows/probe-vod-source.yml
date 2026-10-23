@@ -4,8 +4,10 @@ on:
     branches:
       - feature/vod-source-probe
   workflow_dispatch:
+  schedule:
+    - cron: '15 7 * * *'
 permissions:
-  contents: read
+  contents: write
 jobs:
   probe:
     runs-on: ubuntu-latest
@@ -26,6 +28,17 @@ jobs:
         run: python3 scripts/build_experimental_candidates.py
       - name: Generate combined TOP 10 films and series (experimental)
         run: python3 scripts/build_top10_films_series.py
+      - name: Publish experimental JSON on this branch
+        run: |
+          mkdir -p data
+          cp out/experimental_vod_top10.json data/experimental_vod_top10.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/experimental_vod_top10.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh experimental TOP 10 VOD JSON [skip ci]'
+            git push origin HEAD:feature/vod-source-probe
+          fi
       - name: Upload combined TOP 10 JSON
         uses: actions/upload-artifact@v4
         with:
