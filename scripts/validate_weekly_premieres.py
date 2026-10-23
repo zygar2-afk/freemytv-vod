@@ -44,8 +44,16 @@ def validate(feed, today):
             if not isinstance(evidence, dict):
                 problems.append(name + ": no premiereEvidence")
                 continue
-            if evidence.get("event") not in ("new_movie_premiere", "new_series_premiere", "new_season_premiere"):
-                problems.append(name + ": unverified premiere event type")
+            event = evidence.get("event")
+            if event not in ("new_movie_premiere", "new_series_premiere", "new_season_premiere", "new_on_vod"):
+                problems.append(name + ": invalid event type")
+            if event == "new_on_vod":
+                if bucket != "series" or item.get("displayCategory") != "NOWO_W_VOD" or item.get("seasonPremiereVerified") is not False:
+                    problems.append(name + ": new_on_vod cannot be represented as a confirmed premiere")
+                if evidence.get("verifiedByIndependentSource") is not False:
+                    problems.append(name + ": candidate provenance flag missing")
+            elif evidence.get("checkedBy") == "automated_listing_parser":
+                problems.append(name + ": automated listing cannot verify a new season or production premiere")
             if not valid_url(evidence.get("sourceUrl")):
                 problems.append(name + ": premiere needs HTTPS evidence URL")
             if not evidence.get("checkedBy") or not evidence.get("checkedAt"):
