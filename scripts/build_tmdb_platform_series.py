@@ -33,13 +33,18 @@ def build(today, getter=request):
                 candidates[key]=show
     results=[]
     for id,show in candidates.items():
+        first_air = show.get('first_air_date') or ''
+        try:
+            if dt.date.fromisoformat(first_air).year < 2025: continue
+        except ValueError:
+            continue
         pl=getter(f"/tv/{id}/watch/providers").get("results",{}).get("PL",{})
         providers=sorted({mapped for p in pl.get("flatrate",[])
                   if (mapped:=normalize_provider(p.get("provider_name"), p.get("provider_id")))})
         if not providers: continue
         title=(show.get("name") or show.get("original_name") or "").strip()
         if not title: continue
-        results.append({"tmdbId":id,"title":title, "providersPL":providers,
+        results.append({"tmdbId":id,"title":title, "firstAirDate":first_air, "providersPL":providers,
             "posterPath":show.get("backdrop_path") or show.get("poster_path"),
             "genreIds":show.get("genre_ids") or [],
             "rating":float(show.get("vote_average") or 0),
