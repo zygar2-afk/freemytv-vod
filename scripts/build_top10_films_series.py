@@ -95,12 +95,15 @@ def collect(url, media_type, page_limit, today):
                 "ratingVerifiedByFilmweb": False,
                 "editorialRecommendationVerified": False,
                 "status": "CANDIDATE_UNVERIFIED",
+                "displayCategory": "NOWO_W_VOD" if media_type == "series" else "NOWOSC_FILMOWA_VOD",
+                "seasonPremiereVerified": False,
             })
             if value["title"].strip().casefold() != row["title"].strip().casefold():
                 value["conflict"] = True
             if value["listingRating"] != rating:
                 value["conflict"] = True
             provider = {"name":row["provider"],"vodAddedAt":row["vodAddedAt"],
+                        "availabilityEvidenceUrl": url,
                         "outsideSubscriptionLabelPresent":row["outsideSubscriptionLabelPresent"]}
             if provider not in value["providers"]:
                 value["providers"].append(provider)
@@ -124,6 +127,16 @@ def collect(url, media_type, page_limit, today):
     selected.sort(key=lambda x:(x["listingRating"]["votesApprox"],
                x["listingRating"]["rating"],max(x["datesAdded"]),x["title"]), reverse=True)
     for value in selected:
+        # This date proves only a listing claim about catalog addition,
+        # never a new season or a first production premiere.
+        if media_type == "series":
+            latest = max(value["datesAdded"])
+            value["premiereEvidence"] = {
+                "event":"new_on_vod", "premiereDatePL":latest,
+                "sourceUrl":value["providers"][0]["availabilityEvidenceUrl"],
+                "checkedAt":today.isoformat(), "checkedBy":"automated_listing_parser",
+                "verifiedByIndependentSource":False,
+            }
         value["providers"].sort(key=lambda p:(p["name"],p["vodAddedAt"]))
         value["datesAdded"].sort()
     return selected[:TOP], {
