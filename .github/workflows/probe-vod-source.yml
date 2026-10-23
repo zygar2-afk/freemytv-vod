@@ -43,6 +43,18 @@ jobs:
           path: out/tmdb_series_21d.json
           if-no-files-found: error
           retention-days: 7
+      - name: Publish TMDB series candidate JSON to experimental branch
+        if: steps.tmdb_auth.outputs.available == 'true'
+        run: |
+          mkdir -p data
+          cp out/tmdb_series_21d.json data/tmdb_series_21d.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/tmdb_series_21d.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh TMDB series candidates [skip ci]'
+            git push origin HEAD:feature/vod-source-probe
+          fi
   probe:
     runs-on: ubuntu-latest
     timeout-minutes: 3
