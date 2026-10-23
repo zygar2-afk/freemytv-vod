@@ -27,6 +27,7 @@ def collect(url, media_type, page_limit, today):
     pages = []
     visited = set()
     stop = "PAGE_LIMIT"
+    audit = {"total":0,"recent":0,"idValid":0,"yearUnknown":0,"yearOlder":0,"yearCurrent":0,"ratingMissing":0,"belowThreshold":0,"qualified":0}
     for page in range(1, page_limit + 1):
         if url in visited:
             stop = "PAGINATION_LOOP"
@@ -41,28 +42,41 @@ def collect(url, media_type, page_limit, today):
             break
         pages.append({"page":page, "cards":len(cards.cards), "candidates":len(candidates)})
         for row in candidates:
+            audit["total"] += 1
             try:
                 added = dt.date.fromisoformat(row["vodAddedAt"])
             except (KeyError, ValueError):
                 continue
             if not 0 <= (today - added).days <= 6:
                 continue
+            audit["recent"] += 1
             links = row.get("filmwebLinkCandidates", [])
             if len(links) != 1:
                 continue
             m = re.search(r"-([0-9]+)$",urllib.parse.urlsplit(links[0]).path)
             if not m:
                 continue
+            audit["idValid"] += 1
             # Require a production released in the current calendar year; this
             # is a conservative safeguard against old catalog additions, not
             # proof of a premiere within the past seven days.
             year_match = re.search(r"-(19[0-9]{2}|20[0-9]{2})-[0-9]+$",
                                    urllib.parse.unquote(urllib.parse.urlsplit(links[0]).path))
-            if not year_match or int(year_match.group(1)) != today.year:
+            if not year_match:
+                audit["yearUnknown"] += 1
                 continue
+            if int(year_match.group(1)) != today.year:
+                audit["yearOlder"] += 1
+                continue
+            audit["yearCurrent"] += 1
             rating = rating_from_listing(row)
             if rating is None:
+                audit["ratingMissing"] += 1
                 continue
+            if rating["rating"] < MIN_RATING or rating["votesApprox"] < MIN_VOTES:
+                audit["belowThreshold"] += 1
+                continue
+            audit["qualified"] += 1
             identity = m.group(1)
             value = grouped.setdefault(identity, {
                 "filmwebId": identity, "filmwebUrl": links[0],
@@ -103,7 +117,8 @@ def collect(url, media_type, page_limit, today):
         value["datesAdded"].sort()
     return selected[:TOP], {
         "pages":pages, "stoppedBecause":stop,
-        "eligibleInSample":len(selected), "fullSevenDayCoverageVerified":False,
+        "eligibleInSample":len(selected), "filterAudit":audit,
+        "fullSevenDayCoverageVerified":False,
     }
 
 def main():
@@ -128,6 +143,8 @@ def main():
     OUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(f"EXPERIMENTAL TOP 10: {len(movies)} films, {len(shows)} series")
     print(f"Film sample: {movie_meta['pages']} Series sample: {show_meta['pages']}")
+    print("Film filter audit:", json.dumps(movie_meta["filterAudit"], ensure_ascii=False))
+    print("Series filter audit:", json.dumps(show_meta["filterAudit"], ensure_ascii=False))
     print("Incomplete 7-day source coverage; no production publication.")
 if __name__=="__main__":
     main()
