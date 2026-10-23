@@ -23,20 +23,19 @@ jobs:
         run: python3 scripts/build_tmdb_movies.py
       - name: Publish films feed
         run: |
-          mkdir -p data
-          cp out/tmdb_movies_popular_pl.json data/tmdb_movies_popular_pl.json
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/tmdb_movies_popular_pl.json
-          if ! git diff --cached --quiet; then
+          for attempt in 1 2 3 4 5; do
+            git fetch origin feature/vod-source-probe
+            git reset --hard origin/feature/vod-source-probe
+            mkdir -p data
+            cp out/tmdb_movies_popular_pl.json data/tmdb_movies_popular_pl.json
+            git add data/tmdb_movies_popular_pl.json
+            if git diff --cached --quiet; then break; fi
             git commit -m 'Refresh popular TMDB movies [skip ci]'
-            for attempt in 1 2 3; do
-              git fetch origin feature/vod-source-probe
-              git rebase origin/feature/vod-source-probe
-              if git push origin HEAD:feature/vod-source-probe; then break; fi
-              if [ "$attempt" = 3 ]; then exit 1; fi
-            done
-          fi
+            if git push origin HEAD:feature/vod-source-probe; then break; fi
+            if [ "$attempt" = 5 ]; then exit 1; fi
+          done
       - name: Upload movie feed
         uses: actions/upload-artifact@v4
         with:
@@ -57,20 +56,19 @@ jobs:
         run: python3 scripts/build_tmdb_platform_series.py
       - name: Publish platform series JSON
         run: |
-          mkdir -p data
-          cp out/tmdb_series_platform_top10_pl.json data/tmdb_series_platform_top10_pl.json
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/tmdb_series_platform_top10_pl.json
-          if ! git diff --cached --quiet; then
-            git commit -m 'Refresh platform series TOP 10 [skip ci]'
-            for attempt in 1 2 3; do
-              git fetch origin feature/vod-source-probe
-              git rebase origin/feature/vod-source-probe
-              if git push origin HEAD:feature/vod-source-probe; then break; fi
-              if [ "$attempt" = 3 ]; then exit 1; fi
-            done
-          fi
+          for attempt in 1 2 3 4 5; do
+            git fetch origin feature/vod-source-probe
+            git reset --hard origin/feature/vod-source-probe
+            mkdir -p data
+            cp out/tmdb_series_platform_top10_pl.json data/tmdb_series_platform_top10_pl.json
+            git add data/tmdb_series_platform_top10_pl.json
+            if git diff --cached --quiet; then break; fi
+            git commit -m 'Refresh platform series TOP 30 [skip ci]'
+            if git push origin HEAD:feature/vod-source-probe; then break; fi
+            if [ "$attempt" = 5 ]; then exit 1; fi
+          done
       - name: Upload TOP 10
         uses: actions/upload-artifact@v4
         with:
