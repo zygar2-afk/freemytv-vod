@@ -13,9 +13,9 @@ class Tests(unittest.TestCase):
                 if id==1:return {"results":{"PL":{"flatrate":[{"provider_name":"Netflix"}]}}}
                 if id==2:return {"results":{"PL":{"flatrate":[{"provider_name":"SkyShowtime"}]}}}
                 return {"results":{"US":{"flatrate":[{"provider_name":"Max"}]}}}
-            return {"results":[{"id":1,"name":"A","popularity":2,"genre_ids":[18]},
-                               {"id":2,"name":"B","popularity":5,"genre_ids":[35]},
-                               {"id":3,"name":"C","popularity":99}]}
+            return {"results":[{"id":1,"name":"A","first_air_date":"2025-02-02","popularity":2,"genre_ids":[18]},
+                               {"id":2,"name":"B","first_air_date":"2026-01-01","popularity":5,"genre_ids":[35]},
+                               {"id":3,"name":"C","first_air_date":"2024-01-01","popularity":99}]}
         d=build(dt.date(2026,10,23),get)
         self.assertEqual([x["title"] for x in d["series"]],["B","A"])
         self.assertEqual(d["series"][0]["providersPL"],["SkyShowtime"])
