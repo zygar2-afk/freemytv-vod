@@ -17,13 +17,14 @@ def normalize_provider(name, provider_id=None):
     if "skyshowtime" in s: return "SkyShowtime"
     if s in ("hbomax", "max"): return "HBO Max"
     if s in ("appletvplus", "appletv+"): return "Apple TV+"
+    if s in ("amazonprimevideo", "primevideo", "amazonprime"): return "Prime Video"
     return None
 
 def build(today, getter=request):
     candidates = {}
     for path, args in [
         ("/trending/tv/week", {"language":"pl-PL"}),
-        *[("/tv/popular",{"language":"pl-PL","page":i}) for i in range(1,7)],
+        *[("/tv/popular",{"language":"pl-PL","page":i}) for i in range(1,11)],
         ("/tv/on_the_air",{"language":"pl-PL","page":1}),
     ]:
         for show in getter(path,args).get("results",[]):
@@ -33,11 +34,7 @@ def build(today, getter=request):
                 candidates[key]=show
     results=[]
     for id,show in candidates.items():
-        first_air = show.get('first_air_date') or ''
-        try:
-            if dt.date.fromisoformat(first_air).year < 2025: continue
-        except ValueError:
-            continue
+        first_air = show.get("first_air_date") or ""
         pl=getter(f"/tv/{id}/watch/providers").get("results",{}).get("PL",{})
         providers=sorted({mapped for p in pl.get("flatrate",[])
                   if (mapped:=normalize_provider(p.get("provider_name"), p.get("provider_id")))})
@@ -53,10 +50,23 @@ def build(today, getter=request):
             "availabilityScope":"series-level subscription listing in Poland",
             "status":"POPULAR_NOW_NOT_OFFICIAL_VIEWS"})
     results.sort(key=lambda x:(x["popularityTMDB"],x["rating"]), reverse=True)
+    # Ten most popular TMDB series per service; one shared carousel with duplicates removed.
+    by_platform = {p: [] for p in ("Netflix", "HBO Max", "SkyShowtime", "Prime Video", "Apple TV+")}
+    for show in results:
+        for platform in show["providersPL"]:
+            if platform in by_platform and len(by_platform[platform]) < 10:
+                by_platform[platform].append(show)
+    combined = []
+    seen = set()
+    for platform in by_platform:
+        for show in by_platform[platform]:
+            if show["tmdbId"] not in seen:
+                combined.append(show)
+                seen.add(show["tmdbId"])
     return {"region":"PL","source":"TMDB","category":"platform_series_popular_now",
-        "platforms":["Netflix","SkyShowtime","HBO Max","Apple TV+"], "rankingMetric":"TMDB popularity; not platform viewing figures",
+        "platforms":["Netflix","SkyShowtime","HBO Max","Apple TV+","Prime Video"], "rankingMetric":"TMDB popularity; not platform viewing figures",
         "datePL":today.isoformat(),"generatedAt":dt.datetime.now(dt.timezone.utc).isoformat(),
-        "series":results[:30],"candidateCount":len(results)}
+        "series":combined,"candidateCount":len(results), "perPlatformCounts":{p:len(items) for p,items in by_platform.items()}}
 
 def main():
     today=dt.datetime.now(zoneinfo.ZoneInfo("Europe/Warsaw")).date()
