@@ -18,6 +18,6 @@ class Tests(unittest.TestCase):
                                {"id":3,"name":"C","first_air_date":"2024-01-01","popularity":99}]}
         d=build(dt.date(2026,10,23),get)
         self.assertEqual([x["title"] for x in d["series"]],["A","B"])
-        self.assertEqual(d["series"][0]["providersPL"],["SkyShowtime"])
+        self.assertEqual(d["series"][0]["providersPL"],["Netflix"])
         self.assertEqual(d["rankingMetric"],"TMDB popularity; not platform viewing figures")
 if __name__=="__main__":unittest.main()
