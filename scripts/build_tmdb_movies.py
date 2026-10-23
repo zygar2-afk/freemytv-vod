@@ -23,7 +23,7 @@ def build(today,getter=request):
         try: age=(today-dt.date.fromisoformat(date)).days
         except ValueError: continue
         # Up to a year old, NOT labeled as a new VOD premiere.
-        if age<0 or age>1095: continue
+        if age < 0 or dt.date.fromisoformat(date).year < 2026: continue
         pl=getter(f"/movie/{id}/watch/providers").get("results",{}).get("PL",{})
         names=sorted({p.get("provider_name") for p in pl.get("flatrate",[]) if p.get("provider_name")})
         if not names: continue
