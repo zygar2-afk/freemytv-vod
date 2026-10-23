@@ -24,6 +24,7 @@ def validate(feed, today):
     if feed.get("region") != "PL":
         problems.append("Region must be PL")
     for bucket in ("movies", "series"):
+        days = 7 if bucket == "movies" else 21
         items = feed.get(bucket)
         if not isinstance(items, list):
             problems.append(bucket + ": missing list")
@@ -51,8 +52,8 @@ def validate(feed, today):
                 problems.append(name + ": premiere evidence lacks review metadata")
             try:
                 premiere_date = dt.date.fromisoformat(evidence["premiereDatePL"])
-                if not 0 <= (today - premiere_date).days <= 6:
-                    problems.append(name + ": premiere not within 7 days")
+                if not 0 <= (today - premiere_date).days < days:
+                    problems.append(name + f": premiere not within {days} days")
             except (KeyError, ValueError, TypeError):
                 problems.append(name + ": premiereDatePL missing/invalid")
             providers = item.get("providers")
