@@ -36,7 +36,7 @@ def build(today,getter=request):
           "status":"POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
           "caveat":"TMDB popularity is not viewing figures; provider availability may lag."})
     movies.sort(key=lambda x:(x["popularityTMDB"],x["releaseDate"]),reverse=True)
-    return {"region":"PL","source":"TMDB","category":"popular_movies_now","movies":movies[:10],
+    return {"region":"PL","source":"TMDB","category":"popular_movies_now","movies":movies[:30],
             "candidateCount":len(movies),"generatedAt":dt.datetime.now(dt.timezone.utc).isoformat()}
 def main():
     today=dt.datetime.now(zoneinfo.ZoneInfo("Europe/Warsaw")).date()
