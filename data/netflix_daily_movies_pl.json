@@ -1,0 +1,177 @@
+{
+  "region": "PL",
+  "category": "netflix_daily_movies_pl",
+  "source": "TVHUB",
+  "sourceUrl": "https://tvhub.pl/",
+  "datePL": "2026-10-22",
+  "generatedAt": "2026-10-24T06:55:23.884843+00:00",
+  "movies": [
+    {
+      "rank": 1,
+      "title": "Mniej obcy",
+      "originalTitle": "Less of a Stranger",
+      "tmdbId": 1620080,
+      "posterPath": "/xn42TCarooeOxY1yrfOknEmMvAu.jpg",
+      "genreIds": [
+        18,
+        10402
+      ],
+      "rating": 8.8,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1620080"
+    },
+    {
+      "rank": 2,
+      "title": "Constantine",
+      "originalTitle": "Constantine",
+      "tmdbId": 561,
+      "posterPath": "/x3YFn10ehQKMRIJwIfiDAX8S9Xt.jpg",
+      "genreIds": [
+        14,
+        28,
+        27
+      ],
+      "rating": 7.2,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/561"
+    },
+    {
+      "rank": 3,
+      "title": "Zwierzęta",
+      "originalTitle": "Animals",
+      "tmdbId": 1236045,
+      "posterPath": "/tzoarEu7TsG959upiELyYPm5kO9.jpg",
+      "genreIds": [
+        53,
+        18
+      ],
+      "rating": 7.0,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1236045"
+    },
+    {
+      "rank": 4,
+      "title": "Hot Wheels Let's Race: Attack of the T-Rex",
+      "originalTitle": "Hot Wheels Let's Race: Attack of the T-Rex",
+      "tmdbId": 1802674,
+      "posterPath": "/dK69ml1Y34MrEovK4ZyizRiWbEH.jpg",
+      "genreIds": [
+        16,
+        10751,
+        28
+      ],
+      "rating": 6.0,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1802674"
+    },
+    {
+      "rank": 5,
+      "title": "Nadciąga burza",
+      "originalTitle": "The Storm",
+      "tmdbId": 1173879,
+      "posterPath": "/sE2UCUTgEFvvObMmMlJSfgjEet0.jpg",
+      "genreIds": [
+        35,
+        18,
+        53
+      ],
+      "rating": 0,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1173879"
+    },
+    {
+      "rank": 6,
+      "title": "Nowokaina",
+      "originalTitle": "Novocaine",
+      "tmdbId": 1195506,
+      "posterPath": "/lyBH2mFFU6qrHwD5QKotL2JnEb6.jpg",
+      "genreIds": [
+        28,
+        35,
+        53
+      ],
+      "rating": 6.755,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1195506"
+    },
+    {
+      "rank": 7,
+      "title": "Center Stage : Turn It Up",
+      "originalTitle": "Center Stage : Turn It Up",
+      "tmdbId": 16346,
+      "posterPath": "/Aec0DEgQEwzfGa9551qpiS85V3j.jpg",
+      "genreIds": [
+        18,
+        10402,
+        10749
+      ],
+      "rating": 6.867,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/16346"
+    },
+    {
+      "rank": 8,
+      "title": "W ukryciu",
+      "originalTitle": "Within",
+      "tmdbId": 291413,
+      "posterPath": "/abYksHVv56UF1HKJpc4DNHGaWuX.jpg",
+      "genreIds": [
+        27,
+        53
+      ],
+      "rating": 5.4,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/291413"
+    },
+    {
+      "rank": 9,
+      "title": "Statek widmo",
+      "originalTitle": "Ghost Ship",
+      "tmdbId": 9645,
+      "posterPath": "/r4yVwsLF2pJr4C50pWizn9fYNbF.jpg",
+      "genreIds": [
+        27,
+        9648,
+        53
+      ],
+      "rating": 6.016,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/9645"
+    },
+    {
+      "rank": 10,
+      "title": "Man Up",
+      "originalTitle": "Man Up",
+      "tmdbId": 332340,
+      "posterPath": "/znc4p9S2177ClNnTlJHr1CSOIkB.jpg",
+      "genreIds": [
+        10749,
+        35
+      ],
+      "rating": 6.574,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/332340"
+    }
+  ],
+  "note": "Unofficial third-party daily chart, may lag up to 3 days"
+}
