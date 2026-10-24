@@ -8,7 +8,7 @@
       "title": "Spider-Man: Całkiem nowy dzień",
       "releaseDate": "2026-07-29",
       "posterPath": "/r08LxMJCbf1SiJIWeyH9aJmdqwC.jpg",
-      "popularityTMDB": 1227.7402,
+      "popularityTMDB": 1138.6936,
       "rating": 8.468,
       "genreIds": [
         878,
@@ -27,8 +27,8 @@
       "title": "Projekt Hail Mary",
       "releaseDate": "2026-03-15",
       "posterPath": "/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
-      "popularityTMDB": 1019.0916,
-      "rating": 8.635,
+      "popularityTMDB": 923.0057,
+      "rating": 8.6,
       "genreIds": [
         878,
         12
@@ -45,8 +45,8 @@
       "title": "Nie patrz w dół 2",
       "releaseDate": "2026-09-01",
       "posterPath": "/nGau0KBOaRILSK5MqFcuTfv7GMl.jpg",
-      "popularityTMDB": 272.829,
-      "rating": 7.285,
+      "popularityTMDB": 280.2526,
+      "rating": 7.304,
       "genreIds": [
         53
       ],
@@ -62,8 +62,8 @@
       "title": "Naznaczony: Wyjście z mrocznego wymiaru",
       "releaseDate": "2026-08-19",
       "posterPath": "/p40lmrdI4blcAPZQMTPaiy5v5Ym.jpg",
-      "popularityTMDB": 239.7157,
-      "rating": 7.7,
+      "popularityTMDB": 221.4154,
+      "rating": 7.698,
       "genreIds": [
         27,
         53
@@ -80,8 +80,8 @@
       "title": "Matchbox: film",
       "releaseDate": "2026-10-05",
       "posterPath": "/jdJsnhHfkIi3J7jwfiCFT4gXNx5.jpg",
-      "popularityTMDB": 234.439,
-      "rating": 7.76,
+      "popularityTMDB": 218.6375,
+      "rating": 7.749,
       "genreIds": [
         28,
         35,
@@ -100,8 +100,8 @@
       "title": "Plan doskonały",
       "releaseDate": "2026-10-16",
       "posterPath": "/dgUDj84BWtW6EZzee8BkgKnjDhh.jpg",
-      "popularityTMDB": 225.5783,
-      "rating": 6.979,
+      "popularityTMDB": 209.1518,
+      "rating": 6.997,
       "genreIds": [
         28,
         53
@@ -118,8 +118,8 @@
       "title": "Zwierzęta",
       "releaseDate": "2026-10-09",
       "posterPath": "/tzoarEu7TsG959upiELyYPm5kO9.jpg",
-      "popularityTMDB": 166.5319,
-      "rating": 6.963,
+      "popularityTMDB": 154.8071,
+      "rating": 6.956,
       "genreIds": [
         53,
         18
@@ -136,8 +136,8 @@
       "title": "Toy Story 5",
       "releaseDate": "2026-06-17",
       "posterPath": "/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
-      "popularityTMDB": 108.2164,
-      "rating": 8.277,
+      "popularityTMDB": 114.3273,
+      "rating": 8.271,
       "genreIds": [
         16,
         10751,
@@ -156,8 +156,8 @@
       "title": "Vaiana",
       "releaseDate": "2026-07-08",
       "posterPath": "/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
-      "popularityTMDB": 107.4465,
-      "rating": 7.501,
+      "popularityTMDB": 102.0144,
+      "rating": 7.495,
       "genreIds": [
         10751,
         14,
@@ -176,7 +176,7 @@
       "title": "Żywiciel rodziny",
       "releaseDate": "2026-05-29",
       "posterPath": "/dgqBcgTzaUiSLvKJPDF9AbdFEMO.jpg",
-      "popularityTMDB": 107.2055,
+      "popularityTMDB": 97.6637,
       "rating": 7.1,
       "genreIds": [
         35,
@@ -190,12 +190,30 @@
       "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
     },
     {
+      "tmdbId": 1288445,
+      "title": "Buntownik",
+      "releaseDate": "2026-08-19",
+      "posterPath": "/e2QAGrEmbpmZpMymDRkDisJkvg9.jpg",
+      "popularityTMDB": 92.1334,
+      "rating": 7.6,
+      "genreIds": [
+        28,
+        53
+      ],
+      "providersPL": [
+        "Polsat Box Go"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1288445",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
       "tmdbId": 1288069,
       "title": "Tenzing",
       "releaseDate": "2026-10-09",
       "posterPath": "/6GXqVvL20Y0MpyVP30WoI2NPK69.jpg",
-      "popularityTMDB": 103.1168,
-      "rating": 8.309,
+      "popularityTMDB": 90.0216,
+      "rating": 8.26,
       "genreIds": [
         18,
         36
@@ -213,7 +231,7 @@
       "title": "Nie zostawiaj dzieci samych",
       "releaseDate": "2026-05-14",
       "posterPath": "/flo7Xmyxz2wDUjr5Ff0VrxaVwlY.jpg",
-      "popularityTMDB": 91.8801,
+      "popularityTMDB": 84.7467,
       "rating": 6.828,
       "genreIds": [
         27,
@@ -229,30 +247,12 @@
       "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
     },
     {
-      "tmdbId": 1288445,
-      "title": "Buntownik",
-      "releaseDate": "2026-08-19",
-      "posterPath": "/e2QAGrEmbpmZpMymDRkDisJkvg9.jpg",
-      "popularityTMDB": 90.2262,
-      "rating": 7.619,
-      "genreIds": [
-        28,
-        53
-      ],
-      "providersPL": [
-        "Polsat Box Go"
-      ],
-      "tmdbUrl": "https://www.themoviedb.org/movie/1288445",
-      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
-      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
-    },
-    {
       "tmdbId": 1381078,
       "title": "Miłość twojego życia",
       "releaseDate": "2026-10-07",
       "posterPath": "/4hneB0UFKOZAGJHqJ3VhDcG72uH.jpg",
-      "popularityTMDB": 82.3971,
-      "rating": 6.7,
+      "popularityTMDB": 78.1548,
+      "rating": 6.82,
       "genreIds": [
         10749,
         18
@@ -269,8 +269,8 @@
       "title": "Relacja na żywo",
       "releaseDate": "2026-10-09",
       "posterPath": "/faJB8DXU0LXwq5ebMLj5drz8S4N.jpg",
-      "popularityTMDB": 81.8131,
-      "rating": 7.1,
+      "popularityTMDB": 76.0304,
+      "rating": 7.0,
       "genreIds": [
         80,
         53
@@ -287,8 +287,8 @@
       "title": "Kolonia",
       "releaseDate": "2026-05-21",
       "posterPath": "/iGViga8sDCET1S6GfwOlAbuhSGQ.jpg",
-      "popularityTMDB": 75.0986,
-      "rating": 8.1,
+      "popularityTMDB": 74.1707,
+      "rating": 8.108,
       "genreIds": [
         27,
         28,
@@ -306,8 +306,8 @@
       "title": "Backrooms. Bez wyjścia",
       "releaseDate": "2026-05-27",
       "posterPath": "/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
-      "popularityTMDB": 71.8624,
-      "rating": 7.017,
+      "popularityTMDB": 69.9024,
+      "rating": 7.016,
       "genreIds": [
         27,
         9648,
@@ -321,32 +321,12 @@
       "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
     },
     {
-      "tmdbId": 980431,
-      "title": "Awatar Aang: Ostatni władca wiatru",
-      "releaseDate": "2026-07-24",
-      "posterPath": "/ezbrL1dMymKQZw7mDEWa2ZTzN7d.jpg",
-      "popularityTMDB": 67.9426,
-      "rating": 9.0,
-      "genreIds": [
-        16,
-        12,
-        14,
-        28
-      ],
-      "providersPL": [
-        "SkyShowtime"
-      ],
-      "tmdbUrl": "https://www.themoviedb.org/movie/980431",
-      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
-      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
-    },
-    {
       "tmdbId": 1380417,
       "title": "Ponad prawem",
       "releaseDate": "2026-09-02",
       "posterPath": "/1jANqIbqrWJZb8GM5Kb3L6U8iHi.jpg",
-      "popularityTMDB": 58.7306,
-      "rating": 6.5,
+      "popularityTMDB": 58.527,
+      "rating": 6.594,
       "genreIds": [
         53,
         36,
@@ -361,21 +341,22 @@
       "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
     },
     {
-      "tmdbId": 1228710,
-      "title": "Gwiezdne wojny: Mandalorian i Grogu",
-      "releaseDate": "2026-05-20",
-      "posterPath": "/ysLlsAxwgNSxBWHCgTKJrmjxpRQ.jpg",
-      "popularityTMDB": 51.7723,
-      "rating": 7.462,
+      "tmdbId": 980431,
+      "title": "Awatar Aang: Ostatni władca wiatru",
+      "releaseDate": "2026-07-24",
+      "posterPath": "/ezbrL1dMymKQZw7mDEWa2ZTzN7d.jpg",
+      "popularityTMDB": 58.0881,
+      "rating": 9.038,
       "genreIds": [
-        28,
+        16,
         12,
-        878
+        14,
+        28
       ],
       "providersPL": [
-        "Disney Plus"
+        "SkyShowtime"
       ],
-      "tmdbUrl": "https://www.themoviedb.org/movie/1228710",
+      "tmdbUrl": "https://www.themoviedb.org/movie/980431",
       "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
       "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
     },
@@ -404,8 +385,8 @@
       "title": "Hopnięci",
       "releaseDate": "2026-03-04",
       "posterPath": "/u53UYu5XG2hNgWGvs3xGhAVzypl.jpg",
-      "popularityTMDB": 46.5635,
-      "rating": 8.129,
+      "popularityTMDB": 46.9762,
+      "rating": 8.13,
       "genreIds": [
         16,
         12,
@@ -421,31 +402,12 @@
       "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
     },
     {
-      "tmdbId": 1081003,
-      "title": "Supergirl",
-      "releaseDate": "2026-06-24",
-      "posterPath": "/heZQmyNvkH236ha2M3JckdUQQqb.jpg",
-      "popularityTMDB": 46.0171,
-      "rating": 6.64,
-      "genreIds": [
-        28,
-        12,
-        878
-      ],
-      "providersPL": [
-        "HBO Max"
-      ],
-      "tmdbUrl": "https://www.themoviedb.org/movie/1081003",
-      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
-      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
-    },
-    {
       "tmdbId": 1007757,
       "title": "W cudzej skórze",
       "releaseDate": "2026-05-01",
       "posterPath": "/zMwhWailP1WY7sb6AoE6b8ugoy.jpg",
-      "popularityTMDB": 44.9912,
-      "rating": 8.847,
+      "popularityTMDB": 43.2663,
+      "rating": 8.8,
       "genreIds": [
         12,
         16,
@@ -460,12 +422,31 @@
       "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
     },
     {
+      "tmdbId": 1081003,
+      "title": "Supergirl",
+      "releaseDate": "2026-06-24",
+      "posterPath": "/heZQmyNvkH236ha2M3JckdUQQqb.jpg",
+      "popularityTMDB": 43.2116,
+      "rating": 6.638,
+      "genreIds": [
+        28,
+        12,
+        878
+      ],
+      "providersPL": [
+        "HBO Max"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1081003",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
       "tmdbId": 1168190,
       "title": "Ekipa wyburzeniowa",
       "releaseDate": "2026-01-28",
       "posterPath": "/cz4vLJrmaV1zJlRYbxqtvLzeLWB.jpg",
       "popularityTMDB": 42.1308,
-      "rating": 7.084,
+      "rating": 7.1,
       "genreIds": [
         28,
         35,
@@ -485,7 +466,7 @@
       "releaseDate": "2026-09-23",
       "posterPath": "/o7Oy9Gbx1CCyaweL8xUhtMW4Puq.jpg",
       "popularityTMDB": 41.9756,
-      "rating": 7.984,
+      "rating": 7.986,
       "genreIds": [
         10749,
         35
@@ -498,6 +479,6 @@
       "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
     }
   ],
-  "candidateCount": 26,
-  "generatedAt": "2026-10-23T15:52:21.599593+00:00"
+  "candidateCount": 25,
+  "generatedAt": "2026-10-24T06:52:29.925814+00:00"
 }
