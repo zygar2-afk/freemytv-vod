@@ -11,7 +11,7 @@
   ],
   "rankingMetric": "TMDB popularity; not platform viewing figures",
   "datePL": "2026-10-24",
-  "generatedAt": "2026-10-24T07:17:56.344613+00:00",
+  "generatedAt": "2026-10-24T08:00:22.506681+00:00",
   "series": [
     {
       "tmdbId": 1411,
@@ -255,7 +255,7 @@
         18,
         9648
       ],
-      "rating": 8.643,
+      "rating": 8.64,
       "popularityTMDB": 209.6689,
       "tmdbUrl": "https://www.themoviedb.org/tv/213562",
       "availabilityScope": "series-level subscription listing in Poland",
@@ -410,7 +410,7 @@
         80,
         18
       ],
-      "rating": 8.551,
+      "rating": 8.6,
       "popularityTMDB": 289.7004,
       "tmdbUrl": "https://www.themoviedb.org/tv/247718",
       "availabilityScope": "series-level subscription listing in Poland",
@@ -620,7 +620,7 @@
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
     }
   ],
-  "candidateCount": 81,
+  "candidateCount": 80,
   "perPlatformCounts": {
     "Netflix": 10,
     "HBO Max": 10,
