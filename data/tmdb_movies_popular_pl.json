@@ -441,12 +441,30 @@
       "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
     },
     {
+      "tmdbId": 1032863,
+      "title": "The Love Hypothesis",
+      "releaseDate": "2026-09-23",
+      "posterPath": "/o7Oy9Gbx1CCyaweL8xUhtMW4Puq.jpg",
+      "popularityTMDB": 39.9957,
+      "rating": 7.992,
+      "genreIds": [
+        10749,
+        35
+      ],
+      "providersPL": [
+        "Amazon Prime Video"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1032863",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
       "tmdbId": 1168190,
       "title": "Ekipa wyburzeniowa",
       "releaseDate": "2026-01-28",
       "posterPath": "/cz4vLJrmaV1zJlRYbxqtvLzeLWB.jpg",
-      "popularityTMDB": 42.1308,
-      "rating": 7.1,
+      "popularityTMDB": 38.6579,
+      "rating": 7.085,
       "genreIds": [
         28,
         35,
@@ -459,26 +477,8 @@
       "tmdbUrl": "https://www.themoviedb.org/movie/1168190",
       "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
       "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
-    },
-    {
-      "tmdbId": 1032863,
-      "title": "The Love Hypothesis",
-      "releaseDate": "2026-09-23",
-      "posterPath": "/o7Oy9Gbx1CCyaweL8xUhtMW4Puq.jpg",
-      "popularityTMDB": 41.9756,
-      "rating": 7.986,
-      "genreIds": [
-        10749,
-        35
-      ],
-      "providersPL": [
-        "Amazon Prime Video"
-      ],
-      "tmdbUrl": "https://www.themoviedb.org/movie/1032863",
-      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
-      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
     }
   ],
   "candidateCount": 25,
-  "generatedAt": "2026-10-24T07:17:44.734501+00:00"
+  "generatedAt": "2026-10-24T08:00:13.816946+00:00"
 }
