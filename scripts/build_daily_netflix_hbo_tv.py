@@ -23,7 +23,7 @@ def parse_page(page,today):
     rankings={}
     for slug,name in (("netflix","Netflix"),("hbo-max","HBO Max"),("skyshowtime","SkyShowtime"),("prime-video","Prime Video")):
         card=re.search(r'<article class="tvhub-fp__card tvhub-fp__card--'+slug+r'"[^>]*>(.*?)</article>',panel,re.S)
-        if not card:raise ValueError("Missing TV card for "+name)
+        if not card:raise ValueError("Missing TV card for "+name+"; found "+repr(re.findall(r'tvhub-fp__card--([a-z0-9-]+)',panel)[:20]))
         titles=re.findall(r'<span class="tvhub-fp__title">(.*?)</span>',card.group(1),re.S)
         if len(titles)!=10:raise ValueError(f"{name}: expected 10, found {len(titles)}")
         out=[]
