@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Three dated Polish daily TV rankings, Netflix + HBO Max + SkyShowtime (TVHUB, unofficial).
+"""Four dated Polish daily TV rankings, Netflix + HBO Max + SkyShowtime + Prime Video (TVHUB, unofficial).
 TMDB enriches art only; never infer chart rankings from TMDB popularity.
 """
 import datetime as dt
@@ -7,7 +7,7 @@ import html, json, pathlib, re, urllib.request
 from zoneinfo import ZoneInfo
 from build_tmdb_series import request
 
-OUT=pathlib.Path("out/netflix_hbomax_sky_daily_tv_pl.json")
+OUT=pathlib.Path("out/netflix_hbomax_sky_prime_daily_tv_pl.json")
 URL="https://tvhub.pl/"
 def clean(x):return html.unescape(re.sub(r"<[^>]*>","",x)).strip()
 def parse_page(page,today):
@@ -21,7 +21,7 @@ def parse_page(page,today):
     end=page.find('</section>',begin)
     panel=page[begin:end if end>begin else None]
     rankings={}
-    for slug,name in (("netflix","Netflix"),("hbo-max","HBO Max"),("skyshowtime","SkyShowtime")):
+    for slug,name in (("netflix","Netflix"),("hbo-max","HBO Max"),("skyshowtime","SkyShowtime"),("prime-video","Prime Video")):
         card=re.search(r'<article class="tvhub-fp__card tvhub-fp__card--'+slug+r'"[^>]*>(.*?)</article>',panel,re.S)
         if not card:raise ValueError("Missing TV card for "+name)
         titles=re.findall(r'<span class="tvhub-fp__title">(.*?)</span>',card.group(1),re.S)
@@ -49,14 +49,14 @@ def build(today,fetcher=fetch_page,tmdb=request):
               "tmdbId":match.get("id") or 0,"posterPath":match.get("backdrop_path") or match.get("poster_path") or "",
               "genreIds":match.get("genre_ids") or [],"rating":match.get("vote_average") or 0,
               "providersPL":[provider],"tmdbUrl":f"https://www.themoviedb.org/tv/{match['id']}" if match.get("id") else ""})
-    return {"region":"PL","category":"netflix_hbomax_sky_daily_tv_pl","source":"TVHUB","sourceUrl":URL,
+    return {"region":"PL","category":"netflix_hbomax_sky_prime_daily_tv_pl","source":"TVHUB","sourceUrl":URL,
             "datePL":date,"generatedAt":dt.datetime.now(dt.timezone.utc).isoformat(),
-            "series":entries,"perPlatformCounts":{"Netflix":10,"HBO Max":10,"SkyShowtime":10},
+            "series":entries,"perPlatformCounts":{"Netflix":10,"HBO Max":10,"SkyShowtime":10,"Prime Video":10},
             "note":"Unofficial third-party daily country TV charts; may lag up to 3 days"}
 def main():
     today=dt.datetime.now(ZoneInfo("Europe/Warsaw")).date()
     data=build(today)
     OUT.parent.mkdir(parents=True,exist_ok=True)
     OUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print("NETFLIX/HBO/SKY TV:",data["datePL"],len(data["series"]))
+    print("NETFLIX/HBO/SKY/PRIME TV:",data["datePL"],len(data["series"]))
 if __name__=="__main__":main()
