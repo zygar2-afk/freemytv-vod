@@ -10,9 +10,29 @@
     "Prime Video"
   ],
   "rankingMetric": "TMDB popularity; not platform viewing figures",
-  "datePL": "2026-10-23",
-  "generatedAt": "2026-10-23T15:52:20.390313+00:00",
+  "datePL": "2026-10-24",
+  "generatedAt": "2026-10-24T06:52:45.221920+00:00",
   "series": [
+    {
+      "tmdbId": 1411,
+      "title": "Impersonalni",
+      "firstAirDate": "2011-09-22",
+      "providersPL": [
+        "HBO Max",
+        "Netflix"
+      ],
+      "posterPath": "/efeMgQn6iRALsOqDa2cqlf6Pw5O.jpg",
+      "genreIds": [
+        10759,
+        80,
+        10765
+      ],
+      "rating": 8.1,
+      "popularityTMDB": 5730.6245,
+      "tmdbUrl": "https://www.themoviedb.org/tv/1411",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
     {
       "tmdbId": 1396,
       "title": "Breaking Bad",
@@ -25,8 +45,8 @@
         18,
         80
       ],
-      "rating": 9.0,
-      "popularityTMDB": 1745.5519,
+      "rating": 8.957,
+      "popularityTMDB": 1586.4702,
       "tmdbUrl": "https://www.themoviedb.org/tv/1396",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
@@ -46,8 +66,8 @@
         18,
         9648
       ],
-      "rating": 7.961,
-      "popularityTMDB": 421.2688,
+      "rating": 7.962,
+      "popularityTMDB": 419.9803,
       "tmdbUrl": "https://www.themoviedb.org/tv/2734",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
@@ -67,8 +87,8 @@
         18,
         9648
       ],
-      "rating": 8.419,
-      "popularityTMDB": 366.7552,
+      "rating": 8.42,
+      "popularityTMDB": 361.7743,
       "tmdbUrl": "https://www.themoviedb.org/tv/5920",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
@@ -87,8 +107,8 @@
         18,
         9648
       ],
-      "rating": 5.75,
-      "popularityTMDB": 325.7031,
+      "rating": 5.8,
+      "popularityTMDB": 320.8294,
       "tmdbUrl": "https://www.themoviedb.org/tv/15226",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
@@ -105,26 +125,8 @@
         10764
       ],
       "rating": 6.778,
-      "popularityTMDB": 243.3381,
+      "popularityTMDB": 233.6379,
       "tmdbUrl": "https://www.themoviedb.org/tv/4656",
-      "availabilityScope": "series-level subscription listing in Poland",
-      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
-    },
-    {
-      "tmdbId": 1911,
-      "title": "Kości",
-      "firstAirDate": "2005-09-13",
-      "providersPL": [
-        "Netflix"
-      ],
-      "posterPath": "/aSye04zKzWtUP3U6Cl4bOXc5Ih9.jpg",
-      "genreIds": [
-        80,
-        18
-      ],
-      "rating": 8.176,
-      "popularityTMDB": 238.7667,
-      "tmdbUrl": "https://www.themoviedb.org/tv/1911",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
     },
@@ -142,8 +144,26 @@
         35
       ],
       "rating": 8.537,
-      "popularityTMDB": 231.2716,
+      "popularityTMDB": 229.3604,
       "tmdbUrl": "https://www.themoviedb.org/tv/79744",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 1911,
+      "title": "Kości",
+      "firstAirDate": "2005-09-13",
+      "providersPL": [
+        "Netflix"
+      ],
+      "posterPath": "/aSye04zKzWtUP3U6Cl4bOXc5Ih9.jpg",
+      "genreIds": [
+        80,
+        18
+      ],
+      "rating": 8.175,
+      "popularityTMDB": 219.9165,
+      "tmdbUrl": "https://www.themoviedb.org/tv/1911",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
     },
@@ -161,7 +181,7 @@
         35
       ],
       "rating": 8.586,
-      "popularityTMDB": 200.0623,
+      "popularityTMDB": 218.8727,
       "tmdbUrl": "https://www.themoviedb.org/tv/2316",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
@@ -180,27 +200,8 @@
         18
       ],
       "rating": 8.561,
-      "popularityTMDB": 199.7569,
+      "popularityTMDB": 189.6995,
       "tmdbUrl": "https://www.themoviedb.org/tv/1408",
-      "availabilityScope": "series-level subscription listing in Poland",
-      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
-    },
-    {
-      "tmdbId": 46952,
-      "title": "Czarna lista",
-      "firstAirDate": "2013-09-23",
-      "providersPL": [
-        "Netflix"
-      ],
-      "posterPath": "/2eIlCirgcvEwmCSYh2wDfz5Sxvz.jpg",
-      "genreIds": [
-        18,
-        80,
-        9648
-      ],
-      "rating": 7.6,
-      "popularityTMDB": 190.4156,
-      "tmdbUrl": "https://www.themoviedb.org/tv/46952",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
     },
@@ -216,8 +217,8 @@
         35,
         10765
       ],
-      "rating": 8.003,
-      "popularityTMDB": 3682.2016,
+      "rating": 8.006,
+      "popularityTMDB": 4108.9446,
       "tmdbUrl": "https://www.themoviedb.org/tv/83631",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
@@ -237,7 +238,7 @@
         10765
       ],
       "rating": 8.316,
-      "popularityTMDB": 287.1097,
+      "popularityTMDB": 289.7941,
       "tmdbUrl": "https://www.themoviedb.org/tv/1622",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
@@ -254,8 +255,8 @@
         18,
         9648
       ],
-      "rating": 8.627,
-      "popularityTMDB": 221.1164,
+      "rating": 8.643,
+      "popularityTMDB": 209.6689,
       "tmdbUrl": "https://www.themoviedb.org/tv/213562",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
@@ -274,7 +275,7 @@
         10759
       ],
       "rating": 8.475,
-      "popularityTMDB": 210.2193,
+      "popularityTMDB": 202.9601,
       "tmdbUrl": "https://www.themoviedb.org/tv/1399",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
@@ -294,29 +295,8 @@
         35
       ],
       "rating": 8.167,
-      "popularityTMDB": 175.5724,
+      "popularityTMDB": 170.8349,
       "tmdbUrl": "https://www.themoviedb.org/tv/34307",
-      "availabilityScope": "series-level subscription listing in Poland",
-      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
-    },
-    {
-      "tmdbId": 60625,
-      "title": "Rick i Morty",
-      "firstAirDate": "2013-12-02",
-      "providersPL": [
-        "HBO Max",
-        "Netflix"
-      ],
-      "posterPath": "/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
-      "genreIds": [
-        16,
-        35,
-        10765,
-        10759
-      ],
-      "rating": 8.679,
-      "popularityTMDB": 166.3655,
-      "tmdbUrl": "https://www.themoviedb.org/tv/60625",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
     },
@@ -335,45 +315,47 @@
         10765
       ],
       "rating": 8.079,
-      "popularityTMDB": 157.4571,
+      "popularityTMDB": 170.4556,
       "tmdbUrl": "https://www.themoviedb.org/tv/1402",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
     },
     {
-      "tmdbId": 1398,
-      "title": "Rodzina Soprano",
-      "firstAirDate": "1999-01-10",
+      "tmdbId": 60625,
+      "title": "Rick i Morty",
+      "firstAirDate": "2013-12-02",
       "providersPL": [
-        "HBO Max"
+        "HBO Max",
+        "Netflix"
       ],
-      "posterPath": "/lNpkvX2s8LGB0mjGODMT4o6Up7j.jpg",
+      "posterPath": "/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
       "genreIds": [
-        80,
-        18
+        16,
+        35,
+        10765,
+        10759
       ],
-      "rating": 8.677,
-      "popularityTMDB": 145.4836,
-      "tmdbUrl": "https://www.themoviedb.org/tv/1398",
+      "rating": 8.7,
+      "popularityTMDB": 165.2199,
+      "tmdbUrl": "https://www.themoviedb.org/tv/60625",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
     },
     {
-      "tmdbId": 15260,
-      "title": "Pora na przygodę!",
-      "firstAirDate": "2010-04-05",
+      "tmdbId": 1668,
+      "title": "Przyjaciele",
+      "firstAirDate": "1994-09-22",
       "providersPL": [
-        "HBO Max"
+        "HBO Max",
+        "Netflix"
       ],
-      "posterPath": "/d8rse1RgMzXwmZvBpDvcG1VUO2Y.jpg",
+      "posterPath": "/l0qVZIpXtIo7km9u5Yqh0nKPOr5.jpg",
       "genreIds": [
-        16,
-        35,
-        10765
+        35
       ],
-      "rating": 8.506,
-      "popularityTMDB": 141.0789,
-      "tmdbUrl": "https://www.themoviedb.org/tv/15260",
+      "rating": 8.407,
+      "popularityTMDB": 153.5188,
+      "tmdbUrl": "https://www.themoviedb.org/tv/1668",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
     },
@@ -390,8 +372,8 @@
         80,
         18
       ],
-      "rating": 7.285,
-      "popularityTMDB": 1412.7416,
+      "rating": 7.284,
+      "popularityTMDB": 1267.2599,
       "tmdbUrl": "https://www.themoviedb.org/tv/549",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
@@ -409,8 +391,8 @@
         18,
         10759
       ],
-      "rating": 7.613,
-      "popularityTMDB": 357.3448,
+      "rating": 7.614,
+      "popularityTMDB": 341.8204,
       "tmdbUrl": "https://www.themoviedb.org/tv/4614",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
@@ -428,27 +410,9 @@
         80,
         18
       ],
-      "rating": 8.541,
-      "popularityTMDB": 249.5892,
+      "rating": 8.551,
+      "popularityTMDB": 289.7004,
       "tmdbUrl": "https://www.themoviedb.org/tv/247718",
-      "availabilityScope": "series-level subscription listing in Poland",
-      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
-    },
-    {
-      "tmdbId": 18053,
-      "title": "Siostra Jackie",
-      "firstAirDate": "2009-06-08",
-      "providersPL": [
-        "SkyShowtime"
-      ],
-      "posterPath": "/lyybuNTSkI4vJZdccpinuj7vxCU.jpg",
-      "genreIds": [
-        18,
-        35
-      ],
-      "rating": 7.094,
-      "popularityTMDB": 238.9781,
-      "tmdbUrl": "https://www.themoviedb.org/tv/18053",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
     },
@@ -465,9 +429,27 @@
         18,
         35
       ],
-      "rating": 8.3,
-      "popularityTMDB": 232.9265,
+      "rating": 8.301,
+      "popularityTMDB": 259.6778,
       "tmdbUrl": "https://www.themoviedb.org/tv/153312",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 18053,
+      "title": "Siostra Jackie",
+      "firstAirDate": "2009-06-08",
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "posterPath": "/lyybuNTSkI4vJZdccpinuj7vxCU.jpg",
+      "genreIds": [
+        18,
+        35
+      ],
+      "rating": 7.094,
+      "popularityTMDB": 222.9862,
+      "tmdbUrl": "https://www.themoviedb.org/tv/18053",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
     },
@@ -485,26 +467,47 @@
         18
       ],
       "rating": 7.92,
-      "popularityTMDB": 171.0389,
+      "popularityTMDB": 165.582,
       "tmdbUrl": "https://www.themoviedb.org/tv/80748",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
     },
     {
-      "tmdbId": 113962,
-      "title": "Special Ops: Lioness",
-      "firstAirDate": "2023-07-23",
+      "tmdbId": 1405,
+      "title": "Dexter",
+      "firstAirDate": "2006-10-01",
       "providersPL": [
+        "Netflix",
         "SkyShowtime"
       ],
-      "posterPath": "/mU7l9UaEItxHbg2YBNs0sHjoFVY.jpg",
+      "posterPath": "/nS5ZSmrX92lu1GYAlXZye1mkDfd.jpg",
       "genreIds": [
+        80,
         18,
-        10768
+        9648
       ],
-      "rating": 8.267,
-      "popularityTMDB": 150.4727,
-      "tmdbUrl": "https://www.themoviedb.org/tv/113962",
+      "rating": 8.241,
+      "popularityTMDB": 165.4526,
+      "tmdbUrl": "https://www.themoviedb.org/tv/1405",
+      "availabilityScope": "series-level subscription listing in Poland",
+      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
+    },
+    {
+      "tmdbId": 1426,
+      "title": "Luther",
+      "firstAirDate": "2010-05-04",
+      "providersPL": [
+        "Prime Video"
+      ],
+      "posterPath": "/A2qdFRq9oJDC5E7fbgSS4POUMDF.jpg",
+      "genreIds": [
+        80,
+        18,
+        9648
+      ],
+      "rating": 7.854,
+      "popularityTMDB": 2360.6517,
+      "tmdbUrl": "https://www.themoviedb.org/tv/1426",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
     },
@@ -520,28 +523,9 @@
         10759,
         80
       ],
-      "rating": 8.131,
-      "popularityTMDB": 341.7609,
+      "rating": 8.13,
+      "popularityTMDB": 312.1012,
       "tmdbUrl": "https://www.themoviedb.org/tv/108978",
-      "availabilityScope": "series-level subscription listing in Poland",
-      "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
-    },
-    {
-      "tmdbId": 288673,
-      "title": "Carrie",
-      "firstAirDate": "2026-10-07",
-      "providersPL": [
-        "Prime Video"
-      ],
-      "posterPath": "/9yCJtipMeDe8uAdSJKvw8BnYfRz.jpg",
-      "genreIds": [
-        9648,
-        18,
-        10765
-      ],
-      "rating": 8.348,
-      "popularityTMDB": 222.2513,
-      "tmdbUrl": "https://www.themoviedb.org/tv/288673",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
     },
@@ -557,7 +541,7 @@
         18
       ],
       "rating": 8.411,
-      "popularityTMDB": 194.3197,
+      "popularityTMDB": 190.1534,
       "tmdbUrl": "https://www.themoviedb.org/tv/44006",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
@@ -575,8 +559,8 @@
         18,
         9648
       ],
-      "rating": 8.061,
-      "popularityTMDB": 276.8724,
+      "rating": 8.062,
+      "popularityTMDB": 271.3668,
       "tmdbUrl": "https://www.themoviedb.org/tv/95480",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
@@ -593,8 +577,8 @@
         18,
         35
       ],
-      "rating": 8.364,
-      "popularityTMDB": 161.7316,
+      "rating": 8.366,
+      "popularityTMDB": 152.6388,
       "tmdbUrl": "https://www.themoviedb.org/tv/97546",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
@@ -612,7 +596,7 @@
         18
       ],
       "rating": 8.226,
-      "popularityTMDB": 118.7531,
+      "popularityTMDB": 128.0893,
       "tmdbUrl": "https://www.themoviedb.org/tv/125988",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
@@ -629,14 +613,14 @@
         10765,
         18
       ],
-      "rating": 7.8,
-      "popularityTMDB": 75.2774,
+      "rating": 7.817,
+      "popularityTMDB": 89.4586,
       "tmdbUrl": "https://www.themoviedb.org/tv/196322",
       "availabilityScope": "series-level subscription listing in Poland",
       "status": "POPULAR_NOW_NOT_OFFICIAL_VIEWS"
     }
   ],
-  "candidateCount": 78,
+  "candidateCount": 81,
   "perPlatformCounts": {
     "Netflix": 10,
     "HBO Max": 10,
