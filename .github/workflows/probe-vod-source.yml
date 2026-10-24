@@ -14,6 +14,16 @@ jobs:
     timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
+      - name: Probe alternative Polish daily chart source
+        run: |
+          python3 - <<'PY'
+          import urllib.request
+          try:
+            r=urllib.request.urlopen(urllib.request.Request('https://tvhub.pl/',headers={'User-Agent':'Mozilla/5.0'}),timeout=15)
+            body=r.read(500000).decode('utf8','replace')
+            print('TVHUB HTTP OK, length=',len(body),'Netflix=',body.find('Netflix'),'Top10=',body.find('TOP 10'),'sample=',body[max(0,body.find('Mniej obcy')-160):body.find('Mniej obcy')+250])
+          except Exception as e:print('TVHUB inaccessible:',type(e).__name__,str(e)[:180])
+          PY
       - name: Generate dated Netflix Poland movie top 10
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
