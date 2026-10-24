@@ -1,0 +1,688 @@
+{
+  "region": "PL",
+  "category": "netflix_hbomax_sky_prime_daily_tv_pl",
+  "source": "TVHUB",
+  "sourceUrl": "https://tvhub.pl/",
+  "datePL": "2026-10-22",
+  "generatedAt": "2026-10-24T07:17:42.794005+00:00",
+  "series": [
+    {
+      "rank": 1,
+      "title": "The Mothers of Penguins",
+      "originalTitle": "The Mothers of Penguins",
+      "platform": "Netflix",
+      "tmdbId": 252747,
+      "posterPath": "/aGbsulAQ4pHf2ErFKXvr01KWqYP.jpg",
+      "genreIds": [
+        18,
+        35
+      ],
+      "rating": 7.2,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/252747"
+    },
+    {
+      "rank": 2,
+      "title": "Cyberpunk: Edgerunners",
+      "originalTitle": "Cyberpunk: Edgerunners",
+      "platform": "Netflix",
+      "tmdbId": 105248,
+      "posterPath": "/3UbHGmu9vIMSC5uNfnGt7DjetqT.jpg",
+      "genreIds": [
+        16,
+        10759,
+        10765,
+        80
+      ],
+      "rating": 8.5,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/105248"
+    },
+    {
+      "rank": 3,
+      "title": "Below",
+      "originalTitle": "Below",
+      "platform": "Netflix",
+      "tmdbId": 285322,
+      "posterPath": "/cn0feYcDvVzVjUDoXa1O8sRgzz.jpg",
+      "genreIds": [
+        18,
+        9648
+      ],
+      "rating": 7.25,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/285322"
+    },
+    {
+      "rank": 4,
+      "title": "TYSON",
+      "originalTitle": "TYSON",
+      "platform": "Netflix",
+      "tmdbId": 335536,
+      "posterPath": "/qFNAWAHCXWtS4EMlLxTAetTpZAR.jpg",
+      "genreIds": [
+        99
+      ],
+      "rating": 8.5,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/335536"
+    },
+    {
+      "rank": 5,
+      "title": "The Trap",
+      "originalTitle": "The Trap",
+      "platform": "Netflix",
+      "tmdbId": 28056,
+      "posterPath": "",
+      "genreIds": [
+        18
+      ],
+      "rating": 7.0,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/28056"
+    },
+    {
+      "rank": 6,
+      "title": "East of Eden",
+      "originalTitle": "East of Eden",
+      "platform": "Netflix",
+      "tmdbId": 258165,
+      "posterPath": "/70RZX7kNjA0Qjn6HigB1oMvFJ8R.jpg",
+      "genreIds": [
+        18,
+        80
+      ],
+      "rating": 7.934,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/258165"
+    },
+    {
+      "rank": 7,
+      "title": "Lalka",
+      "originalTitle": "The Doll",
+      "platform": "Netflix",
+      "tmdbId": 72320,
+      "posterPath": "/8f2OJpF7YyLOK5yrDKOzFwHu4ok.jpg",
+      "genreIds": [
+        80
+      ],
+      "rating": 0,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/72320"
+    },
+    {
+      "rank": 8,
+      "title": "Młode gliny",
+      "originalTitle": "Młode gliny",
+      "platform": "Netflix",
+      "tmdbId": 294637,
+      "posterPath": "/mWzn4Mg7FbuDMg7CKR88dKlWAwg.jpg",
+      "genreIds": [
+        80,
+        18
+      ],
+      "rating": 0,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/294637"
+    },
+    {
+      "rank": 9,
+      "title": "The Diplomat",
+      "originalTitle": "The Diplomat",
+      "platform": "Netflix",
+      "tmdbId": 203857,
+      "posterPath": "/hzznrBI07C2chXivlLYvEmQESP7.jpg",
+      "genreIds": [
+        18,
+        10768
+      ],
+      "rating": 7.6,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/203857"
+    },
+    {
+      "rank": 10,
+      "title": "Love Is Blind",
+      "originalTitle": "Love Is Blind",
+      "platform": "Netflix",
+      "tmdbId": 99353,
+      "posterPath": "/5sZyCtojLzqYAsz0qH9QMllu55I.jpg",
+      "genreIds": [
+        10764
+      ],
+      "rating": 6.248,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/99353"
+    },
+    {
+      "rank": 1,
+      "title": "Hotel Paradise",
+      "originalTitle": "Hotel Paradise Poland",
+      "platform": "HBO Max",
+      "tmdbId": 0,
+      "posterPath": "",
+      "genreIds": [],
+      "rating": 0,
+      "providersPL": [
+        "HBO Max"
+      ],
+      "tmdbUrl": ""
+    },
+    {
+      "rank": 2,
+      "title": "Zmora",
+      "originalTitle": "Zmora",
+      "platform": "HBO Max",
+      "tmdbId": 279185,
+      "posterPath": "/uqlqU7IOOrJBLSdxe3VQlO6OXy0.jpg",
+      "genreIds": [
+        80,
+        18
+      ],
+      "rating": 6.0,
+      "providersPL": [
+        "HBO Max"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/279185"
+    },
+    {
+      "rank": 3,
+      "title": "Na Wspólnej",
+      "originalTitle": "Na Wspólnej",
+      "platform": "HBO Max",
+      "tmdbId": 14750,
+      "posterPath": "/pmB8uYJF1WKQCZnJjhnAx2IJjhk.jpg",
+      "genreIds": [
+        10766
+      ],
+      "rating": 5.0,
+      "providersPL": [
+        "HBO Max"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/14750"
+    },
+    {
+      "rank": 4,
+      "title": "Crystal Lake",
+      "originalTitle": "Crystal Lake",
+      "platform": "HBO Max",
+      "tmdbId": 213562,
+      "posterPath": "/wxiBsKFEOOFK8eQStWOykNORlXY.jpg",
+      "genreIds": [
+        18,
+        9648
+      ],
+      "rating": 8.631,
+      "providersPL": [
+        "HBO Max"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/213562"
+    },
+    {
+      "rank": 5,
+      "title": "Zakup w ciemno",
+      "originalTitle": "Zakup w ciemno",
+      "platform": "HBO Max",
+      "tmdbId": 235010,
+      "posterPath": "/39ACeofZC4TZRzujkBm92Du4CcZ.jpg",
+      "genreIds": [
+        10764
+      ],
+      "rating": 6.5,
+      "providersPL": [
+        "HBO Max"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/235010"
+    },
+    {
+      "rank": 6,
+      "title": "Taskmaster",
+      "originalTitle": "Taskmaster",
+      "platform": "HBO Max",
+      "tmdbId": 63404,
+      "posterPath": "/4HK7iRrroCh71cbNFBF4HEJakGG.jpg",
+      "genreIds": [
+        35
+      ],
+      "rating": 8.3,
+      "providersPL": [
+        "HBO Max"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/63404"
+    },
+    {
+      "rank": 7,
+      "title": "Kochaj albo wróć",
+      "originalTitle": "Kochaj albo wróć",
+      "platform": "HBO Max",
+      "tmdbId": 334208,
+      "posterPath": "/bL5ctzA2StPIiyzv32MGCbcal5F.jpg",
+      "genreIds": [
+        10764
+      ],
+      "rating": 0,
+      "providersPL": [
+        "HBO Max"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/334208"
+    },
+    {
+      "rank": 8,
+      "title": "The Floor",
+      "originalTitle": "The Floor",
+      "platform": "HBO Max",
+      "tmdbId": 231730,
+      "posterPath": "/cHznGpISn6Uxy9EyLel5eX7WrXG.jpg",
+      "genreIds": [
+        10764
+      ],
+      "rating": 7.3,
+      "providersPL": [
+        "HBO Max"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/231730"
+    },
+    {
+      "rank": 9,
+      "title": "Azja Express",
+      "originalTitle": "Azja Express",
+      "platform": "HBO Max",
+      "tmdbId": 74274,
+      "posterPath": "/rhZFMS8iGbNX0yQVU4MpZFdg1Xs.jpg",
+      "genreIds": [
+        10764
+      ],
+      "rating": 7.0,
+      "providersPL": [
+        "HBO Max"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/74274"
+    },
+    {
+      "rank": 10,
+      "title": "Kuba Wojewódzki",
+      "originalTitle": "Kuba Wojewódzki",
+      "platform": "HBO Max",
+      "tmdbId": 49394,
+      "posterPath": "/wYGqCZuBdYeL7OLQTDxVA1AnuUl.jpg",
+      "genreIds": [
+        10767
+      ],
+      "rating": 7.2,
+      "providersPL": [
+        "HBO Max"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/49394"
+    },
+    {
+      "rank": 1,
+      "title": "MobLand",
+      "originalTitle": "MobLand",
+      "platform": "SkyShowtime",
+      "tmdbId": 247718,
+      "posterPath": "/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
+      "genreIds": [
+        80,
+        18
+      ],
+      "rating": 8.551,
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/247718"
+    },
+    {
+      "rank": 2,
+      "title": "Marshals",
+      "originalTitle": "Marshals",
+      "platform": "SkyShowtime",
+      "tmdbId": 290856,
+      "posterPath": "/yGJGwt7DdIWTUXuahLfhcH1gi7G.jpg",
+      "genreIds": [
+        18,
+        80,
+        10759
+      ],
+      "rating": 7.954,
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/290856"
+    },
+    {
+      "rank": 3,
+      "title": "Śleboda",
+      "originalTitle": "Deadly Ties",
+      "platform": "SkyShowtime",
+      "tmdbId": 304490,
+      "posterPath": "/cAwsnhfrTZXbtLMGQAwB6EksQoR.jpg",
+      "genreIds": [
+        18,
+        80,
+        9648
+      ],
+      "rating": 6.429,
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/304490"
+    },
+    {
+      "rank": 4,
+      "title": "M.I.A.",
+      "originalTitle": "M.I.A.",
+      "platform": "SkyShowtime",
+      "tmdbId": 262388,
+      "posterPath": "/wqjhAWmqHrIIn4PdchGCuEgPksw.jpg",
+      "genreIds": [
+        18,
+        80
+      ],
+      "rating": 8.402,
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/262388"
+    },
+    {
+      "rank": 5,
+      "title": "La Brea",
+      "originalTitle": "La Brea",
+      "platform": "SkyShowtime",
+      "tmdbId": 128839,
+      "posterPath": "/qhaPuyznsxb13wSQbpqSDqtNuX8.jpg",
+      "genreIds": [
+        10765,
+        18,
+        10759
+      ],
+      "rating": 7.415,
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/128839"
+    },
+    {
+      "rank": 6,
+      "title": "The Five Star Weekend",
+      "originalTitle": "The Five Star Weekend",
+      "platform": "SkyShowtime",
+      "tmdbId": 283151,
+      "posterPath": "/lq2aJdPlyOo11aBwojmLvGjlJS1.jpg",
+      "genreIds": [
+        18
+      ],
+      "rating": 5.9,
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/283151"
+    },
+    {
+      "rank": 7,
+      "title": "The Purge",
+      "originalTitle": "The Purge",
+      "platform": "SkyShowtime",
+      "tmdbId": 80213,
+      "posterPath": "/9PARvL1FQtyjNhLF6AT6Oanqg1U.jpg",
+      "genreIds": [
+        9648,
+        80,
+        18
+      ],
+      "rating": 6.906,
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/80213"
+    },
+    {
+      "rank": 8,
+      "title": "The Office PL",
+      "originalTitle": "The Office PL",
+      "platform": "SkyShowtime",
+      "tmdbId": 128822,
+      "posterPath": "/9gm3mqdQ1FcK0R8GMKs85xAbhAp.jpg",
+      "genreIds": [
+        35
+      ],
+      "rating": 7.8,
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/128822"
+    },
+    {
+      "rank": 9,
+      "title": "Tut",
+      "originalTitle": "Tut",
+      "platform": "SkyShowtime",
+      "tmdbId": 62977,
+      "posterPath": "/cHYQK5iyh1sydnIUdOqHs0DHJSP.jpg",
+      "genreIds": [
+        18
+      ],
+      "rating": 7.14,
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/62977"
+    },
+    {
+      "rank": 10,
+      "title": "Prawo i porządek: Sekcja specjalna",
+      "originalTitle": "Law & Order: Special Victims Unit",
+      "platform": "SkyShowtime",
+      "tmdbId": 2734,
+      "posterPath": "/xhK9YCxNwnE0OB1SWvCY39heHQI.jpg",
+      "genreIds": [
+        80,
+        18,
+        9648
+      ],
+      "rating": 7.962,
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/2734"
+    },
+    {
+      "rank": 1,
+      "title": "Carrie",
+      "originalTitle": "Carrie",
+      "platform": "Prime Video",
+      "tmdbId": 288673,
+      "posterPath": "/9yCJtipMeDe8uAdSJKvw8BnYfRz.jpg",
+      "genreIds": [
+        9648,
+        18,
+        10765
+      ],
+      "rating": 8.326,
+      "providersPL": [
+        "Prime Video"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/288673"
+    },
+    {
+      "rank": 2,
+      "title": "SOR",
+      "originalTitle": "SOR",
+      "platform": "Prime Video",
+      "tmdbId": 334085,
+      "posterPath": "/rjwVNat65xkuEmYG008NyXDdu73.jpg",
+      "genreIds": [
+        18
+      ],
+      "rating": 0,
+      "providersPL": [
+        "Prime Video"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/334085"
+    },
+    {
+      "rank": 3,
+      "title": "Neagley",
+      "originalTitle": "Neagley",
+      "platform": "Prime Video",
+      "tmdbId": 273207,
+      "posterPath": "/uYOYLFQ4q7asuhdiKXCqGaeAQUH.jpg",
+      "genreIds": [
+        18,
+        9648,
+        80
+      ],
+      "rating": 8.088,
+      "providersPL": [
+        "Prime Video"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/273207"
+    },
+    {
+      "rank": 4,
+      "title": "Helluva Boss",
+      "originalTitle": "Helluva Boss",
+      "platform": "Prime Video",
+      "tmdbId": 289892,
+      "posterPath": "/20OP4f0xDbPttORm9OyIbNu3cNN.jpg",
+      "genreIds": [
+        16,
+        35,
+        18,
+        10765
+      ],
+      "rating": 7.5,
+      "providersPL": [
+        "Prime Video"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/289892"
+    },
+    {
+      "rank": 5,
+      "title": "The Terminal List",
+      "originalTitle": "The Terminal List",
+      "platform": "Prime Video",
+      "tmdbId": 120911,
+      "posterPath": "/98mdtfkJ77vVikylIbOQYfJvxpJ.jpg",
+      "genreIds": [
+        10759,
+        18
+      ],
+      "rating": 7.985,
+      "providersPL": [
+        "Prime Video"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/120911"
+    },
+    {
+      "rank": 6,
+      "title": "Friends Sex and Games",
+      "originalTitle": "Friends Sex and Games",
+      "platform": "Prime Video",
+      "tmdbId": 298550,
+      "posterPath": "/geSUajSeWBu14vLk0NyuR1OnrX7.jpg",
+      "genreIds": [
+        18
+      ],
+      "rating": 7.8,
+      "providersPL": [
+        "Prime Video"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/298550"
+    },
+    {
+      "rank": 7,
+      "title": "Reacher",
+      "originalTitle": "Reacher",
+      "platform": "Prime Video",
+      "tmdbId": 108978,
+      "posterPath": "/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
+      "genreIds": [
+        10759,
+        80
+      ],
+      "rating": 8.13,
+      "providersPL": [
+        "Prime Video"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/108978"
+    },
+    {
+      "rank": 8,
+      "title": "Off Campus",
+      "originalTitle": "Off Campus",
+      "platform": "Prime Video",
+      "tmdbId": 273240,
+      "posterPath": "/3ANXZWhhcqPAh0q6nRZ979TIwxC.jpg",
+      "genreIds": [
+        18
+      ],
+      "rating": 8.868,
+      "providersPL": [
+        "Prime Video"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/273240"
+    },
+    {
+      "rank": 9,
+      "title": "Sterling Point",
+      "originalTitle": "Sterling Point",
+      "platform": "Prime Video",
+      "tmdbId": 283297,
+      "posterPath": "/nOWU1NSYQEOXRXcdfZbtJshwRGK.jpg",
+      "genreIds": [
+        9648,
+        18
+      ],
+      "rating": 8.1,
+      "providersPL": [
+        "Prime Video"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/283297"
+    },
+    {
+      "rank": 10,
+      "title": "Girls of Warsaw",
+      "originalTitle": "Girls of Warsaw",
+      "platform": "Prime Video",
+      "tmdbId": 330632,
+      "posterPath": "/neVjJ8u0I8uLRaFodz3VH0hWY88.jpg",
+      "genreIds": [
+        99,
+        10764
+      ],
+      "rating": 0,
+      "providersPL": [
+        "Prime Video"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/tv/330632"
+    }
+  ],
+  "perPlatformCounts": {
+    "Netflix": 10,
+    "HBO Max": 10,
+    "SkyShowtime": 10,
+    "Prime Video": 10
+  },
+  "note": "Unofficial third-party daily country TV charts; may lag up to 3 days"
+}
