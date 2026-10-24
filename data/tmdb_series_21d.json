@@ -1,7 +1,7 @@
 {
   "region": "PL",
   "windowDays": 21,
-  "generatedAt": "2026-10-23T15:52:16.458459+00:00",
+  "generatedAt": "2026-10-24T06:52:26.827883+00:00",
   "source": "TMDB",
   "rankingMetric": "TMDB popularity, not streaming views",
   "seasonSpecificPolishAvailabilityVerified": false,
@@ -18,7 +18,7 @@
       "providerInfoUrl": "https://www.themoviedb.org/tv/1416-grey-s-anatomy/watch?locale=PL",
       "tmdbUrl": "https://www.themoviedb.org/tv/1416",
       "posterPath": "/byswIhxuqAx1W6vdyGOvL0k4Sxw.jpg",
-      "popularityTMDB": 6342.2317,
+      "popularityTMDB": 9717.4016,
       "status": "TMDB_SEASON_DATE_AND_SERIES_PROVIDER_MATCH",
       "caveat": "Polish provider match is series-level; season-specific PL availability is unverified"
     },
@@ -35,7 +35,7 @@
       "providerInfoUrl": "https://www.themoviedb.org/tv/549-law-order/watch?locale=PL",
       "tmdbUrl": "https://www.themoviedb.org/tv/549",
       "posterPath": "/hmd2tEtjolLWpNLCTvXS2PO5VCi.jpg",
-      "popularityTMDB": 1412.7416,
+      "popularityTMDB": 1267.2599,
       "status": "TMDB_SEASON_DATE_AND_SERIES_PROVIDER_MATCH",
       "caveat": "Polish provider match is series-level; season-specific PL availability is unverified"
     },
@@ -54,7 +54,7 @@
       "providerInfoUrl": "https://www.themoviedb.org/tv/2734-law-order-special-victims-unit/watch?locale=PL",
       "tmdbUrl": "https://www.themoviedb.org/tv/2734",
       "posterPath": "/pHNhUwSXuDQ9jPZOCb8SgJaQZsc.jpg",
-      "popularityTMDB": 421.2688,
+      "popularityTMDB": 419.9803,
       "status": "TMDB_SEASON_DATE_AND_SERIES_PROVIDER_MATCH",
       "caveat": "Polish provider match is series-level; season-specific PL availability is unverified"
     },
@@ -70,7 +70,7 @@
       "providerInfoUrl": "https://www.themoviedb.org/tv/213375-visionquest/watch?locale=PL",
       "tmdbUrl": "https://www.themoviedb.org/tv/213375",
       "posterPath": "/xK27l5uwaVyZSlENWnmLlWwDQNS.jpg",
-      "popularityTMDB": 369.2353,
+      "popularityTMDB": 342.2431,
       "status": "TMDB_SEASON_DATE_AND_SERIES_PROVIDER_MATCH",
       "caveat": "Polish provider match is series-level; season-specific PL availability is unverified"
     },
@@ -88,7 +88,7 @@
       "providerInfoUrl": "https://www.themoviedb.org/tv/4614-ncis/watch?locale=PL",
       "tmdbUrl": "https://www.themoviedb.org/tv/4614",
       "posterPath": "/y4fGncqELtnvRQuwSpuH8LncZqU.jpg",
-      "popularityTMDB": 357.3448,
+      "popularityTMDB": 341.8204,
       "status": "TMDB_SEASON_DATE_AND_SERIES_PROVIDER_MATCH",
       "caveat": "Polish provider match is series-level; season-specific PL availability is unverified"
     },
@@ -104,23 +104,7 @@
       "providerInfoUrl": "https://www.themoviedb.org/tv/153312-tulsa-king/watch?locale=PL",
       "tmdbUrl": "https://www.themoviedb.org/tv/153312",
       "posterPath": "/8uWh9xVg1h0Fzx2tY6tF4FGLXOH.jpg",
-      "popularityTMDB": 232.9265,
-      "status": "TMDB_SEASON_DATE_AND_SERIES_PROVIDER_MATCH",
-      "caveat": "Polish provider match is series-level; season-specific PL availability is unverified"
-    },
-    {
-      "tmdbId": 288673,
-      "title": "Carrie",
-      "season": 1,
-      "premiereDate": "2026-10-07",
-      "premiereType": "new_series_premiere",
-      "providersPL": [
-        "Amazon Prime Video"
-      ],
-      "providerInfoUrl": "https://www.themoviedb.org/tv/288673-carrie/watch?locale=PL",
-      "tmdbUrl": "https://www.themoviedb.org/tv/288673",
-      "posterPath": "/6mUMquPQBFJGqTACS3Azkwwrx8d.jpg",
-      "popularityTMDB": 222.2513,
+      "popularityTMDB": 259.6778,
       "status": "TMDB_SEASON_DATE_AND_SERIES_PROVIDER_MATCH",
       "caveat": "Polish provider match is series-level; season-specific PL availability is unverified"
     },
@@ -136,7 +120,7 @@
       "providerInfoUrl": "https://www.themoviedb.org/tv/213562-crystal-lake/watch?locale=PL",
       "tmdbUrl": "https://www.themoviedb.org/tv/213562",
       "posterPath": "/cRMairWhVnqgyB2UpB0MNVUVBsW.jpg",
-      "popularityTMDB": 221.1164,
+      "popularityTMDB": 209.6689,
       "status": "TMDB_SEASON_DATE_AND_SERIES_PROVIDER_MATCH",
       "caveat": "Polish provider match is series-level; season-specific PL availability is unverified"
     },
@@ -152,7 +136,23 @@
       "providerInfoUrl": "https://www.themoviedb.org/tv/44006-chicago-fire/watch?locale=PL",
       "tmdbUrl": "https://www.themoviedb.org/tv/44006",
       "posterPath": "/mqwUwexSSiBGC9qGgu38tKczFn.jpg",
-      "popularityTMDB": 194.3197,
+      "popularityTMDB": 190.1534,
+      "status": "TMDB_SEASON_DATE_AND_SERIES_PROVIDER_MATCH",
+      "caveat": "Polish provider match is series-level; season-specific PL availability is unverified"
+    },
+    {
+      "tmdbId": 288673,
+      "title": "Carrie",
+      "season": 1,
+      "premiereDate": "2026-10-07",
+      "premiereType": "new_series_premiere",
+      "providersPL": [
+        "Amazon Prime Video"
+      ],
+      "providerInfoUrl": "https://www.themoviedb.org/tv/288673-carrie/watch?locale=PL",
+      "tmdbUrl": "https://www.themoviedb.org/tv/288673",
+      "posterPath": "/6mUMquPQBFJGqTACS3Azkwwrx8d.jpg",
+      "popularityTMDB": 186.6257,
       "status": "TMDB_SEASON_DATE_AND_SERIES_PROVIDER_MATCH",
       "caveat": "Polish provider match is series-level; season-specific PL availability is unverified"
     },
@@ -169,10 +169,10 @@
       "providerInfoUrl": "https://www.themoviedb.org/tv/58841-chicago-p-d/watch?locale=PL",
       "tmdbUrl": "https://www.themoviedb.org/tv/58841",
       "posterPath": "/w7R4ooo2IbOfBKOoMDwaiMGsNQf.jpg",
-      "popularityTMDB": 188.7471,
+      "popularityTMDB": 183.7581,
       "status": "TMDB_SEASON_DATE_AND_SERIES_PROVIDER_MATCH",
       "caveat": "Polish provider match is series-level; season-specific PL availability is unverified"
     }
   ],
-  "candidateCount": 23
+  "candidateCount": 22
 }
