@@ -15,14 +15,11 @@ def parse_page(page,today):
     if not m:raise ValueError("Missing dated TVHUB chart")
     date=dt.date.fromisoformat(m.group(1))
     if (today-date).days not in (0,1,2,3):raise ValueError("Chart stale or future")
-    begin=page.find('data-fp-type-panel="tv"',m.end())
-    if begin<0:raise ValueError("TV panel not found")
-    # Panels also have buttons; the actual type panel is a <div>.
-    begin=page.find('<div class="tvhub-fp__type-panel" data-fp-type-panel="tv">',m.end())
-    if begin<0:raise ValueError("TV content panel not found")
+    panel_match=re.search(r'<div[^>]*data-fp-type-panel="tv"[^>]*>',page[m.end():])
+    if not panel_match:raise ValueError("TV content panel not found")
+    begin=m.end()+panel_match.start()
     end=page.find('</section>',begin)
-    if end<0:raise ValueError("TV panel not terminated")
-    panel=page[begin:end]
+    panel=page[begin:end if end>begin else None]
     rankings={}
     for slug,name in (("netflix","Netflix"),("hbo-max","HBO Max")):
         card=re.search(r'<article class="tvhub-fp__card tvhub-fp__card--'+slug+r'"[^>]*>(.*?)</article>',panel,re.S)
