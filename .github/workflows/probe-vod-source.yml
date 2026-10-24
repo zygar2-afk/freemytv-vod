@@ -9,6 +9,31 @@ on:
 permissions:
   contents: write
 jobs:
+  four-platform-daily-movies:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build four platform daily top 10 movies
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
+        run: python3 scripts/build_daily_four_platform_movies.py
+      - name: Publish validated top 40 movie ranking
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3 4 5; do
+            git fetch origin feature/vod-source-probe
+            git reset --hard origin/feature/vod-source-probe
+            mkdir -p data
+            cp out/netflix_hbomax_sky_prime_daily_movies_pl.json data/netflix_hbomax_sky_prime_daily_movies_pl.json
+            git add data/netflix_hbomax_sky_prime_daily_movies_pl.json
+            if git diff --cached --quiet; then break; fi
+            git commit -m 'Refresh Netflix HBO Sky and Prime movies TOP 40 [skip ci]'
+            if git push origin HEAD:feature/vod-source-probe; then break; fi
+            if [ "$attempt" = 5 ]; then exit 1; fi
+          done
   netflix-hbomax-tv:
     runs-on: ubuntu-latest
     timeout-minutes: 8
