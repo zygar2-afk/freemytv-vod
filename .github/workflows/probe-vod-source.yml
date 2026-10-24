@@ -14,7 +14,7 @@ jobs:
     timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
-      - name: Build Netflix, HBO Max and SkyShowtime Polish daily TV top 10
+      - name: Build Netflix, HBO Max, SkyShowtime and Prime Video Polish daily TV top 10
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
@@ -27,8 +27,8 @@ jobs:
             git fetch origin feature/vod-source-probe
             git reset --hard origin/feature/vod-source-probe
             mkdir -p data
-            cp out/netflix_hbomax_sky_daily_tv_pl.json data/netflix_hbomax_sky_daily_tv_pl.json
-            git add data/netflix_hbomax_sky_daily_tv_pl.json
+            cp out/netflix_hbomax_sky_prime_daily_tv_pl.json data/netflix_hbomax_sky_prime_daily_tv_pl.json
+            git add data/netflix_hbomax_sky_prime_daily_tv_pl.json
             if git diff --cached --quiet; then break; fi
             git commit -m 'Update Netflix, HBO Max and SkyShowtime daily TV rankings [skip ci]'
             if git push origin HEAD:feature/vod-source-probe; then break; fi
