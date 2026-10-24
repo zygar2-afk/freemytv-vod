@@ -1,0 +1,715 @@
+{
+  "region": "PL",
+  "category": "netflix_hbomax_sky_prime_daily_movies_pl",
+  "source": "TVHUB",
+  "sourceUrl": "https://tvhub.pl/",
+  "datePL": "2026-10-22",
+  "generatedAt": "2026-10-24T08:00:31.817027+00:00",
+  "perPlatformCounts": {
+    "Netflix": 10,
+    "HBO Max": 10,
+    "SkyShowtime": 10,
+    "Prime Video": 10
+  },
+  "movies": [
+    {
+      "rank": 1,
+      "title": "Mniej obcy",
+      "originalTitle": "Less of a Stranger",
+      "platform": "Netflix",
+      "tmdbId": 1620080,
+      "posterPath": "/xn42TCarooeOxY1yrfOknEmMvAu.jpg",
+      "genreIds": [
+        18,
+        10402
+      ],
+      "rating": 8.8,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1620080"
+    },
+    {
+      "rank": 2,
+      "title": "Constantine",
+      "originalTitle": "Constantine",
+      "platform": "Netflix",
+      "tmdbId": 561,
+      "posterPath": "/x3YFn10ehQKMRIJwIfiDAX8S9Xt.jpg",
+      "genreIds": [
+        14,
+        28,
+        27
+      ],
+      "rating": 7.2,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/561"
+    },
+    {
+      "rank": 3,
+      "title": "Zwierzęta",
+      "originalTitle": "Animals",
+      "platform": "Netflix",
+      "tmdbId": 1236045,
+      "posterPath": "/tzoarEu7TsG959upiELyYPm5kO9.jpg",
+      "genreIds": [
+        53,
+        18
+      ],
+      "rating": 7.0,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1236045"
+    },
+    {
+      "rank": 4,
+      "title": "Hot Wheels Let's Race: Attack of the T-Rex",
+      "originalTitle": "Hot Wheels Let's Race: Attack of the T-Rex",
+      "platform": "Netflix",
+      "tmdbId": 1802674,
+      "posterPath": "/dK69ml1Y34MrEovK4ZyizRiWbEH.jpg",
+      "genreIds": [
+        16,
+        10751,
+        28
+      ],
+      "rating": 6.0,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1802674"
+    },
+    {
+      "rank": 5,
+      "title": "Nadciąga burza",
+      "originalTitle": "The Storm",
+      "platform": "Netflix",
+      "tmdbId": 1173879,
+      "posterPath": "/sE2UCUTgEFvvObMmMlJSfgjEet0.jpg",
+      "genreIds": [
+        35,
+        18,
+        53
+      ],
+      "rating": 0,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1173879"
+    },
+    {
+      "rank": 6,
+      "title": "Nowokaina",
+      "originalTitle": "Novocaine",
+      "platform": "Netflix",
+      "tmdbId": 1195506,
+      "posterPath": "/lyBH2mFFU6qrHwD5QKotL2JnEb6.jpg",
+      "genreIds": [
+        28,
+        35,
+        53
+      ],
+      "rating": 6.755,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1195506"
+    },
+    {
+      "rank": 7,
+      "title": "Center Stage : Turn It Up",
+      "originalTitle": "Center Stage : Turn It Up",
+      "platform": "Netflix",
+      "tmdbId": 16346,
+      "posterPath": "/Aec0DEgQEwzfGa9551qpiS85V3j.jpg",
+      "genreIds": [
+        18,
+        10402,
+        10749
+      ],
+      "rating": 6.867,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/16346"
+    },
+    {
+      "rank": 8,
+      "title": "W ukryciu",
+      "originalTitle": "Within",
+      "platform": "Netflix",
+      "tmdbId": 291413,
+      "posterPath": "/abYksHVv56UF1HKJpc4DNHGaWuX.jpg",
+      "genreIds": [
+        27,
+        53
+      ],
+      "rating": 5.4,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/291413"
+    },
+    {
+      "rank": 9,
+      "title": "Statek widmo",
+      "originalTitle": "Ghost Ship",
+      "platform": "Netflix",
+      "tmdbId": 9645,
+      "posterPath": "/r4yVwsLF2pJr4C50pWizn9fYNbF.jpg",
+      "genreIds": [
+        27,
+        9648,
+        53
+      ],
+      "rating": 6.016,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/9645"
+    },
+    {
+      "rank": 10,
+      "title": "Man Up",
+      "originalTitle": "Man Up",
+      "platform": "Netflix",
+      "tmdbId": 332340,
+      "posterPath": "/znc4p9S2177ClNnTlJHr1CSOIkB.jpg",
+      "genreIds": [
+        10749,
+        35
+      ],
+      "rating": 6.574,
+      "providersPL": [
+        "Netflix"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/332340"
+    },
+    {
+      "rank": 1,
+      "title": "Speak No Evil",
+      "originalTitle": "Speak No Evil",
+      "platform": "HBO Max",
+      "tmdbId": 1114513,
+      "posterPath": "/1fL2S8LKxCVE9KoPRBXeagmBtex.jpg",
+      "genreIds": [
+        27,
+        53
+      ],
+      "rating": 7.088,
+      "providersPL": [
+        "HBO Max"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1114513"
+    },
+    {
+      "rank": 2,
+      "title": "Uncharted",
+      "originalTitle": "Uncharted",
+      "platform": "HBO Max",
+      "tmdbId": 335787,
+      "posterPath": "/fwrqW8Lp5VQuppFrODd4iJ8LySE.jpg",
+      "genreIds": [
+        28,
+        12,
+        9648
+      ],
+      "rating": 6.865,
+      "providersPL": [
+        "HBO Max"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/335787"
+    },
+    {
+      "rank": 3,
+      "title": "Milczenie owiec",
+      "originalTitle": "The Silence of the Lambs",
+      "platform": "HBO Max",
+      "tmdbId": 274,
+      "posterPath": "/mbOx1wxMLikzwWUO9TKAcFIy6op.jpg",
+      "genreIds": [
+        80,
+        53,
+        18
+      ],
+      "rating": 8.345,
+      "providersPL": [
+        "HBO Max"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/274"
+    },
+    {
+      "rank": 4,
+      "title": "The Magnificent Seven",
+      "originalTitle": "The Magnificent Seven",
+      "platform": "HBO Max",
+      "tmdbId": 333484,
+      "posterPath": "/4qxZJRYe4ezA5J1sidnV7vuaYaz.jpg",
+      "genreIds": [
+        12,
+        28,
+        37
+      ],
+      "rating": 6.504,
+      "providersPL": [
+        "HBO Max"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/333484"
+    },
+    {
+      "rank": 5,
+      "title": "Nieczysta gra",
+      "originalTitle": "Play Dirty",
+      "platform": "HBO Max",
+      "tmdbId": 941109,
+      "posterPath": "/k6tdiMTO39RQj3dhfspuzprfoe0.jpg",
+      "genreIds": [
+        80,
+        28,
+        53
+      ],
+      "rating": 6.577,
+      "providersPL": [
+        "HBO Max"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/941109"
+    },
+    {
+      "rank": 6,
+      "title": "Siedem",
+      "originalTitle": "Se7en",
+      "platform": "HBO Max",
+      "tmdbId": 807,
+      "posterPath": "/i5H7zusQGsysGQ8i6P361Vnr0n2.jpg",
+      "genreIds": [
+        80,
+        9648,
+        53
+      ],
+      "rating": 8.383,
+      "providersPL": [
+        "HBO Max"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/807"
+    },
+    {
+      "rank": 7,
+      "title": "40 Acres",
+      "originalTitle": "40 Acres",
+      "platform": "HBO Max",
+      "tmdbId": 1319951,
+      "posterPath": "/6m3K1hizm5yoguOsAcIjNSECn5b.jpg",
+      "genreIds": [
+        28,
+        53,
+        18,
+        14,
+        27
+      ],
+      "rating": 6.6,
+      "providersPL": [
+        "HBO Max"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1319951"
+    },
+    {
+      "rank": 8,
+      "title": "Dune: Part Two",
+      "originalTitle": "Dune: Part Two",
+      "platform": "HBO Max",
+      "tmdbId": 693134,
+      "posterPath": "/eZ239CUp1d6OryZEBPnO2n87gMG.jpg",
+      "genreIds": [
+        878,
+        12
+      ],
+      "rating": 8.1,
+      "providersPL": [
+        "HBO Max"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/693134"
+    },
+    {
+      "rank": 9,
+      "title": "Klopsiki kontratakują",
+      "originalTitle": "Cloudy with a Chance of Meatballs 2",
+      "platform": "HBO Max",
+      "tmdbId": 109451,
+      "posterPath": "/vWriOBVlgW0XWdgbOiijhyLW7B8.jpg",
+      "genreIds": [
+        16,
+        10751,
+        35
+      ],
+      "rating": 6.46,
+      "providersPL": [
+        "HBO Max"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/109451"
+    },
+    {
+      "rank": 10,
+      "title": "Lśnienie",
+      "originalTitle": "The Shining",
+      "platform": "HBO Max",
+      "tmdbId": 694,
+      "posterPath": "/AdKA2F1SzYPhSZdEbjH1Zh75UVQ.jpg",
+      "genreIds": [
+        27,
+        53
+      ],
+      "rating": 8.2,
+      "providersPL": [
+        "HBO Max"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/694"
+    },
+    {
+      "rank": 1,
+      "title": "Reminders of Him. Cząstka ciebie, którą znam",
+      "originalTitle": "Reminders of Him",
+      "platform": "SkyShowtime",
+      "tmdbId": 1367642,
+      "posterPath": "/5rxEnsgriw8z065q51lrvPKYmCL.jpg",
+      "genreIds": [
+        10749,
+        18
+      ],
+      "rating": 7.763,
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1367642"
+    },
+    {
+      "rank": 2,
+      "title": "The Visitor",
+      "originalTitle": "The Visitor",
+      "platform": "SkyShowtime",
+      "tmdbId": 12473,
+      "posterPath": "/uybT3vd3lvvdQZdK4YAZTG7cmOa.jpg",
+      "genreIds": [
+        80,
+        18,
+        10402
+      ],
+      "rating": 7.131,
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/12473"
+    },
+    {
+      "rank": 3,
+      "title": "Niespodziewany świąteczny gość",
+      "originalTitle": "Too Close for Christmas",
+      "platform": "SkyShowtime",
+      "tmdbId": 764104,
+      "posterPath": "/k7rxfxdroEsfzHx3P3ADYx2xm6I.jpg",
+      "genreIds": [
+        10749,
+        18,
+        10770
+      ],
+      "rating": 5.86,
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/764104"
+    },
+    {
+      "rank": 4,
+      "title": "Krzyk 7",
+      "originalTitle": "Scream 7",
+      "platform": "SkyShowtime",
+      "tmdbId": 1159559,
+      "posterPath": "/3eUyLEF5M0ky3h6KJsWiWzaakB8.jpg",
+      "genreIds": [
+        27,
+        9648,
+        80
+      ],
+      "rating": 6.2,
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1159559"
+    },
+    {
+      "rank": 5,
+      "title": "Nieuchwytny cel 2",
+      "originalTitle": "Hard Target 2",
+      "platform": "SkyShowtime",
+      "tmdbId": 402331,
+      "posterPath": "/jMLvLxu1nc26mRoJg5Hka0NJcNd.jpg",
+      "genreIds": [
+        28,
+        53
+      ],
+      "rating": 6.325,
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/402331"
+    },
+    {
+      "rank": 6,
+      "title": "Christmas in Love",
+      "originalTitle": "Christmas in Love",
+      "platform": "SkyShowtime",
+      "tmdbId": 550020,
+      "posterPath": "/opvymPgWyoOvwL2YXdGryKYSagn.jpg",
+      "genreIds": [
+        10770,
+        10749,
+        10751,
+        35
+      ],
+      "rating": 5.957,
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/550020"
+    },
+    {
+      "rank": 7,
+      "title": "Plan B",
+      "originalTitle": "The Back-Up Plan",
+      "platform": "SkyShowtime",
+      "tmdbId": 34806,
+      "posterPath": "/fudUJZpEKRhFVzYz8iIIO7Wnvtw.jpg",
+      "genreIds": [
+        35,
+        10749
+      ],
+      "rating": 6.122,
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/34806"
+    },
+    {
+      "rank": 8,
+      "title": "Zupa nic",
+      "originalTitle": "Back Then",
+      "platform": "SkyShowtime",
+      "tmdbId": 1511470,
+      "posterPath": "/AtNkjvU7T13Xly2uXcMxkqd1uBR.jpg",
+      "genreIds": [],
+      "rating": 0,
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1511470"
+    },
+    {
+      "rank": 9,
+      "title": "The Birthday Cake",
+      "originalTitle": "The Birthday Cake",
+      "platform": "SkyShowtime",
+      "tmdbId": 624481,
+      "posterPath": "/1eKFWBEGYfAvcMf4Lr8SvmOjaXP.jpg",
+      "genreIds": [
+        80,
+        53
+      ],
+      "rating": 5.1,
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/624481"
+    },
+    {
+      "rank": 10,
+      "title": "Grinch",
+      "originalTitle": "The Grinch",
+      "platform": "SkyShowtime",
+      "tmdbId": 360920,
+      "posterPath": "/5lWIYxYEqWi8j3ZloxXntw3ImBo.jpg",
+      "genreIds": [
+        16,
+        35,
+        10751,
+        14
+      ],
+      "rating": 6.866,
+      "providersPL": [
+        "SkyShowtime"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/360920"
+    },
+    {
+      "rank": 1,
+      "title": "Plan doskonały",
+      "originalTitle": "Masterplan",
+      "platform": "Prime Video",
+      "tmdbId": 1561726,
+      "posterPath": "/dgUDj84BWtW6EZzee8BkgKnjDhh.jpg",
+      "genreIds": [
+        28,
+        53
+      ],
+      "rating": 6.997,
+      "providersPL": [
+        "Prime Video"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1561726"
+    },
+    {
+      "rank": 2,
+      "title": "Miłość twojego życia",
+      "originalTitle": "Love of Your Life",
+      "platform": "Prime Video",
+      "tmdbId": 1381078,
+      "posterPath": "/4hneB0UFKOZAGJHqJ3VhDcG72uH.jpg",
+      "genreIds": [
+        10749,
+        18
+      ],
+      "rating": 6.82,
+      "providersPL": [
+        "Prime Video"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1381078"
+    },
+    {
+      "rank": 3,
+      "title": "Iluzja 3",
+      "originalTitle": "Now You See Me: Now You Don't",
+      "platform": "Prime Video",
+      "tmdbId": 425274,
+      "posterPath": "/ufqytAlziHq5pljKByGJ8IKhtEZ.jpg",
+      "genreIds": [
+        80,
+        53
+      ],
+      "rating": 6.44,
+      "providersPL": [
+        "Prime Video"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/425274"
+    },
+    {
+      "rank": 4,
+      "title": "Hipoteza miłości",
+      "originalTitle": "The Love Hypothesis",
+      "platform": "Prime Video",
+      "tmdbId": 1032863,
+      "posterPath": "/o7Oy9Gbx1CCyaweL8xUhtMW4Puq.jpg",
+      "genreIds": [
+        10749,
+        35
+      ],
+      "rating": 7.989,
+      "providersPL": [
+        "Prime Video"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1032863"
+    },
+    {
+      "rank": 5,
+      "title": "Mother Mary",
+      "originalTitle": "Mother Mary",
+      "platform": "Prime Video",
+      "tmdbId": 1102883,
+      "posterPath": "/9eynUDRhChIsgSYLK82aC4zIQ2M.jpg",
+      "genreIds": [
+        10402,
+        18,
+        53
+      ],
+      "rating": 5.665,
+      "providersPL": [
+        "Prime Video"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1102883"
+    },
+    {
+      "rank": 6,
+      "title": "Wola przetrwania",
+      "originalTitle": "Not Without Hope",
+      "platform": "Prime Video",
+      "tmdbId": 339849,
+      "posterPath": "/rJ7PB78ZcBaCPxQRLrZxh4M2Z0N.jpg",
+      "genreIds": [
+        53,
+        18
+      ],
+      "rating": 6.626,
+      "providersPL": [
+        "Prime Video"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/339849"
+    },
+    {
+      "rank": 7,
+      "title": "Ty+Ja - Wbrew wszystkim",
+      "originalTitle": "You+Me – Against the World",
+      "platform": "Prime Video",
+      "tmdbId": 1641629,
+      "posterPath": "/nkEhDomjmPHJSA4Tx8pxv0NlKEy.jpg",
+      "genreIds": [
+        10749,
+        18
+      ],
+      "rating": 5.486,
+      "providersPL": [
+        "Prime Video"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1641629"
+    },
+    {
+      "rank": 8,
+      "title": "The Dating List",
+      "originalTitle": "The Dating List",
+      "platform": "Prime Video",
+      "tmdbId": 626036,
+      "posterPath": "/gMA0dLZ4lHIFv2JUDkfTu0eXNuD.jpg",
+      "genreIds": [
+        10770,
+        10749,
+        35
+      ],
+      "rating": 6.9,
+      "providersPL": [
+        "Prime Video"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/626036"
+    },
+    {
+      "rank": 9,
+      "title": "Uwikłani: Marfil",
+      "originalTitle": "Drawn Together",
+      "platform": "Prime Video",
+      "tmdbId": 1574238,
+      "posterPath": "/goVvXGQA4j8zySkDHepbvpS6izV.jpg",
+      "genreIds": [],
+      "rating": 0,
+      "providersPL": [
+        "Prime Video"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1574238"
+    },
+    {
+      "rank": 10,
+      "title": "Speak No Evil",
+      "originalTitle": "Speak No Evil",
+      "platform": "Prime Video",
+      "tmdbId": 1114513,
+      "posterPath": "/1fL2S8LKxCVE9KoPRBXeagmBtex.jpg",
+      "genreIds": [
+        27,
+        53
+      ],
+      "rating": 7.088,
+      "providersPL": [
+        "Prime Video"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1114513"
+    }
+  ],
+  "note": "Unofficial Polish daily ranking; published date may lag up to three days"
+}
