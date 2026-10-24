@@ -9,6 +9,31 @@ on:
 permissions:
   contents: write
 jobs:
+  netflix-hbomax-tv:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Netflix and HBO Max Polish daily TV top 10
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
+        run: python3 scripts/build_daily_netflix_hbo_tv.py
+      - name: Publish validated ranking
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3 4 5; do
+            git fetch origin feature/vod-source-probe
+            git reset --hard origin/feature/vod-source-probe
+            mkdir -p data
+            cp out/netflix_hbomax_daily_tv_pl.json data/netflix_hbomax_daily_tv_pl.json
+            git add data/netflix_hbomax_daily_tv_pl.json
+            if git diff --cached --quiet; then break; fi
+            git commit -m 'Update Netflix and HBO Max daily TV rankings [skip ci]'
+            if git push origin HEAD:feature/vod-source-probe; then break; fi
+            if [ "$attempt" = 5 ]; then exit 1; fi
+          done
   netflix-daily-films:
     runs-on: ubuntu-latest
     timeout-minutes: 8
