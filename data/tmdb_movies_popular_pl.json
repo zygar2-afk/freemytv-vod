@@ -365,8 +365,8 @@
       "title": "Jak przycinać róże",
       "releaseDate": "2026-04-23",
       "posterPath": "/vcZ3UUVmFNk90DBSrTBlTKCdbbE.jpg",
-      "popularityTMDB": 49.5675,
-      "rating": 5.713,
+      "popularityTMDB": 50.946,
+      "rating": 5.7,
       "genreIds": [
         35,
         18,
@@ -377,6 +377,25 @@
         "MUBI Amazon Channel"
       ],
       "tmdbUrl": "https://www.themoviedb.org/movie/1130948",
+      "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
+      "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
+    },
+    {
+      "tmdbId": 1228710,
+      "title": "Gwiezdne wojny: Mandalorian i Grogu",
+      "releaseDate": "2026-05-20",
+      "posterPath": "/ysLlsAxwgNSxBWHCgTKJrmjxpRQ.jpg",
+      "popularityTMDB": 47.2402,
+      "rating": 7.464,
+      "genreIds": [
+        28,
+        12,
+        878
+      ],
+      "providersPL": [
+        "Disney Plus"
+      ],
+      "tmdbUrl": "https://www.themoviedb.org/movie/1228710",
       "status": "POPULAR_NOW_SERIES_LEVEL_PROVIDER_MATCH",
       "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
     },
@@ -479,6 +498,6 @@
       "caveat": "TMDB popularity is not viewing figures; provider availability may lag."
     }
   ],
-  "candidateCount": 25,
-  "generatedAt": "2026-10-24T08:00:13.816946+00:00"
+  "candidateCount": 26,
+  "generatedAt": "2026-10-24T08:00:38.431854+00:00"
 }
