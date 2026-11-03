@@ -1,103 +1,312 @@
+
 #!/usr/bin/env python3
-"""Publish verified Polish VOD additions from a maintained input dataset.
-This DOES NOT scrape Filmweb or discover VOD premieres itself.
-"""
+"""FreeTV: codzienny katalog filmow i seriali z TMDB."""
+
 import datetime as dt
 import json
+import os
 import pathlib
 import sys
+import time
+import urllib.error
 import urllib.parse
+import urllib.request
+from zoneinfo import ZoneInfo
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-SOURCE = ROOT / 'data' / 'verified_titles.json'
-TARGET = ROOT / 'vod_recommendations.json'
-WARSAW = dt.timezone(dt.timedelta(hours=1))  # publication timestamp UTC is sufficient; dates evaluated in Warsaw separately
+OUTPUT = ROOT / "vod_recommendations.json"
+
+TOKEN = os.environ.get("TMDB_READ_TOKEN", "").strip()
+API = "https://api.themoviedb.org/3"
+
+LIMIT = 20
+MAX_PAGES = 8
+WARSAW = ZoneInfo("Europe/Warsaw")
 
 
-def valid_filmweb_url(value):
-    if not isinstance(value, str):
-        return False
-    url = urllib.parse.urlsplit(value)
-    return url.scheme == 'https' and url.hostname in ('filmweb.pl', 'www.filmweb.pl') and bool(url.path.strip('/'))
+def request(path, params):
+    if not TOKEN:
+        raise RuntimeError("Brak sekretu TMDB_READ_TOKEN")
+
+    query = urllib.parse.urlencode(params)
+    url = API + path + "?" + query
+
+    req = urllib.request.Request(
+        url,
+        headers={
+            "Authorization": "Bearer " + TOKEN,
+            "Accept": "application/json",
+            "User-Agent": "FreeTV-VOD-Feed/1.0",
+        },
+    )
+
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=25) as response:
+                return json.load(response)
+        except (urllib.error.URLError, TimeoutError):
+            if attempt == 2:
+                raise
+            time.sleep(2 * (attempt + 1))
 
 
-def validate(row, today):
-    if not isinstance(row, dict) or row.get('kind', 'movie') != 'movie':
-        return None
-    title = row.get('title', '')
-    if not isinstance(title, str) or not title.strip():
-        return None
+def date_days_ago(days):
+    today = dt.datetime.now(WARSAW).date()
+    return (today - dt.timedelta(days=days)).isoformat()
+
+
+def today_string():
+    return dt.datetime.now(WARSAW).date().isoformat()
+
+
+def safe_date(value):
     try:
-        added = dt.date.fromisoformat(row['vodAddedAt'])
-    except (ValueError, KeyError, TypeError):
+        return dt.date.fromisoformat(value)
+    except (TypeError, ValueError):
         return None
-    # Match 7 latest calendar dates, including today. Exclude tomorrow and older dates.
-    if not 0 <= (today - added).days <= 6:
-        return None
-    providers = row.get('providers')
-    if not isinstance(providers, list) or not providers or any(not isinstance(p, dict) or not isinstance(p.get('name'), str) or not p['name'].strip() for p in providers):
-        return None
-    # Explicit source for the actual POLISH VOD addition, not a cinema or general availability date.
-    vod_source = row.get('vodSource')
-    if not isinstance(vod_source, str) or not vod_source.startswith('https://'):
-        return None
-    fw = row.get('filmweb')
-    if not isinstance(fw, dict):
-        return None
-    rating = fw.get('userRating')
-    votes = fw.get('votes')
-    rating_url = fw.get('ratingSource', '')
-    editorial_url = fw.get('editorialSource', '')
-    rated = (type(rating) in (float, int) and type(votes) is int and
-             7 <= rating <= 10 and votes >= 100 and valid_filmweb_url(rating_url))
-    editorial = fw.get('editorialRecommended') is True and valid_filmweb_url(editorial_url)
-    if not rated and not editorial:
-        return None
-    # Refuse to transmit unsupported display claims, even when a manual record is malformed.
-    result = dict(row)
-    result['title'] = title.strip()
-    result['filmweb'] = dict(fw)
-    if not rated:
-        result['filmweb']['userRating'] = None
-        result['filmweb']['votes'] = 0
-        result['filmweb']['ratingSource'] = None
-    if not editorial:
-        result['filmweb']['editorialRecommended'] = False
-        result['filmweb']['editorialSource'] = None
-    image = row.get('artworkUrl', '')
-    image_url = urllib.parse.urlsplit(image) if isinstance(image, str) else None
-    if not image_url or image_url.scheme != 'https' or image_url.hostname != 'image.tmdb.org' or not image_url.path.startswith('/t/p/'):
-        result['artworkUrl'] = ''
-    return result
 
 
-def build():
-    source = json.loads(SOURCE.read_text(encoding='utf-8'))
-    if not isinstance(source, list):
-        raise ValueError('data/verified_titles.json must contain a JSON array')
-    today = dt.datetime.now(dt.timezone.utc).astimezone(__import__('zoneinfo').ZoneInfo('Europe/Warsaw')).date()
-    movies = []
+def collect(media_type, category):
+    """Pobieranie produkcji z dostepnoscia VOD w Polsce."""
+
+    found = []
     seen = set()
-    for row in source:
-        valid = validate(row, today)
-        if valid is None:
-            continue
-        key = (str(valid.get('tmdbId', '')), valid['title'].lower())
-        if key in seen:
-            continue
-        seen.add(key)
-        movies.append(valid)
-    movies.sort(key=lambda film: (film['vodAddedAt'], film['title']), reverse=True)
-    feed = {'region': 'PL', 'generatedAt': dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace('+00:00', 'Z'), 'movies': movies}
-    TARGET.write_text(json.dumps(feed, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    print(f'Published {len(movies)} verified film(s) from {len(source)} source record(s)')
-    if source and not movies:
-        print('No source records met freshness/evidence requirements; publishing an empty list.')
+
+    is_movie = media_type == "movie"
+    date_field = "primary_release_date" if is_movie else "first_air_date"
+    api_date_field = "release_date" if is_movie else "first_air_date"
+
+    for page in range(1, MAX_PAGES + 1):
+        params = {
+            "language": "pl-PL",
+            "region": "PL",
+            "watch_region": "PL",
+            "with_watch_monetization_types": "flatrate|free|ads|rent|buy",
+            "include_adult": "false",
+            "sort_by": (
+                date_field + ".desc"
+                if category == "new"
+                else "popularity.desc"
+            ),
+            "page": page,
+        }
+
+        if category == "new":
+            params[date_field + ".gte"] = date_days_ago(29)
+            params[date_field + ".lte"] = today_string()
+
+        data = request("/discover/" + media_type, params)
+
+        for item in data.get("results", []):
+            tmdb_id = item.get("id")
+            if not isinstance(tmdb_id, int) or tmdb_id in seen:
+                continue
+
+            seen.add(tmdb_id)
+
+            original = (
+                item.get("original_title")
+                if is_movie
+                else item.get("original_name")
+            ) or ""
+
+            title = (
+                item.get("title")
+                if is_movie
+                else item.get("name")
+            ) or original
+
+            date_value = item.get(api_date_field) or ""
+            premiered = safe_date(date_value)
+
+            if category == "new":
+                if premiered is None:
+                    continue
+
+                age = (
+                    dt.datetime.now(WARSAW).date() - premiered
+                ).days
+
+                if not 0 <= age <= 29:
+                    continue
+
+            poster_path = item.get("poster_path")
+            if not poster_path:
+                continue
+
+            details = request(
+                "/" + media_type + "/" + str(tmdb_id),
+                {
+                    "language": "pl-PL",
+                    "append_to_response": "watch/providers",
+                },
+            )
+
+            providers_data = (
+                details.get("watch/providers", {})
+                .get("results", {})
+                .get("PL", {})
+            )
+
+            providers = []
+            provider_ids = set()
+
+            for group in ("flatrate", "free", "ads", "rent", "buy"):
+                for provider in providers_data.get(group, []):
+                    provider_id = provider.get("provider_id")
+                    name = provider.get("provider_name")
+
+                    if provider_id in provider_ids or not name:
+                        continue
+
+                    provider_ids.add(provider_id)
+                    providers.append(name)
+
+            # Nie pokazujemy tytulow bez potwierdzonej
+            # aktualnej dostepnosci VOD na TMDB dla Polski.
+            if not providers:
+                continue
+
+            description = details.get("overview") or item.get(
+                "overview"
+            ) or ""
+
+            result = {
+                "kind": media_type,
+                "tmdbId": tmdb_id,
+                "title": title.strip(),
+                "originalTitle": original.strip(),
+                "description": description.strip(),
+                "releaseDate": date_value,
+                "year": date_value[:4] if date_value else "",
+                "posterUrl": (
+                    "https://image.tmdb.org/t/p/w500"
+                    + poster_path
+                ),
+                "artworkUrl": (
+                    "https://image.tmdb.org/t/p/w780"
+                    + poster_path
+                ),
+                "rating": details.get("vote_average", 0),
+                "ratingSource": "TMDB",
+                "providers": providers,
+                "availabilityRegion": "PL",
+                "source": "TMDB",
+                "url": (
+                    "https://www.themoviedb.org/"
+                    + media_type
+                    + "/"
+                    + str(tmdb_id)
+                ),
+            }
+
+            if category == "new":
+                result["newnessBasis"] = "production_release_date"
+                result["vodAddedAt"] = None
+                result["vodAdditionVerified"] = False
+
+            found.append(result)
+
+            if len(found) >= LIMIT:
+                return found
+
+        total_pages = data.get("total_pages", 1)
+        if page >= total_pages:
+            break
+
+    return found
 
 
-if __name__ == '__main__':
+def remove_duplicates(new_items, popular_items):
+    """Jeden tytul tylko w jednej sekcji tego samego typu."""
+
+    new_ids = {item["tmdbId"] for item in new_items}
+
+    popular = [
+        item for item in popular_items
+        if item["tmdbId"] not in new_ids
+    ]
+
+    return popular[:LIMIT]
+
+
+def main():
+    if not TOKEN:
+        raise RuntimeError(
+            "Nie ustawiono TMDB_READ_TOKEN w GitHub Actions"
+        )
+
+    print("Pobieranie nowosci filmowych...")
+    new_movies = collect("movie", "new")
+
+    print("Pobieranie popularnych filmow...")
+    popular_movies = collect("movie", "popular")
+
+    print("Pobieranie nowosci serialowych...")
+    new_series = collect("tv", "new")
+
+    print("Pobieranie popularnych seriali...")
+    popular_series = collect("tv", "popular")
+
+    popular_movies = remove_duplicates(
+        new_movies, popular_movies
+    )
+    popular_series = remove_duplicates(
+        new_series, popular_series
+    )
+
+    now = dt.datetime.now(dt.timezone.utc)
+
+    feed = {
+        "region": "PL",
+        "generatedAt": now.replace(
+            microsecond=0
+        ).isoformat().replace("+00:00", "Z"),
+        "source": "TMDB",
+        "newnessPolicy": (
+            "Recent releases from the last 30 calendar days "
+            "currently listed as available on Polish VOD. "
+            "VOD addition dates are not verified."
+        ),
+        "filmwebVerified": False,
+        "newMovies": new_movies,
+        "popularMovies": popular_movies,
+        "newSeries": new_series,
+        "popularSeries": popular_series,
+        "movies": new_movies + popular_movies,
+        "series": new_series + popular_series,
+    }
+
+    # Nie nadpisuj ostatniego katalogu, gdy API
+    # nie zwrocilo zadnych pozycji.
+    if not any((
+        new_movies,
+        popular_movies,
+        new_series,
+        popular_series,
+    )):
+        raise RuntimeError(
+            "TMDB nie zwrocilo zadnych pozycji. "
+            "Poprzedni katalog pozostaje bez zmian."
+        )
+
+    OUTPUT.write_text(
+        json.dumps(feed, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
+    print(
+        "Zapisano: "
+        f"{len(new_movies)} nowych filmow, "
+        f"{len(popular_movies)} popularnych filmow, "
+        f"{len(new_series)} nowych seriali, "
+        f"{len(popular_series)} popularnych seriali."
+    )
+
+
+if __name__ == "__main__":
     try:
-        build()
-    except (ValueError, OSError, json.JSONDecodeError) as exc:
-        print(f'ERROR: {exc}', file=sys.stderr)
-        raise SystemExit(1)
+        main()
+    except Exception as error:
+        print("BLAD:", error, file=sys.stderr)
+        sys.exit(1)
