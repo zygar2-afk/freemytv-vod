@@ -84,6 +84,57 @@ def request(path, params):
         "in the repository Actions secrets."
     )
 
+
+def select_trailer(videos):
+    """Prefer official YouTube trailers; use teasers only as a fallback."""
+    candidates = []
+    for video in videos:
+        if (video.get("site") != "YouTube" or not video.get("key")):
+            continue
+        if video.get("type") not in ("Trailer", "Teaser"):
+            continue
+        key = video["key"]
+        if not isinstance(key, str) or len(key) != 11:
+            continue
+        candidates.append(video)
+    if not candidates:
+        return None
+    candidates.sort(
+        key=lambda v: (
+            v.get("type") == "Trailer",
+            v.get("official") is True,
+            v.get("iso_639_1") == "pl",
+            v.get("published_at", ""),
+        ),
+        reverse=True,
+    )
+    return candidates[0]["key"]
+
+
+def trailer_key(media_type, tmdb_id, details):
+    videos = details.get("videos", {}).get("results", [])
+    key = select_trailer(videos)
+    if key:
+        return key
+    english = request(
+        f"/{media_type}/{tmdb_id}/videos", {"language": "en-US"}
+    )
+    return select_trailer(english.get("results", []))
+
+
+def genre_names(details):
+    """TMDB localized (pl-PL) genres. Limit cards to two."""
+    genres = details.get("genres", [])
+    names = []
+    for genre in genres:
+        name = genre.get("name", "").strip()
+        if name and name not in names:
+            names.append(name)
+        if len(names) == 2:
+            break
+    return names
+
+
 def date_days_ago(days):
     today = dt.datetime.now(WARSAW).date()
     return (today - dt.timedelta(days=days)).isoformat()
@@ -172,7 +223,7 @@ def collect(media_type, category):
                 "/" + media_type + "/" + str(tmdb_id),
                 {
                     "language": "pl-PL",
-                    "append_to_response": "watch/providers",
+                    "append_to_response": "watch/providers,videos",
                 },
             )
 
@@ -205,6 +256,9 @@ def collect(media_type, category):
                 "overview"
             ) or ""
 
+            trailer = trailer_key(media_type, tmdb_id, details)
+            genres = genre_names(details)
+
             result = {
                 "kind": media_type,
                 "tmdbId": tmdb_id,
@@ -223,6 +277,12 @@ def collect(media_type, category):
                 ),
                 "rating": details.get("vote_average", 0),
                 "ratingSource": "TMDB",
+                "genres": genres,
+                "trailerYoutubeKey": trailer,
+                "trailerUrl": (
+                    "https://www.youtube.com/watch?v=" + trailer
+                    if trailer else None
+                ),
                 "providers": providers,
                 "availabilityRegion": "PL",
                 "source": "TMDB",
