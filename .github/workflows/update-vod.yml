@@ -3,8 +3,9 @@ name: Update Polish VOD recommendations
 
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: "15 6 * * *"
+    - cron: "0 7 * * *"
 
 permissions:
   contents: write
@@ -16,7 +17,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
 
     steps:
       - name: Checkout repository
@@ -27,7 +28,9 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Generate verified VOD feed
+      - name: Generate movies and series from TMDB
+        env:
+          TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
         run: python scripts/build_feed.py
 
       - name: Publish updated JSON
@@ -39,6 +42,7 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add vod_recommendations.json
-          git commit -m "Update VOD recommendations"
+          git commit -m "Update movies and series from TMDB"
           git push
