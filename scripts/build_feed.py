@@ -17,6 +17,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "vod_recommendations.json"
 
 TOKEN = os.environ.get("TMDB_READ_TOKEN", "").strip()
+API_KEY = os.environ.get("TMDB_API_KEY", "").strip()
 API = "https://api.themoviedb.org/3"
 
 LIMIT = 20
@@ -25,30 +26,63 @@ WARSAW = ZoneInfo("Europe/Warsaw")
 
 
 def request(path, params):
-    if not TOKEN:
-        raise RuntimeError("Brak sekretu TMDB_READ_TOKEN")
+    """Use the TMDB v3 key first, or fall back to a valid v4 read token.
 
-    query = urllib.parse.urlencode(params)
-    url = API + path + "?" + query
+    Never log or include credentials in error output.
+    """
+    if not TOKEN and not API_KEY:
+        raise RuntimeError("Brak TMDB_API_KEY oraz TMDB_READ_TOKEN w GitHub Secrets")
 
-    req = urllib.request.Request(
-        url,
-        headers={
+    credentials = []
+    if API_KEY:
+        credentials.append(("TMDB_API_KEY", {"api_key": API_KEY}, {}))
+    if TOKEN:
+        credentials.append(("TMDB_READ_TOKEN", {}, {
             "Authorization": "Bearer " + TOKEN,
-            "Accept": "application/json",
-            "User-Agent": "FreeTV-VOD-Feed/1.0",
-        },
+        }))
+
+    for name, auth_query, auth_headers in credentials:
+        query = urllib.parse.urlencode({**params, **auth_query})
+        url = API + path + "?" + query
+        req = urllib.request.Request(
+            url,
+            headers={
+                **auth_headers,
+                "Accept": "application/json",
+                "User-Agent": "FreeTV-VOD-Feed/1.1",
+            },
+        )
+        for attempt in range(3):
+            try:
+                with urllib.request.urlopen(req, timeout=25) as response:
+                    return json.load(response)
+            except urllib.error.HTTPError as error:
+                if error.code in (401, 403):
+                    print(
+                        f"TMDB authentication rejected {name} (HTTP {error.code}); "
+                        "trying another configured credential.",
+                        file=sys.stderr,
+                    )
+                    break
+                if error.code == 429 or 500 <= error.code < 600:
+                    if attempt < 2:
+                        time.sleep(2 * (attempt + 1))
+                        continue
+                raise RuntimeError(
+                    f"TMDB HTTP {error.code} on {path}; credentials hidden"
+                ) from None
+            except (urllib.error.URLError, TimeoutError):
+                if attempt == 2:
+                    raise RuntimeError(
+                        f"TMDB network error on {path}; credentials hidden"
+                    ) from None
+                time.sleep(2 * (attempt + 1))
+
+    raise RuntimeError(
+        "TMDB rejected every configured credential (401/403). "
+        "Set a genuine TMDB v3 API key or v4 API Read Access Token "
+        "in the repository Actions secrets."
     )
-
-    for attempt in range(3):
-        try:
-            with urllib.request.urlopen(req, timeout=25) as response:
-                return json.load(response)
-        except (urllib.error.URLError, TimeoutError):
-            if attempt == 2:
-                raise
-            time.sleep(2 * (attempt + 1))
-
 
 def date_days_ago(days):
     today = dt.datetime.now(WARSAW).date()
@@ -231,9 +265,9 @@ def remove_duplicates(new_items, popular_items):
 
 
 def main():
-    if not TOKEN:
+    if not TOKEN and not API_KEY:
         raise RuntimeError(
-            "Nie ustawiono TMDB_READ_TOKEN w GitHub Actions"
+            "Nie ustawiono TMDB_API_KEY ani TMDB_READ_TOKEN w GitHub Actions"
         )
 
     print("Pobieranie nowosci filmowych...")
