@@ -1,6 +1,6 @@
 {
   "region": "PL",
-  "generatedAt": "2026-11-03T20:11:02Z",
+  "generatedAt": "2026-11-03T20:30:52Z",
   "source": "TMDB",
   "newnessPolicy": "Recent releases from the last 30 calendar days currently listed as available on Polish VOD. VOD addition dates are not verified.",
   "filmwebVerified": false,
@@ -17,6 +17,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/i4nQn6GJznN02EcGOQCetNoU4mt.jpg",
       "rating": 6.9,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat",
+        "Horror"
+      ],
+      "trailerYoutubeKey": "iOjzJsHS0M0",
+      "trailerUrl": "https://www.youtube.com/watch?v=iOjzJsHS0M0",
       "providers": [
         "HBO Max"
       ],
@@ -39,6 +45,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/suSGUJNCgdVVjCXcJBDtjKxWTlg.jpg",
       "rating": 0.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Animacja",
+        "Familijny"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "Netflix"
       ],
@@ -61,6 +73,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/xTJYIPjyuCbkc7zEtfAFJfVDSV5.jpg",
       "rating": 0.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Familijny",
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "Jg8Gz0evaZw",
+      "trailerUrl": "https://www.youtube.com/watch?v=Jg8Gz0evaZw",
       "providers": [
         "Netflix"
       ],
@@ -83,6 +101,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/ofaxzyLkBnRL9UNwriLFppjSnuR.jpg",
       "rating": 0.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dokumentalny",
+        "Historyczny"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "DocAlliance Films"
       ],
@@ -105,6 +129,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/56DCMhPl45B78y4Mo8GquugW3w9.jpg",
       "rating": 0.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Horror",
+        "Tajemnica"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "FOUND TV"
       ],
@@ -127,6 +157,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/xUMZvvkriIEMmfFvEr7uXhz19oV.jpg",
       "rating": 7.458,
       "ratingSource": "TMDB",
+      "genres": [
+        "Komedia"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "Netflix"
       ],
@@ -149,6 +184,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/vBqVyTpzv5RzHSsQdu8ECxAqSvd.jpg",
       "rating": 6.5,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dokumentalny"
+      ],
+      "trailerYoutubeKey": "5vri0LVrMIE",
+      "trailerUrl": "https://www.youtube.com/watch?v=5vri0LVrMIE",
       "providers": [
         "Netflix"
       ],
@@ -171,6 +211,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/sMPIiaOoyTr5o6s602KIVMJX3P2.jpg",
       "rating": 6.4,
       "ratingSource": "TMDB",
+      "genres": [
+        "Thriller",
+        "Dramat"
+      ],
+      "trailerYoutubeKey": "8hVLhaK619k",
+      "trailerUrl": "https://www.youtube.com/watch?v=8hVLhaK619k",
       "providers": [
         "Netflix"
       ],
@@ -193,6 +239,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/7lSCZqdOhjsCI1BqZMUr8eNOOl5.jpg",
       "rating": 7.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dokumentalny"
+      ],
+      "trailerYoutubeKey": "gAIhw9wCb5c",
+      "trailerUrl": "https://www.youtube.com/watch?v=gAIhw9wCb5c",
       "providers": [
         "Netflix"
       ],
@@ -215,6 +266,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/6MqBwshl0Lu9a5ImgFbdBX7aA69.jpg",
       "rating": 0.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Horror"
+      ],
+      "trailerYoutubeKey": "XHnl_0yi5vo",
+      "trailerUrl": "https://www.youtube.com/watch?v=XHnl_0yi5vo",
       "providers": [
         "Plex"
       ],
@@ -237,6 +293,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/mipoSv2lyhlfiKhGSUJHNVnlqfS.jpg",
       "rating": 0.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dokumentalny"
+      ],
+      "trailerYoutubeKey": "U7InGWM1spM",
+      "trailerUrl": "https://www.youtube.com/watch?v=U7InGWM1spM",
       "providers": [
         "Apple TV Store"
       ],
@@ -259,6 +320,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/w3YJx1PPPC6aiVKusxfc9QA0uYS.jpg",
       "rating": 6.527,
       "ratingSource": "TMDB",
+      "genres": [
+        "Horror",
+        "Akcja"
+      ],
+      "trailerYoutubeKey": "hj6Cer6bJUI",
+      "trailerUrl": "https://www.youtube.com/watch?v=hj6Cer6bJUI",
       "providers": [
         "CDA Premium"
       ],
@@ -281,6 +348,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/ahSqZAAHU4PgNdbKdGPj332O7As.jpg",
       "rating": 5.868,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat",
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "XjUt3Fv_f-Y",
+      "trailerUrl": "https://www.youtube.com/watch?v=XjUt3Fv_f-Y",
       "providers": [
         "Netflix"
       ],
@@ -303,6 +376,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/6DZcdjkoIR6xPxSn81jqWPYNKXb.jpg",
       "rating": 0.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat"
+      ],
+      "trailerYoutubeKey": "1xvScjfZC5Q",
+      "trailerUrl": "https://www.youtube.com/watch?v=1xvScjfZC5Q",
       "providers": [
         "Filmzie"
       ],
@@ -325,6 +403,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/45aRvdvuLz2mooiHAe3j1bCFfHL.jpg",
       "rating": 5.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Komedia"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "Netflix"
       ],
@@ -347,6 +430,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/wVZXTyC92jRU7lwn5QjhDs7FORk.jpg",
       "rating": 0.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dokumentalny"
+      ],
+      "trailerYoutubeKey": "MZAV0HKRDVk",
+      "trailerUrl": "https://www.youtube.com/watch?v=MZAV0HKRDVk",
       "providers": [
         "HBO Max"
       ],
@@ -369,6 +457,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/eKeRcZ7otaDAR3uEtM1e4RcqIGy.jpg",
       "rating": 7.672,
       "ratingSource": "TMDB",
+      "genres": [
+        "Romans",
+        "Thriller"
+      ],
+      "trailerYoutubeKey": "-sV69CJwUwU",
+      "trailerUrl": "https://www.youtube.com/watch?v=-sV69CJwUwU",
       "providers": [
         "Amazon Prime Video"
       ],
@@ -391,6 +485,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/49Od5H7C5fZcgySoWPPu5cFCXaS.jpg",
       "rating": 0.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dokumentalny"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "TVP"
       ],
@@ -413,6 +512,9 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/tJqbCsOvPb4byUfiFaLwVyTwIMj.jpg",
       "rating": 9.0,
       "ratingSource": "TMDB",
+      "genres": [],
+      "trailerYoutubeKey": "Q5YNPfPsenY",
+      "trailerUrl": "https://www.youtube.com/watch?v=Q5YNPfPsenY",
       "providers": [
         "Apple TV Store"
       ],
@@ -435,6 +537,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/d1NVILoUn4hI8zEFNKoP0K5WDgO.jpg",
       "rating": 10.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dokumentalny",
+        "Muzyczny"
+      ],
+      "trailerYoutubeKey": "jRig7JvOpWg",
+      "trailerUrl": "https://www.youtube.com/watch?v=jRig7JvOpWg",
       "providers": [
         "Netflix"
       ],
@@ -459,6 +567,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/gKMDmGde8aAD8M6dvm6j7wciSbJ.jpg",
       "rating": 8.539,
       "ratingSource": "TMDB",
+      "genres": [
+        "Akcja",
+        "Thriller"
+      ],
+      "trailerYoutubeKey": "_PZpmTj1Q8Q",
+      "trailerUrl": "https://www.youtube.com/watch?v=_PZpmTj1Q8Q",
       "providers": [
         "HBO Max",
         "Apple TV Store",
@@ -485,6 +599,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/sp8BH41oNdYwIKQFswqluNYa3SM.jpg",
       "rating": 8.486,
       "ratingSource": "TMDB",
+      "genres": [
+        "Sci-Fi",
+        "Akcja"
+      ],
+      "trailerYoutubeKey": "P3uI5sLosKU",
+      "trailerUrl": "https://www.youtube.com/watch?v=P3uI5sLosKU",
       "providers": [
         "Polsat Box Go",
         "Apple TV Store",
@@ -509,6 +629,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/ptWQV5lfa91U1ndxW566kYTvKo6.jpg",
       "rating": 6.17,
       "ratingSource": "TMDB",
+      "genres": [
+        "Akcja",
+        "Thriller"
+      ],
+      "trailerYoutubeKey": "BIEzwpyawtw",
+      "trailerUrl": "https://www.youtube.com/watch?v=BIEzwpyawtw",
       "providers": [
         "Amazon Prime Video"
       ],
@@ -528,6 +654,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/yMapvyFKryN8lgR1o0wD4tsCUw3.jpg",
       "rating": 8.207,
       "ratingSource": "TMDB",
+      "genres": [
+        "Familijny",
+        "Animacja"
+      ],
+      "trailerYoutubeKey": "WEeFtmQAGTA",
+      "trailerUrl": "https://www.youtube.com/watch?v=WEeFtmQAGTA",
       "providers": [
         "Disney Plus",
         "Apple TV Store",
@@ -552,6 +684,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/2XTAPrXgZeHwGNrH3P48ojlbMJ.jpg",
       "rating": 7.3,
       "ratingSource": "TMDB",
+      "genres": [
+        "Thriller"
+      ],
+      "trailerYoutubeKey": "Krs0VDIjhmE",
+      "trailerUrl": "https://www.youtube.com/watch?v=Krs0VDIjhmE",
       "providers": [
         "Polsat Box Go",
         "Player",
@@ -576,6 +713,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/qkAwiwIrVrJQHwE4BhewiD6DUAh.jpg",
       "rating": 7.4,
       "ratingSource": "TMDB",
+      "genres": [
+        "Horror",
+        "Sci-Fi"
+      ],
+      "trailerYoutubeKey": "mNd1gb19A-c",
+      "trailerUrl": "https://www.youtube.com/watch?v=mNd1gb19A-c",
       "providers": [
         "Amazon Video"
       ],
@@ -595,6 +738,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/kywmjGFWDlOsmQEyPq63fJFcBXy.jpg",
       "rating": 7.221,
       "ratingSource": "TMDB",
+      "genres": [
+        "Akcja",
+        "Thriller"
+      ],
+      "trailerYoutubeKey": "-xSxaE1ClEE",
+      "trailerUrl": "https://www.youtube.com/watch?v=-xSxaE1ClEE",
       "providers": [
         "Apple TV Store",
         "Player",
@@ -619,6 +768,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/toCKmrFAgxOfehUAxo59ATIEcdw.jpg",
       "rating": 7.7,
       "ratingSource": "TMDB",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "trailerYoutubeKey": "gXjurDkYnEM",
+      "trailerUrl": "https://www.youtube.com/watch?v=gXjurDkYnEM",
       "providers": [
         "Polsat Box Go",
         "Apple TV Store",
@@ -643,6 +798,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/lNXeEpg4yLSRwXwOeR5lbPgwbqL.jpg",
       "rating": 6.07,
       "ratingSource": "TMDB",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "trailerYoutubeKey": "4DowjB87tRE",
+      "trailerUrl": "https://www.youtube.com/watch?v=4DowjB87tRE",
       "providers": [
         "Polsat Box Go",
         "Player",
@@ -667,6 +828,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/jlP8XDjZN89GrpM3je5Uf8Grqx8.jpg",
       "rating": 6.076,
       "ratingSource": "TMDB",
+      "genres": [
+        "Akcja",
+        "Thriller"
+      ],
+      "trailerYoutubeKey": "l5Luvr9TRRc",
+      "trailerUrl": "https://www.youtube.com/watch?v=l5Luvr9TRRc",
       "providers": [
         "Amazon Video",
         "Pilot WP"
@@ -687,6 +854,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/tRuNcKYde78DOGjpbkBZBwWeTYI.jpg",
       "rating": 7.9,
       "ratingSource": "TMDB",
+      "genres": [
+        "Fantasy",
+        "Animacja"
+      ],
+      "trailerYoutubeKey": "IoYahD_xNR0",
+      "trailerUrl": "https://www.youtube.com/watch?v=IoYahD_xNR0",
       "providers": [
         "Disney Plus",
         "Apple TV Store",
@@ -711,6 +884,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/lFaMt4I8LiQAGW9Rb5gfGFXbvOY.jpg",
       "rating": 7.578,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat"
+      ],
+      "trailerYoutubeKey": "qC0HZLUXRXw",
+      "trailerUrl": "https://www.youtube.com/watch?v=qC0HZLUXRXw",
       "providers": [
         "Netflix"
       ],
@@ -730,6 +908,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/6NOpwEq5LYHdaXkGJ3hL46x2Zai.jpg",
       "rating": 7.641,
       "ratingSource": "TMDB",
+      "genres": [
+        "Akcja",
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "7xfqITrMDcI",
+      "trailerUrl": "https://www.youtube.com/watch?v=7xfqITrMDcI",
       "providers": [
         "Apple TV",
         "Apple TV Amazon Channel"
@@ -750,6 +934,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/yLMbHFNQ900b5M7kXujcJ5tkGrv.jpg",
       "rating": 8.17,
       "ratingSource": "TMDB",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "trailerYoutubeKey": "gMC8kkwbIQQ",
+      "trailerUrl": "https://www.youtube.com/watch?v=gMC8kkwbIQQ",
       "providers": [
         "Apple TV Store",
         "Player",
@@ -774,6 +964,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/ryBlb6XdU02fp0EZWVKDaqFjFvz.jpg",
       "rating": 5.744,
       "ratingSource": "TMDB",
+      "genres": [
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "pV32AcPa-iA",
+      "trailerUrl": "https://www.youtube.com/watch?v=pV32AcPa-iA",
       "providers": [
         "Amazon Prime Video"
       ],
@@ -793,6 +988,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/s20qugrUD5mPGQdyQ1LMLCYUOmy.jpg",
       "rating": 4.041,
       "ratingSource": "TMDB",
+      "genres": [
+        "Sci-Fi",
+        "Thriller"
+      ],
+      "trailerYoutubeKey": "d9erkpdh5o0",
+      "trailerUrl": "https://www.youtube.com/watch?v=d9erkpdh5o0",
       "providers": [
         "Amazon Prime Video"
       ],
@@ -814,6 +1015,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/gPA6rma2MEClH1YU57pIWQDbtWY.jpg",
       "rating": 5.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "e1e0ZlP5o08",
+      "trailerUrl": "https://www.youtube.com/watch?v=e1e0ZlP5o08",
       "providers": [
         "Netflix"
       ],
@@ -836,6 +1042,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/3CmUTPm9gn9oiAnvSPr9WkLLb3Y.jpg",
       "rating": 4.2,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat",
+        "Tajemnica"
+      ],
+      "trailerYoutubeKey": "ARYGWtBnQEA",
+      "trailerUrl": "https://www.youtube.com/watch?v=ARYGWtBnQEA",
       "providers": [
         "Netflix"
       ],
@@ -858,6 +1070,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/ThhNhFCIFsYrOtJ2jXkb1ulOd0.jpg",
       "rating": 4.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Tajemnica"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "Netflix"
       ],
@@ -880,6 +1097,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/up1YBgPq6lC0ut2JvjguNwLiXw4.jpg",
       "rating": 8.5,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat",
+        "Kryminał"
+      ],
+      "trailerYoutubeKey": "5J6ZiYIyIiA",
+      "trailerUrl": "https://www.youtube.com/watch?v=5J6ZiYIyIiA",
       "providers": [
         "Netflix"
       ],
@@ -902,6 +1125,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/yyA9CI8BLNg6LtVRvmVxki4xiGb.jpg",
       "rating": 7.5,
       "ratingSource": "TMDB",
+      "genres": [
+        "Tajemnica"
+      ],
+      "trailerYoutubeKey": "Sn2ZCxOxsN0",
+      "trailerUrl": "https://www.youtube.com/watch?v=Sn2ZCxOxsN0",
       "providers": [
         "Netflix"
       ],
@@ -924,6 +1152,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/tdnHaR0vlKMQbjmaCs2V3LDmzSd.jpg",
       "rating": 6.5,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat",
+        "Kryminał"
+      ],
+      "trailerYoutubeKey": "NwJhml1_D54",
+      "trailerUrl": "https://www.youtube.com/watch?v=NwJhml1_D54",
       "providers": [
         "Netflix"
       ],
@@ -946,6 +1180,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/zp5lT15wR0cfCYcR12DXcVNsrnh.jpg",
       "rating": 8.667,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dokumentalny"
+      ],
+      "trailerYoutubeKey": "e5ExUsk6-OE",
+      "trailerUrl": "https://www.youtube.com/watch?v=e5ExUsk6-OE",
       "providers": [
         "Netflix"
       ],
@@ -968,6 +1207,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/s1A6UOu8IOmw0kJXohlitMRiwQb.jpg",
       "rating": 7.188,
       "ratingSource": "TMDB",
+      "genres": [
+        "Tajemnica",
+        "Dramat"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "Netflix"
       ],
@@ -990,6 +1235,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/iB5PVhe5T6nDxtN6D6cUTPZXT9M.jpg",
       "rating": 7.625,
       "ratingSource": "TMDB",
+      "genres": [
+        "Kryminał",
+        "Dramat"
+      ],
+      "trailerYoutubeKey": "AaEy1f2Dgys",
+      "trailerUrl": "https://www.youtube.com/watch?v=AaEy1f2Dgys",
       "providers": [
         "Apple TV",
         "Apple TV Amazon Channel"
@@ -1013,6 +1264,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/8vPbO9RrrduzxXxkOX7SnHZuqXg.jpg",
       "rating": 0.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "Netflix"
       ],
@@ -1035,6 +1291,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/kPE4g5mBBQ7luAPlFcYwyfH7eOQ.jpg",
       "rating": 7.192,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dokumentalny"
+      ],
+      "trailerYoutubeKey": "_iM1AOFxoDI",
+      "trailerUrl": "https://www.youtube.com/watch?v=_iM1AOFxoDI",
       "providers": [
         "Netflix"
       ],
@@ -1057,6 +1318,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/e6VN49hyQGuY5oQ1ZRQWX9aHhJ5.jpg",
       "rating": 0.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Reality"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "Hayu"
       ],
@@ -1079,6 +1345,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/klTvQAof4mGA4rQhvhKy14PDDQn.jpg",
       "rating": 3.5,
       "ratingSource": "TMDB",
+      "genres": [
+        "Reality"
+      ],
+      "trailerYoutubeKey": "nAl3qxAHcT0",
+      "trailerUrl": "https://www.youtube.com/watch?v=nAl3qxAHcT0",
       "providers": [
         "Disney Plus"
       ],
@@ -1101,6 +1372,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/iTVhDUbzUFUJ18jrcYM4rw7qGk.jpg",
       "rating": 7.2,
       "ratingSource": "TMDB",
+      "genres": [
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "SO4CU9P8--8",
+      "trailerUrl": "https://www.youtube.com/watch?v=SO4CU9P8--8",
       "providers": [
         "Netflix"
       ],
@@ -1123,6 +1399,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/nltGG4HEkyQIYpmRB0hAuTpC3jf.jpg",
       "rating": 8.5,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat"
+      ],
+      "trailerYoutubeKey": "eojaHI20G5g",
+      "trailerUrl": "https://www.youtube.com/watch?v=eojaHI20G5g",
       "providers": [
         "Amazon Prime Video"
       ],
@@ -1145,6 +1426,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/z6WSxbaMdFQ9OLeHihaPJyVND4D.jpg",
       "rating": 0.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "Amazon Prime Video"
       ],
@@ -1167,6 +1453,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/lMaSCFbCUbwR80DEAcxPe2nUFHv.jpg",
       "rating": 0.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dokumentalny"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "HBO Max"
       ],
@@ -1189,6 +1480,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/anbnH36wydXKxfNISOXb0afFeF1.jpg",
       "rating": 5.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Komedia",
+        "Dramat"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "Netflix"
       ],
@@ -1211,6 +1508,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/ax5C1W79usiYKDJkgTOAZrDKwmj.jpg",
       "rating": 4.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Akcja i Przygoda",
+        "War & Politics"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "Netflix"
       ],
@@ -1233,6 +1536,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/4JiGXFs7rQiHJO1m39ExECppTh0.jpg",
       "rating": 7.294,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat",
+        "Sci-Fi & Fantasy"
+      ],
+      "trailerYoutubeKey": "q_woHkkYhdg",
+      "trailerUrl": "https://www.youtube.com/watch?v=q_woHkkYhdg",
       "providers": [
         "HBO Max"
       ],
@@ -1257,6 +1566,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/4D6yvXySjV3XqX8eNmZzL1uZkUm.jpg",
       "rating": 8.4,
       "ratingSource": "TMDB",
+      "genres": [
+        "Kryminał",
+        "Dramat"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "Netflix",
         "Amazon Prime Video",
@@ -1278,6 +1593,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/b34jPzmB0wZy7EjUZoleXOl2RRI.jpg",
       "rating": 8.1,
       "ratingSource": "TMDB",
+      "genres": [
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "cjJLEYMzpjc",
+      "trailerUrl": "https://www.youtube.com/watch?v=cjJLEYMzpjc",
       "providers": [
         "Disney Plus"
       ],
@@ -1295,8 +1615,13 @@
       "year": "2005",
       "posterUrl": "https://image.tmdb.org/t/p/w500/2kND8XyGerHlxwZFH1NRGc6HJCy.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/2kND8XyGerHlxwZFH1NRGc6HJCy.jpg",
-      "rating": 8.6,
+      "rating": 8.584,
       "ratingSource": "TMDB",
+      "genres": [
+        "Komedia"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "Netflix",
         "Amazon Prime Video",
@@ -1320,6 +1645,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/yZevl2vHQgmosfwUdVNzviIfaWS.jpg",
       "rating": 7.739,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat",
+        "Sci-Fi & Fantasy"
+      ],
+      "trailerYoutubeKey": "xzgAU1e72Nc",
+      "trailerUrl": "https://www.youtube.com/watch?v=xzgAU1e72Nc",
       "providers": [
         "Netflix",
         "Amazon Video"
@@ -1340,6 +1671,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/eKGs3ujcQXc1BxoB9FjCOKlwaYZ.jpg",
       "rating": 8.3,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat",
+        "Sci-Fi & Fantasy"
+      ],
+      "trailerYoutubeKey": "RO3Qp_XdR0w",
+      "trailerUrl": "https://www.youtube.com/watch?v=RO3Qp_XdR0w",
       "providers": [
         "Netflix",
         "Amazon Prime Video",
@@ -1361,6 +1698,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/9vAuFHqJpuwav4MUW7JbC4BbXf8.jpg",
       "rating": 7.909,
       "ratingSource": "TMDB",
+      "genres": [
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "rbpTUPisA78",
+      "trailerUrl": "https://www.youtube.com/watch?v=rbpTUPisA78",
       "providers": [
         "Disney Plus"
       ],
@@ -1380,6 +1722,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/pHNhUwSXuDQ9jPZOCb8SgJaQZsc.jpg",
       "rating": 7.961,
       "ratingSource": "TMDB",
+      "genres": [
+        "Kryminał",
+        "Dramat"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "Netflix",
         "Amazon Prime Video",
@@ -1403,6 +1751,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/txYCbLirXJBxAebZ3SEhgAT91YV.jpg",
       "rating": 8.562,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat"
+      ],
+      "trailerYoutubeKey": "MczMB8nU1sY",
+      "trailerUrl": "https://www.youtube.com/watch?v=MczMB8nU1sY",
       "providers": [
         "Netflix",
         "Amazon Prime Video",
@@ -1425,6 +1778,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/5hKrI8ZWrIlax6Mw5HibjcEAAFD.jpg",
       "rating": 8.245,
       "ratingSource": "TMDB",
+      "genres": [
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "hQXKyIG_NS4",
+      "trailerUrl": "https://www.youtube.com/watch?v=hQXKyIG_NS4",
       "providers": [
         "Netflix"
       ],
@@ -1444,6 +1802,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/wHIMMLFsk32wIzDmawWkYVbxFCS.jpg",
       "rating": 7.879,
       "ratingSource": "TMDB",
+      "genres": [
+        "Sci-Fi & Fantasy",
+        "Akcja i Przygoda"
+      ],
+      "trailerYoutubeKey": "K5p98bXfxiY",
+      "trailerUrl": "https://www.youtube.com/watch?v=K5p98bXfxiY",
       "providers": [
         "Amazon Prime Video",
         "Amazon Video"
@@ -1464,6 +1828,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/hWSb4UnIjlTvnvrP98NbFSO60HA.jpg",
       "rating": 8.295,
       "ratingSource": "TMDB",
+      "genres": [
+        "Kryminał",
+        "Dramat"
+      ],
+      "trailerYoutubeKey": "NTYxiJBbEZk",
+      "trailerUrl": "https://www.youtube.com/watch?v=NTYxiJBbEZk",
       "providers": [
         "Disney Plus"
       ],
@@ -1483,6 +1853,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/zBs57sM3Q3aPTEVfK4x76HGDseC.jpg",
       "rating": 8.027,
       "ratingSource": "TMDB",
+      "genres": [
+        "Animacja",
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "_jgYEYERYFQ",
+      "trailerUrl": "https://www.youtube.com/watch?v=_jgYEYERYFQ",
       "providers": [
         "Disney Plus"
       ],
@@ -1502,6 +1878,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/3axGMbUecXXOPSeG47v2i9wK5y5.jpg",
       "rating": 7.934,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat",
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "HQFrNB4LcrE",
+      "trailerUrl": "https://www.youtube.com/watch?v=HQFrNB4LcrE",
       "providers": [
         "Amazon Prime Video",
         "Amazon Video"
@@ -1522,6 +1904,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/bQLrHIRNEkE3PdIWQrZHynQZazu.jpg",
       "rating": 8.104,
       "ratingSource": "TMDB",
+      "genres": [
+        "Akcja i Przygoda",
+        "Dramat"
+      ],
+      "trailerYoutubeKey": "7rcozIVtujw",
+      "trailerUrl": "https://www.youtube.com/watch?v=7rcozIVtujw",
       "providers": [
         "Netflix",
         "Amazon Video"
@@ -1542,6 +1930,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/2JCD8vab3fircOU8cM2HJCxfv4I.jpg",
       "rating": 8.1,
       "ratingSource": "TMDB",
+      "genres": [
+        "Kryminał",
+        "Dramat"
+      ],
+      "trailerYoutubeKey": "8ZOHmz3bfAI",
+      "trailerUrl": "https://www.youtube.com/watch?v=8ZOHmz3bfAI",
       "providers": [
         "Amazon Prime Video",
         "SkyShowtime",
@@ -1563,6 +1957,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/ekaa7YjGPTkFLcPhwWXTnARuCEU.jpg",
       "rating": 7.64,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat",
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "vY0qzXi5oJg",
+      "trailerUrl": "https://www.youtube.com/watch?v=vY0qzXi5oJg",
       "providers": [
         "Netflix",
         "Amazon Video"
@@ -1583,6 +1983,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/fObK6dxvhaqLkwgO8q4hAoWg11E.jpg",
       "rating": 7.414,
       "ratingSource": "TMDB",
+      "genres": [
+        "Animacja",
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "x-jJ41Qhqb0",
+      "trailerUrl": "https://www.youtube.com/watch?v=x-jJ41Qhqb0",
       "providers": [
         "Disney Plus"
       ],
@@ -1602,6 +2008,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/pbIytFb4K9dh9kUBNgMotuhdQsl.jpg",
       "rating": 8.223,
       "ratingSource": "TMDB",
+      "genres": [
+        "Animacja",
+        "Akcja i Przygoda"
+      ],
+      "trailerYoutubeKey": "obb1e7fiGLw",
+      "trailerUrl": "https://www.youtube.com/watch?v=obb1e7fiGLw",
       "providers": [
         "SkyShowtime"
       ],
@@ -1621,6 +2033,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/8iixmfGx5EIFPdpNvB2JvI3VIqX.jpg",
       "rating": 8.317,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat",
+        "Tajemnica"
+      ],
+      "trailerYoutubeKey": "yy96yJjkvjo",
+      "trailerUrl": "https://www.youtube.com/watch?v=yy96yJjkvjo",
       "providers": [
         "Amazon Prime Video",
         "HBO Max"
@@ -1641,6 +2059,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/8eJf0hxgIhE6QSxbtuNCekTddy1.jpg",
       "rating": 8.256,
       "ratingSource": "TMDB",
+      "genres": [
+        "Akcja i Przygoda",
+        "Dramat"
+      ],
+      "trailerYoutubeKey": "NNBNX34mO34",
+      "trailerUrl": "https://www.youtube.com/watch?v=NNBNX34mO34",
       "providers": [
         "Netflix"
       ],
@@ -1662,6 +2086,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/i4nQn6GJznN02EcGOQCetNoU4mt.jpg",
       "rating": 6.9,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat",
+        "Horror"
+      ],
+      "trailerYoutubeKey": "iOjzJsHS0M0",
+      "trailerUrl": "https://www.youtube.com/watch?v=iOjzJsHS0M0",
       "providers": [
         "HBO Max"
       ],
@@ -1684,6 +2114,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/suSGUJNCgdVVjCXcJBDtjKxWTlg.jpg",
       "rating": 0.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Animacja",
+        "Familijny"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "Netflix"
       ],
@@ -1706,6 +2142,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/xTJYIPjyuCbkc7zEtfAFJfVDSV5.jpg",
       "rating": 0.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Familijny",
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "Jg8Gz0evaZw",
+      "trailerUrl": "https://www.youtube.com/watch?v=Jg8Gz0evaZw",
       "providers": [
         "Netflix"
       ],
@@ -1728,6 +2170,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/ofaxzyLkBnRL9UNwriLFppjSnuR.jpg",
       "rating": 0.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dokumentalny",
+        "Historyczny"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "DocAlliance Films"
       ],
@@ -1750,6 +2198,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/56DCMhPl45B78y4Mo8GquugW3w9.jpg",
       "rating": 0.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Horror",
+        "Tajemnica"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "FOUND TV"
       ],
@@ -1772,6 +2226,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/xUMZvvkriIEMmfFvEr7uXhz19oV.jpg",
       "rating": 7.458,
       "ratingSource": "TMDB",
+      "genres": [
+        "Komedia"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "Netflix"
       ],
@@ -1794,6 +2253,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/vBqVyTpzv5RzHSsQdu8ECxAqSvd.jpg",
       "rating": 6.5,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dokumentalny"
+      ],
+      "trailerYoutubeKey": "5vri0LVrMIE",
+      "trailerUrl": "https://www.youtube.com/watch?v=5vri0LVrMIE",
       "providers": [
         "Netflix"
       ],
@@ -1816,6 +2280,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/sMPIiaOoyTr5o6s602KIVMJX3P2.jpg",
       "rating": 6.4,
       "ratingSource": "TMDB",
+      "genres": [
+        "Thriller",
+        "Dramat"
+      ],
+      "trailerYoutubeKey": "8hVLhaK619k",
+      "trailerUrl": "https://www.youtube.com/watch?v=8hVLhaK619k",
       "providers": [
         "Netflix"
       ],
@@ -1838,6 +2308,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/7lSCZqdOhjsCI1BqZMUr8eNOOl5.jpg",
       "rating": 7.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dokumentalny"
+      ],
+      "trailerYoutubeKey": "gAIhw9wCb5c",
+      "trailerUrl": "https://www.youtube.com/watch?v=gAIhw9wCb5c",
       "providers": [
         "Netflix"
       ],
@@ -1860,6 +2335,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/6MqBwshl0Lu9a5ImgFbdBX7aA69.jpg",
       "rating": 0.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Horror"
+      ],
+      "trailerYoutubeKey": "XHnl_0yi5vo",
+      "trailerUrl": "https://www.youtube.com/watch?v=XHnl_0yi5vo",
       "providers": [
         "Plex"
       ],
@@ -1882,6 +2362,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/mipoSv2lyhlfiKhGSUJHNVnlqfS.jpg",
       "rating": 0.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dokumentalny"
+      ],
+      "trailerYoutubeKey": "U7InGWM1spM",
+      "trailerUrl": "https://www.youtube.com/watch?v=U7InGWM1spM",
       "providers": [
         "Apple TV Store"
       ],
@@ -1904,6 +2389,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/w3YJx1PPPC6aiVKusxfc9QA0uYS.jpg",
       "rating": 6.527,
       "ratingSource": "TMDB",
+      "genres": [
+        "Horror",
+        "Akcja"
+      ],
+      "trailerYoutubeKey": "hj6Cer6bJUI",
+      "trailerUrl": "https://www.youtube.com/watch?v=hj6Cer6bJUI",
       "providers": [
         "CDA Premium"
       ],
@@ -1926,6 +2417,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/ahSqZAAHU4PgNdbKdGPj332O7As.jpg",
       "rating": 5.868,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat",
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "XjUt3Fv_f-Y",
+      "trailerUrl": "https://www.youtube.com/watch?v=XjUt3Fv_f-Y",
       "providers": [
         "Netflix"
       ],
@@ -1948,6 +2445,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/6DZcdjkoIR6xPxSn81jqWPYNKXb.jpg",
       "rating": 0.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat"
+      ],
+      "trailerYoutubeKey": "1xvScjfZC5Q",
+      "trailerUrl": "https://www.youtube.com/watch?v=1xvScjfZC5Q",
       "providers": [
         "Filmzie"
       ],
@@ -1970,6 +2472,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/45aRvdvuLz2mooiHAe3j1bCFfHL.jpg",
       "rating": 5.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Komedia"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "Netflix"
       ],
@@ -1992,6 +2499,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/wVZXTyC92jRU7lwn5QjhDs7FORk.jpg",
       "rating": 0.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dokumentalny"
+      ],
+      "trailerYoutubeKey": "MZAV0HKRDVk",
+      "trailerUrl": "https://www.youtube.com/watch?v=MZAV0HKRDVk",
       "providers": [
         "HBO Max"
       ],
@@ -2014,6 +2526,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/eKeRcZ7otaDAR3uEtM1e4RcqIGy.jpg",
       "rating": 7.672,
       "ratingSource": "TMDB",
+      "genres": [
+        "Romans",
+        "Thriller"
+      ],
+      "trailerYoutubeKey": "-sV69CJwUwU",
+      "trailerUrl": "https://www.youtube.com/watch?v=-sV69CJwUwU",
       "providers": [
         "Amazon Prime Video"
       ],
@@ -2036,6 +2554,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/49Od5H7C5fZcgySoWPPu5cFCXaS.jpg",
       "rating": 0.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dokumentalny"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "TVP"
       ],
@@ -2058,6 +2581,9 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/tJqbCsOvPb4byUfiFaLwVyTwIMj.jpg",
       "rating": 9.0,
       "ratingSource": "TMDB",
+      "genres": [],
+      "trailerYoutubeKey": "Q5YNPfPsenY",
+      "trailerUrl": "https://www.youtube.com/watch?v=Q5YNPfPsenY",
       "providers": [
         "Apple TV Store"
       ],
@@ -2080,6 +2606,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/d1NVILoUn4hI8zEFNKoP0K5WDgO.jpg",
       "rating": 10.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dokumentalny",
+        "Muzyczny"
+      ],
+      "trailerYoutubeKey": "jRig7JvOpWg",
+      "trailerUrl": "https://www.youtube.com/watch?v=jRig7JvOpWg",
       "providers": [
         "Netflix"
       ],
@@ -2102,6 +2634,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/gKMDmGde8aAD8M6dvm6j7wciSbJ.jpg",
       "rating": 8.539,
       "ratingSource": "TMDB",
+      "genres": [
+        "Akcja",
+        "Thriller"
+      ],
+      "trailerYoutubeKey": "_PZpmTj1Q8Q",
+      "trailerUrl": "https://www.youtube.com/watch?v=_PZpmTj1Q8Q",
       "providers": [
         "HBO Max",
         "Apple TV Store",
@@ -2128,6 +2666,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/sp8BH41oNdYwIKQFswqluNYa3SM.jpg",
       "rating": 8.486,
       "ratingSource": "TMDB",
+      "genres": [
+        "Sci-Fi",
+        "Akcja"
+      ],
+      "trailerYoutubeKey": "P3uI5sLosKU",
+      "trailerUrl": "https://www.youtube.com/watch?v=P3uI5sLosKU",
       "providers": [
         "Polsat Box Go",
         "Apple TV Store",
@@ -2152,6 +2696,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/ptWQV5lfa91U1ndxW566kYTvKo6.jpg",
       "rating": 6.17,
       "ratingSource": "TMDB",
+      "genres": [
+        "Akcja",
+        "Thriller"
+      ],
+      "trailerYoutubeKey": "BIEzwpyawtw",
+      "trailerUrl": "https://www.youtube.com/watch?v=BIEzwpyawtw",
       "providers": [
         "Amazon Prime Video"
       ],
@@ -2171,6 +2721,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/yMapvyFKryN8lgR1o0wD4tsCUw3.jpg",
       "rating": 8.207,
       "ratingSource": "TMDB",
+      "genres": [
+        "Familijny",
+        "Animacja"
+      ],
+      "trailerYoutubeKey": "WEeFtmQAGTA",
+      "trailerUrl": "https://www.youtube.com/watch?v=WEeFtmQAGTA",
       "providers": [
         "Disney Plus",
         "Apple TV Store",
@@ -2195,6 +2751,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/2XTAPrXgZeHwGNrH3P48ojlbMJ.jpg",
       "rating": 7.3,
       "ratingSource": "TMDB",
+      "genres": [
+        "Thriller"
+      ],
+      "trailerYoutubeKey": "Krs0VDIjhmE",
+      "trailerUrl": "https://www.youtube.com/watch?v=Krs0VDIjhmE",
       "providers": [
         "Polsat Box Go",
         "Player",
@@ -2219,6 +2780,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/qkAwiwIrVrJQHwE4BhewiD6DUAh.jpg",
       "rating": 7.4,
       "ratingSource": "TMDB",
+      "genres": [
+        "Horror",
+        "Sci-Fi"
+      ],
+      "trailerYoutubeKey": "mNd1gb19A-c",
+      "trailerUrl": "https://www.youtube.com/watch?v=mNd1gb19A-c",
       "providers": [
         "Amazon Video"
       ],
@@ -2238,6 +2805,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/kywmjGFWDlOsmQEyPq63fJFcBXy.jpg",
       "rating": 7.221,
       "ratingSource": "TMDB",
+      "genres": [
+        "Akcja",
+        "Thriller"
+      ],
+      "trailerYoutubeKey": "-xSxaE1ClEE",
+      "trailerUrl": "https://www.youtube.com/watch?v=-xSxaE1ClEE",
       "providers": [
         "Apple TV Store",
         "Player",
@@ -2262,6 +2835,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/toCKmrFAgxOfehUAxo59ATIEcdw.jpg",
       "rating": 7.7,
       "ratingSource": "TMDB",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "trailerYoutubeKey": "gXjurDkYnEM",
+      "trailerUrl": "https://www.youtube.com/watch?v=gXjurDkYnEM",
       "providers": [
         "Polsat Box Go",
         "Apple TV Store",
@@ -2286,6 +2865,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/lNXeEpg4yLSRwXwOeR5lbPgwbqL.jpg",
       "rating": 6.07,
       "ratingSource": "TMDB",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "trailerYoutubeKey": "4DowjB87tRE",
+      "trailerUrl": "https://www.youtube.com/watch?v=4DowjB87tRE",
       "providers": [
         "Polsat Box Go",
         "Player",
@@ -2310,6 +2895,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/jlP8XDjZN89GrpM3je5Uf8Grqx8.jpg",
       "rating": 6.076,
       "ratingSource": "TMDB",
+      "genres": [
+        "Akcja",
+        "Thriller"
+      ],
+      "trailerYoutubeKey": "l5Luvr9TRRc",
+      "trailerUrl": "https://www.youtube.com/watch?v=l5Luvr9TRRc",
       "providers": [
         "Amazon Video",
         "Pilot WP"
@@ -2330,6 +2921,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/tRuNcKYde78DOGjpbkBZBwWeTYI.jpg",
       "rating": 7.9,
       "ratingSource": "TMDB",
+      "genres": [
+        "Fantasy",
+        "Animacja"
+      ],
+      "trailerYoutubeKey": "IoYahD_xNR0",
+      "trailerUrl": "https://www.youtube.com/watch?v=IoYahD_xNR0",
       "providers": [
         "Disney Plus",
         "Apple TV Store",
@@ -2354,6 +2951,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/lFaMt4I8LiQAGW9Rb5gfGFXbvOY.jpg",
       "rating": 7.578,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat"
+      ],
+      "trailerYoutubeKey": "qC0HZLUXRXw",
+      "trailerUrl": "https://www.youtube.com/watch?v=qC0HZLUXRXw",
       "providers": [
         "Netflix"
       ],
@@ -2373,6 +2975,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/6NOpwEq5LYHdaXkGJ3hL46x2Zai.jpg",
       "rating": 7.641,
       "ratingSource": "TMDB",
+      "genres": [
+        "Akcja",
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "7xfqITrMDcI",
+      "trailerUrl": "https://www.youtube.com/watch?v=7xfqITrMDcI",
       "providers": [
         "Apple TV",
         "Apple TV Amazon Channel"
@@ -2393,6 +3001,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/yLMbHFNQ900b5M7kXujcJ5tkGrv.jpg",
       "rating": 8.17,
       "ratingSource": "TMDB",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "trailerYoutubeKey": "gMC8kkwbIQQ",
+      "trailerUrl": "https://www.youtube.com/watch?v=gMC8kkwbIQQ",
       "providers": [
         "Apple TV Store",
         "Player",
@@ -2417,6 +3031,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/ryBlb6XdU02fp0EZWVKDaqFjFvz.jpg",
       "rating": 5.744,
       "ratingSource": "TMDB",
+      "genres": [
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "pV32AcPa-iA",
+      "trailerUrl": "https://www.youtube.com/watch?v=pV32AcPa-iA",
       "providers": [
         "Amazon Prime Video"
       ],
@@ -2436,6 +3055,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/s20qugrUD5mPGQdyQ1LMLCYUOmy.jpg",
       "rating": 4.041,
       "ratingSource": "TMDB",
+      "genres": [
+        "Sci-Fi",
+        "Thriller"
+      ],
+      "trailerYoutubeKey": "d9erkpdh5o0",
+      "trailerUrl": "https://www.youtube.com/watch?v=d9erkpdh5o0",
       "providers": [
         "Amazon Prime Video"
       ],
@@ -2457,6 +3082,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/gPA6rma2MEClH1YU57pIWQDbtWY.jpg",
       "rating": 5.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "e1e0ZlP5o08",
+      "trailerUrl": "https://www.youtube.com/watch?v=e1e0ZlP5o08",
       "providers": [
         "Netflix"
       ],
@@ -2479,6 +3109,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/3CmUTPm9gn9oiAnvSPr9WkLLb3Y.jpg",
       "rating": 4.2,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat",
+        "Tajemnica"
+      ],
+      "trailerYoutubeKey": "ARYGWtBnQEA",
+      "trailerUrl": "https://www.youtube.com/watch?v=ARYGWtBnQEA",
       "providers": [
         "Netflix"
       ],
@@ -2501,6 +3137,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/ThhNhFCIFsYrOtJ2jXkb1ulOd0.jpg",
       "rating": 4.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Tajemnica"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "Netflix"
       ],
@@ -2523,6 +3164,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/up1YBgPq6lC0ut2JvjguNwLiXw4.jpg",
       "rating": 8.5,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat",
+        "Kryminał"
+      ],
+      "trailerYoutubeKey": "5J6ZiYIyIiA",
+      "trailerUrl": "https://www.youtube.com/watch?v=5J6ZiYIyIiA",
       "providers": [
         "Netflix"
       ],
@@ -2545,6 +3192,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/yyA9CI8BLNg6LtVRvmVxki4xiGb.jpg",
       "rating": 7.5,
       "ratingSource": "TMDB",
+      "genres": [
+        "Tajemnica"
+      ],
+      "trailerYoutubeKey": "Sn2ZCxOxsN0",
+      "trailerUrl": "https://www.youtube.com/watch?v=Sn2ZCxOxsN0",
       "providers": [
         "Netflix"
       ],
@@ -2567,6 +3219,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/tdnHaR0vlKMQbjmaCs2V3LDmzSd.jpg",
       "rating": 6.5,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat",
+        "Kryminał"
+      ],
+      "trailerYoutubeKey": "NwJhml1_D54",
+      "trailerUrl": "https://www.youtube.com/watch?v=NwJhml1_D54",
       "providers": [
         "Netflix"
       ],
@@ -2589,6 +3247,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/zp5lT15wR0cfCYcR12DXcVNsrnh.jpg",
       "rating": 8.667,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dokumentalny"
+      ],
+      "trailerYoutubeKey": "e5ExUsk6-OE",
+      "trailerUrl": "https://www.youtube.com/watch?v=e5ExUsk6-OE",
       "providers": [
         "Netflix"
       ],
@@ -2611,6 +3274,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/s1A6UOu8IOmw0kJXohlitMRiwQb.jpg",
       "rating": 7.188,
       "ratingSource": "TMDB",
+      "genres": [
+        "Tajemnica",
+        "Dramat"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "Netflix"
       ],
@@ -2633,6 +3302,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/iB5PVhe5T6nDxtN6D6cUTPZXT9M.jpg",
       "rating": 7.625,
       "ratingSource": "TMDB",
+      "genres": [
+        "Kryminał",
+        "Dramat"
+      ],
+      "trailerYoutubeKey": "AaEy1f2Dgys",
+      "trailerUrl": "https://www.youtube.com/watch?v=AaEy1f2Dgys",
       "providers": [
         "Apple TV",
         "Apple TV Amazon Channel"
@@ -2656,6 +3331,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/8vPbO9RrrduzxXxkOX7SnHZuqXg.jpg",
       "rating": 0.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "Netflix"
       ],
@@ -2678,6 +3358,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/kPE4g5mBBQ7luAPlFcYwyfH7eOQ.jpg",
       "rating": 7.192,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dokumentalny"
+      ],
+      "trailerYoutubeKey": "_iM1AOFxoDI",
+      "trailerUrl": "https://www.youtube.com/watch?v=_iM1AOFxoDI",
       "providers": [
         "Netflix"
       ],
@@ -2700,6 +3385,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/e6VN49hyQGuY5oQ1ZRQWX9aHhJ5.jpg",
       "rating": 0.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Reality"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "Hayu"
       ],
@@ -2722,6 +3412,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/klTvQAof4mGA4rQhvhKy14PDDQn.jpg",
       "rating": 3.5,
       "ratingSource": "TMDB",
+      "genres": [
+        "Reality"
+      ],
+      "trailerYoutubeKey": "nAl3qxAHcT0",
+      "trailerUrl": "https://www.youtube.com/watch?v=nAl3qxAHcT0",
       "providers": [
         "Disney Plus"
       ],
@@ -2744,6 +3439,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/iTVhDUbzUFUJ18jrcYM4rw7qGk.jpg",
       "rating": 7.2,
       "ratingSource": "TMDB",
+      "genres": [
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "SO4CU9P8--8",
+      "trailerUrl": "https://www.youtube.com/watch?v=SO4CU9P8--8",
       "providers": [
         "Netflix"
       ],
@@ -2766,6 +3466,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/nltGG4HEkyQIYpmRB0hAuTpC3jf.jpg",
       "rating": 8.5,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat"
+      ],
+      "trailerYoutubeKey": "eojaHI20G5g",
+      "trailerUrl": "https://www.youtube.com/watch?v=eojaHI20G5g",
       "providers": [
         "Amazon Prime Video"
       ],
@@ -2788,6 +3493,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/z6WSxbaMdFQ9OLeHihaPJyVND4D.jpg",
       "rating": 0.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "Amazon Prime Video"
       ],
@@ -2810,6 +3520,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/lMaSCFbCUbwR80DEAcxPe2nUFHv.jpg",
       "rating": 0.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dokumentalny"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "HBO Max"
       ],
@@ -2832,6 +3547,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/anbnH36wydXKxfNISOXb0afFeF1.jpg",
       "rating": 5.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Komedia",
+        "Dramat"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "Netflix"
       ],
@@ -2854,6 +3575,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/ax5C1W79usiYKDJkgTOAZrDKwmj.jpg",
       "rating": 4.0,
       "ratingSource": "TMDB",
+      "genres": [
+        "Akcja i Przygoda",
+        "War & Politics"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "Netflix"
       ],
@@ -2876,6 +3603,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/4JiGXFs7rQiHJO1m39ExECppTh0.jpg",
       "rating": 7.294,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat",
+        "Sci-Fi & Fantasy"
+      ],
+      "trailerYoutubeKey": "q_woHkkYhdg",
+      "trailerUrl": "https://www.youtube.com/watch?v=q_woHkkYhdg",
       "providers": [
         "HBO Max"
       ],
@@ -2898,6 +3631,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/4D6yvXySjV3XqX8eNmZzL1uZkUm.jpg",
       "rating": 8.4,
       "ratingSource": "TMDB",
+      "genres": [
+        "Kryminał",
+        "Dramat"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "Netflix",
         "Amazon Prime Video",
@@ -2919,6 +3658,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/b34jPzmB0wZy7EjUZoleXOl2RRI.jpg",
       "rating": 8.1,
       "ratingSource": "TMDB",
+      "genres": [
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "cjJLEYMzpjc",
+      "trailerUrl": "https://www.youtube.com/watch?v=cjJLEYMzpjc",
       "providers": [
         "Disney Plus"
       ],
@@ -2936,8 +3680,13 @@
       "year": "2005",
       "posterUrl": "https://image.tmdb.org/t/p/w500/2kND8XyGerHlxwZFH1NRGc6HJCy.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/2kND8XyGerHlxwZFH1NRGc6HJCy.jpg",
-      "rating": 8.6,
+      "rating": 8.584,
       "ratingSource": "TMDB",
+      "genres": [
+        "Komedia"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "Netflix",
         "Amazon Prime Video",
@@ -2961,6 +3710,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/yZevl2vHQgmosfwUdVNzviIfaWS.jpg",
       "rating": 7.739,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat",
+        "Sci-Fi & Fantasy"
+      ],
+      "trailerYoutubeKey": "xzgAU1e72Nc",
+      "trailerUrl": "https://www.youtube.com/watch?v=xzgAU1e72Nc",
       "providers": [
         "Netflix",
         "Amazon Video"
@@ -2981,6 +3736,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/eKGs3ujcQXc1BxoB9FjCOKlwaYZ.jpg",
       "rating": 8.3,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat",
+        "Sci-Fi & Fantasy"
+      ],
+      "trailerYoutubeKey": "RO3Qp_XdR0w",
+      "trailerUrl": "https://www.youtube.com/watch?v=RO3Qp_XdR0w",
       "providers": [
         "Netflix",
         "Amazon Prime Video",
@@ -3002,6 +3763,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/9vAuFHqJpuwav4MUW7JbC4BbXf8.jpg",
       "rating": 7.909,
       "ratingSource": "TMDB",
+      "genres": [
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "rbpTUPisA78",
+      "trailerUrl": "https://www.youtube.com/watch?v=rbpTUPisA78",
       "providers": [
         "Disney Plus"
       ],
@@ -3021,6 +3787,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/pHNhUwSXuDQ9jPZOCb8SgJaQZsc.jpg",
       "rating": 7.961,
       "ratingSource": "TMDB",
+      "genres": [
+        "Kryminał",
+        "Dramat"
+      ],
+      "trailerYoutubeKey": null,
+      "trailerUrl": null,
       "providers": [
         "Netflix",
         "Amazon Prime Video",
@@ -3044,6 +3816,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/txYCbLirXJBxAebZ3SEhgAT91YV.jpg",
       "rating": 8.562,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat"
+      ],
+      "trailerYoutubeKey": "MczMB8nU1sY",
+      "trailerUrl": "https://www.youtube.com/watch?v=MczMB8nU1sY",
       "providers": [
         "Netflix",
         "Amazon Prime Video",
@@ -3066,6 +3843,11 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/5hKrI8ZWrIlax6Mw5HibjcEAAFD.jpg",
       "rating": 8.245,
       "ratingSource": "TMDB",
+      "genres": [
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "hQXKyIG_NS4",
+      "trailerUrl": "https://www.youtube.com/watch?v=hQXKyIG_NS4",
       "providers": [
         "Netflix"
       ],
@@ -3085,6 +3867,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/wHIMMLFsk32wIzDmawWkYVbxFCS.jpg",
       "rating": 7.879,
       "ratingSource": "TMDB",
+      "genres": [
+        "Sci-Fi & Fantasy",
+        "Akcja i Przygoda"
+      ],
+      "trailerYoutubeKey": "K5p98bXfxiY",
+      "trailerUrl": "https://www.youtube.com/watch?v=K5p98bXfxiY",
       "providers": [
         "Amazon Prime Video",
         "Amazon Video"
@@ -3105,6 +3893,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/hWSb4UnIjlTvnvrP98NbFSO60HA.jpg",
       "rating": 8.295,
       "ratingSource": "TMDB",
+      "genres": [
+        "Kryminał",
+        "Dramat"
+      ],
+      "trailerYoutubeKey": "NTYxiJBbEZk",
+      "trailerUrl": "https://www.youtube.com/watch?v=NTYxiJBbEZk",
       "providers": [
         "Disney Plus"
       ],
@@ -3124,6 +3918,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/zBs57sM3Q3aPTEVfK4x76HGDseC.jpg",
       "rating": 8.027,
       "ratingSource": "TMDB",
+      "genres": [
+        "Animacja",
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "_jgYEYERYFQ",
+      "trailerUrl": "https://www.youtube.com/watch?v=_jgYEYERYFQ",
       "providers": [
         "Disney Plus"
       ],
@@ -3143,6 +3943,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/3axGMbUecXXOPSeG47v2i9wK5y5.jpg",
       "rating": 7.934,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat",
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "HQFrNB4LcrE",
+      "trailerUrl": "https://www.youtube.com/watch?v=HQFrNB4LcrE",
       "providers": [
         "Amazon Prime Video",
         "Amazon Video"
@@ -3163,6 +3969,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/bQLrHIRNEkE3PdIWQrZHynQZazu.jpg",
       "rating": 8.104,
       "ratingSource": "TMDB",
+      "genres": [
+        "Akcja i Przygoda",
+        "Dramat"
+      ],
+      "trailerYoutubeKey": "7rcozIVtujw",
+      "trailerUrl": "https://www.youtube.com/watch?v=7rcozIVtujw",
       "providers": [
         "Netflix",
         "Amazon Video"
@@ -3183,6 +3995,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/2JCD8vab3fircOU8cM2HJCxfv4I.jpg",
       "rating": 8.1,
       "ratingSource": "TMDB",
+      "genres": [
+        "Kryminał",
+        "Dramat"
+      ],
+      "trailerYoutubeKey": "8ZOHmz3bfAI",
+      "trailerUrl": "https://www.youtube.com/watch?v=8ZOHmz3bfAI",
       "providers": [
         "Amazon Prime Video",
         "SkyShowtime",
@@ -3204,6 +4022,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/ekaa7YjGPTkFLcPhwWXTnARuCEU.jpg",
       "rating": 7.64,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat",
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "vY0qzXi5oJg",
+      "trailerUrl": "https://www.youtube.com/watch?v=vY0qzXi5oJg",
       "providers": [
         "Netflix",
         "Amazon Video"
@@ -3224,6 +4048,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/fObK6dxvhaqLkwgO8q4hAoWg11E.jpg",
       "rating": 7.414,
       "ratingSource": "TMDB",
+      "genres": [
+        "Animacja",
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "x-jJ41Qhqb0",
+      "trailerUrl": "https://www.youtube.com/watch?v=x-jJ41Qhqb0",
       "providers": [
         "Disney Plus"
       ],
@@ -3243,6 +4073,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/pbIytFb4K9dh9kUBNgMotuhdQsl.jpg",
       "rating": 8.223,
       "ratingSource": "TMDB",
+      "genres": [
+        "Animacja",
+        "Akcja i Przygoda"
+      ],
+      "trailerYoutubeKey": "obb1e7fiGLw",
+      "trailerUrl": "https://www.youtube.com/watch?v=obb1e7fiGLw",
       "providers": [
         "SkyShowtime"
       ],
@@ -3262,6 +4098,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/8iixmfGx5EIFPdpNvB2JvI3VIqX.jpg",
       "rating": 8.317,
       "ratingSource": "TMDB",
+      "genres": [
+        "Dramat",
+        "Tajemnica"
+      ],
+      "trailerYoutubeKey": "yy96yJjkvjo",
+      "trailerUrl": "https://www.youtube.com/watch?v=yy96yJjkvjo",
       "providers": [
         "Amazon Prime Video",
         "HBO Max"
@@ -3282,6 +4124,12 @@
       "artworkUrl": "https://image.tmdb.org/t/p/w780/8eJf0hxgIhE6QSxbtuNCekTddy1.jpg",
       "rating": 8.256,
       "ratingSource": "TMDB",
+      "genres": [
+        "Akcja i Przygoda",
+        "Dramat"
+      ],
+      "trailerYoutubeKey": "NNBNX34mO34",
+      "trailerUrl": "https://www.youtube.com/watch?v=NNBNX34mO34",
       "providers": [
         "Netflix"
       ],
