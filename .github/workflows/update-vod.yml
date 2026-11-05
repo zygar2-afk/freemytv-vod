@@ -1,49 +1,68 @@
-
 name: Update Polish VOD recommendations
-
 on:
   workflow_dispatch:
-
   schedule:
-    - cron: "0 7 * * *"
-
+    - cron: '0 4,5 * * *'
+  push:
+    branches: [main]
+    paths: ['scripts/**', 'test_feed.py', '.github/workflows/update-vod.yml']
+  pull_request:
+    paths: ['scripts/**', 'test_feed.py', '.github/workflows/update-vod.yml']
 permissions:
   contents: write
-
 concurrency:
-  group: vod-feed-update
+  group: vod-feed-${{ github.event.pull_request.number || 'main' }}
   cancel-in-progress: false
-
 jobs:
   update:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
-    timeout-minutes: 15
-
+    timeout-minutes: 20
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
-
-      - name: Generate movies and series from TMDB
+          python-version: '3.12'
+      - name: Test catalog rules
+        run: python -m unittest -v test_feed.py
+      - name: Check Warsaw daily slot
+        id: slot
+        env:
+          EVENT: ${{ github.event_name }}
+        run: |
+          python - <<'PY'
+          import datetime as dt, json, os, pathlib
+          from zoneinfo import ZoneInfo
+          now = dt.datetime.now(ZoneInfo('Europe/Warsaw'))
+          slot = now.replace(hour=6, minute=0, second=0, microsecond=0)
+          run = os.environ['EVENT'] != 'schedule'
+          if not run and now >= slot:
+              try:
+                  generated = dt.datetime.fromisoformat(json.loads(pathlib.Path('vod_recommendations.json').read_text())['generatedAt'].replace('Z', '+00:00'))
+                  run = generated < slot
+              except (OSError, ValueError, KeyError):
+                  run = True
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              output.write('generate=' + str(run).lower() + '\n')
+          PY
+      - name: Generate recent subscription releases
+        if: steps.slot.outputs.generate == 'true'
         env:
           TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
         run: python scripts/build_feed.py
-
+      - uses: actions/upload-artifact@v4
+        if: steps.slot.outputs.generate == 'true'
+        with:
+          name: vod-preview
+          path: vod_recommendations.json
+          retention-days: 7
       - name: Publish updated JSON
+        if: steps.slot.outputs.generate == 'true' && github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         run: |
-          if git diff --quiet -- vod_recommendations.json; then
-            echo "No changes to publish."
-            exit 0
-          fi
-
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
+          if git diff --quiet -- vod_recommendations.json; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add vod_recommendations.json
-          git commit -m "Update movies and series from TMDB"
+          git commit -m 'Update recent Polish subscription releases from TMDB'
           git push
