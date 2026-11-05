@@ -51,6 +51,9 @@ jobs:
           TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
         run: python scripts/build_feed.py
+      - name: Validate actual generated catalog
+        if: steps.slot.outputs.generate == 'true'
+        run: python scripts/validate_feed.py
       - uses: actions/upload-artifact@v4
         if: steps.slot.outputs.generate == 'true'
         with:
