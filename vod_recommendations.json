@@ -1,10 +1,40 @@
 {
   "schemaVersion": 2,
   "region": "PL",
-  "generatedAt": "2026-11-17T12:59:21Z",
+  "generatedAt": "2026-11-18T12:52:43Z",
   "source": "TMDB",
   "newnessPolicy": "Last 30 calendar days: production or season premiere. VOD addition dates are not verified.",
   "newMovies": [
+    {
+      "kind": "movie",
+      "tmdbId": 1716604,
+      "title": "A Proud Family Wizmas",
+      "originalTitle": "A Proud Family Wizmas",
+      "description": "",
+      "releaseDate": "2026-11-14",
+      "seasonReleaseDate": null,
+      "newnessDate": "2026-11-14",
+      "newnessBasis": "production_release_date",
+      "year": "2026",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/9nFa7GEw9FmZWn3gaFhLvVrhVDY.jpg",
+      "artworkUrl": "https://image.tmdb.org/t/p/w780/9nFa7GEw9FmZWn3gaFhLvVrhVDY.jpg",
+      "rating": 5.5,
+      "voteCount": 10,
+      "ratingSource": "TMDB",
+      "genres": [
+        "Animacja",
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "8NRj-jl7n_E",
+      "providers": [
+        "Disney+"
+      ],
+      "availabilityRegion": "PL",
+      "source": "TMDB",
+      "url": "https://www.themoviedb.org/movie/1716604",
+      "vodAddedAt": null,
+      "vodAdditionVerified": false
+    },
     {
       "kind": "movie",
       "tmdbId": 1314786,
@@ -18,8 +48,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/tEFMZGcmxBDCodbLAqmrjdjCTwm.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/tEFMZGcmxBDCodbLAqmrjdjCTwm.jpg",
-      "rating": 6.5,
-      "voteCount": 5,
+      "rating": 6.583,
+      "voteCount": 6,
       "ratingSource": "TMDB",
       "genres": [
         "Dramat",
@@ -48,8 +78,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/zhxlzxBlO1sWB1rPn7RmAoeQ2na.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/zhxlzxBlO1sWB1rPn7RmAoeQ2na.jpg",
-      "rating": 6.637,
-      "voteCount": 62,
+      "rating": 6.3,
+      "voteCount": 80,
       "ratingSource": "TMDB",
       "genres": [
         "Thriller",
@@ -78,8 +108,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/alhhrpj1PSAn5bfz4Os1k7Bweoj.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/alhhrpj1PSAn5bfz4Os1k7Bweoj.jpg",
-      "rating": 6.863,
-      "voteCount": 40,
+      "rating": 6.628,
+      "voteCount": 47,
       "ratingSource": "TMDB",
       "genres": [
         "Sci-Fi",
@@ -138,8 +168,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/k7h5uzeCFBNl802TW2WTvctGYHi.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/k7h5uzeCFBNl802TW2WTvctGYHi.jpg",
-      "rating": 6.656,
-      "voteCount": 48,
+      "rating": 6.377,
+      "voteCount": 57,
       "ratingSource": "TMDB",
       "genres": [
         "Romans",
@@ -168,8 +198,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/7gyOjaZ97varqJNbp3P6FjlQZOQ.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/7gyOjaZ97varqJNbp3P6FjlQZOQ.jpg",
-      "rating": 7.033,
-      "voteCount": 15,
+      "rating": 7.417,
+      "voteCount": 18,
       "ratingSource": "TMDB",
       "genres": [
         "Animacja",
@@ -198,7 +228,7 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/ihbN6lNDXKe6w9xE6IBFMVF2Rkr.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/ihbN6lNDXKe6w9xE6IBFMVF2Rkr.jpg",
-      "rating": 7.262,
+      "rating": 7.3,
       "voteCount": 21,
       "ratingSource": "TMDB",
       "genres": [
@@ -228,8 +258,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/eH7BUSUy3cyzlCTZpMU95U5DKq8.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/eH7BUSUy3cyzlCTZpMU95U5DKq8.jpg",
-      "rating": 7.098,
-      "voteCount": 41,
+      "rating": 7.061,
+      "voteCount": 49,
       "ratingSource": "TMDB",
       "genres": [
         "Akcja",
@@ -288,8 +318,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/zjASMxUqsye6BKLbW78FA9d64Yy.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/zjASMxUqsye6BKLbW78FA9d64Yy.jpg",
-      "rating": 7.333,
-      "voteCount": 3,
+      "rating": 6.75,
+      "voteCount": 4,
       "ratingSource": "TMDB",
       "genres": [
         "Komedia"
@@ -317,8 +347,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/u77wLiH63UJiwfQsrUmHF4nXq0z.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/u77wLiH63UJiwfQsrUmHF4nXq0z.jpg",
-      "rating": 7.1,
-      "voteCount": 25,
+      "rating": 7.0,
+      "voteCount": 27,
       "ratingSource": "TMDB",
       "genres": [
         "Dramat",
@@ -377,8 +407,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/ziyEHM0P1TgvhVXIqqguoMAD0TJ.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/ziyEHM0P1TgvhVXIqqguoMAD0TJ.jpg",
-      "rating": 6.0,
-      "voteCount": 5,
+      "rating": 6.667,
+      "voteCount": 6,
       "ratingSource": "TMDB",
       "genres": [
         "Dokumentalny"
@@ -437,7 +467,7 @@
       "posterUrl": "https://image.tmdb.org/t/p/w500/fopmDU345HPkMC9iUaNQEY0uRkk.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/fopmDU345HPkMC9iUaNQEY0uRkk.jpg",
       "rating": 7.2,
-      "voteCount": 55,
+      "voteCount": 58,
       "ratingSource": "TMDB",
       "genres": [
         "Dokumentalny"
@@ -494,8 +524,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/lkEQXQ1YpMCzCrLOBxHLGdCHLVb.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/lkEQXQ1YpMCzCrLOBxHLGdCHLVb.jpg",
-      "rating": 7.4,
-      "voteCount": 24,
+      "rating": 7.143,
+      "voteCount": 28,
       "ratingSource": "TMDB",
       "genres": [
         "Romans",
@@ -582,7 +612,7 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/zvsNAohDHRWcGvbPSD7r3WojpKb.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/zvsNAohDHRWcGvbPSD7r3WojpKb.jpg",
-      "rating": 7.201,
+      "rating": 7.2,
       "voteCount": 67,
       "ratingSource": "TMDB",
       "genres": [
@@ -642,8 +672,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/zstBJatewUcaNVPICaIvLIel10X.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/zstBJatewUcaNVPICaIvLIel10X.jpg",
-      "rating": 6.1,
-      "voteCount": 6,
+      "rating": 5.357,
+      "voteCount": 7,
       "ratingSource": "TMDB",
       "genres": [
         "Dokumentalny",
@@ -731,7 +761,7 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/i4nQn6GJznN02EcGOQCetNoU4mt.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/i4nQn6GJznN02EcGOQCetNoU4mt.jpg",
-      "rating": 6.664,
+      "rating": 6.7,
       "voteCount": 131,
       "ratingSource": "TMDB",
       "genres": [
@@ -761,8 +791,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/sMPIiaOoyTr5o6s602KIVMJX3P2.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/sMPIiaOoyTr5o6s602KIVMJX3P2.jpg",
-      "rating": 6.323,
-      "voteCount": 110,
+      "rating": 6.3,
+      "voteCount": 111,
       "ratingSource": "TMDB",
       "genres": [
         "Thriller",
@@ -908,8 +938,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/eSS5mvSG84UUuvtbHel5Yu3Wik4.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/eSS5mvSG84UUuvtbHel5Yu3Wik4.jpg",
-      "rating": 6.279,
-      "voteCount": 190,
+      "rating": 6.358,
+      "voteCount": 201,
       "ratingSource": "TMDB",
       "genres": [
         "Akcja",
@@ -998,7 +1028,7 @@
       "posterUrl": "https://image.tmdb.org/t/p/w500/eKeRcZ7otaDAR3uEtM1e4RcqIGy.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/eKeRcZ7otaDAR3uEtM1e4RcqIGy.jpg",
       "rating": 7.6,
-      "voteCount": 183,
+      "voteCount": 184,
       "ratingSource": "TMDB",
       "genres": [
         "Romans",
@@ -1145,7 +1175,7 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/lFaMt4I8LiQAGW9Rb5gfGFXbvOY.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/lFaMt4I8LiQAGW9Rb5gfGFXbvOY.jpg",
-      "rating": 7.447,
+      "rating": 7.4,
       "voteCount": 141,
       "ratingSource": "TMDB",
       "genres": [
@@ -1174,8 +1204,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/ryBlb6XdU02fp0EZWVKDaqFjFvz.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/ryBlb6XdU02fp0EZWVKDaqFjFvz.jpg",
-      "rating": 5.591,
-      "voteCount": 198,
+      "rating": 5.6,
+      "voteCount": 200,
       "ratingSource": "TMDB",
       "genres": [
         "Komedia"
@@ -1283,6 +1313,35 @@
   "newSeries": [
     {
       "kind": "tv",
+      "tmdbId": 97083,
+      "title": "The Circle",
+      "originalTitle": "The Circle",
+      "description": "W tym społecznym eksperymencie ścierają się ze sobą statusy i strategie. Uczestnicy konkursu flirtują, nawiązują przyjaźnie i… kłamią, by wygrać 100 000 dolarów.",
+      "releaseDate": "2020-01-01",
+      "seasonReleaseDate": "2026-11-17",
+      "newnessDate": "2026-11-17",
+      "newnessBasis": "season_release_date",
+      "year": "2020",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/bQRxhfXXsH4ccScOBHs51bgwNe4.jpg",
+      "artworkUrl": "https://image.tmdb.org/t/p/w780/bQRxhfXXsH4ccScOBHs51bgwNe4.jpg",
+      "rating": 6.8,
+      "voteCount": 102,
+      "ratingSource": "TMDB",
+      "genres": [
+        "Reality"
+      ],
+      "trailerYoutubeKey": "4PUKxO4fwSc",
+      "providers": [
+        "Netflix"
+      ],
+      "availabilityRegion": "PL",
+      "source": "TMDB",
+      "url": "https://www.themoviedb.org/tv/97083",
+      "vodAddedAt": null,
+      "vodAdditionVerified": false
+    },
+    {
+      "kind": "tv",
       "tmdbId": 294405,
       "title": "Gdzie zawsze świeci słońce",
       "originalTitle": "Där solen alltid skiner",
@@ -1324,8 +1383,8 @@
       "year": "2019",
       "posterUrl": "https://image.tmdb.org/t/p/w500/nr0r7YTn1l84KLG1iCSO5ofHTvO.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/nr0r7YTn1l84KLG1iCSO5ofHTvO.jpg",
-      "rating": 8.856,
-      "voteCount": 1065,
+      "rating": 8.859,
+      "voteCount": 1072,
       "ratingSource": "TMDB",
       "genres": [
         "Akcja i Przygoda",
@@ -1344,6 +1403,36 @@
     },
     {
       "kind": "tv",
+      "tmdbId": 341602,
+      "title": "Alan's Universe",
+      "originalTitle": "Alan's Universe",
+      "description": "",
+      "releaseDate": "2026-11-14",
+      "seasonReleaseDate": "2026-11-14",
+      "newnessDate": "2026-11-14",
+      "newnessBasis": "season_release_date",
+      "year": "2026",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/sjDSfy47Hafgt8qxj9ebfJtl5AG.jpg",
+      "artworkUrl": "https://image.tmdb.org/t/p/w780/sjDSfy47Hafgt8qxj9ebfJtl5AG.jpg",
+      "rating": 0.0,
+      "voteCount": 0,
+      "ratingSource": "TMDB",
+      "genres": [
+        "Komedia",
+        "Dramat"
+      ],
+      "trailerYoutubeKey": null,
+      "providers": [
+        "Netflix"
+      ],
+      "availabilityRegion": "PL",
+      "source": "TMDB",
+      "url": "https://www.themoviedb.org/tv/341602",
+      "vodAddedAt": null,
+      "vodAdditionVerified": false
+    },
+    {
+      "kind": "tv",
       "tmdbId": 303182,
       "title": "Morderstwo w Galicji",
       "originalTitle": "El crimen de Pazos",
@@ -1355,8 +1444,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/85l3tcxiTlx0TaPFL1DrZeL5KoT.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/85l3tcxiTlx0TaPFL1DrZeL5KoT.jpg",
-      "rating": 6.769,
-      "voteCount": 13,
+      "rating": 6.4,
+      "voteCount": 15,
       "ratingSource": "TMDB",
       "genres": [
         "Kryminał",
@@ -1385,8 +1474,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/cJUMJm96OcnPoDqEtL0FfwZ05ZX.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/cJUMJm96OcnPoDqEtL0FfwZ05ZX.jpg",
-      "rating": 6.8,
-      "voteCount": 5,
+      "rating": 7.875,
+      "voteCount": 8,
       "ratingSource": "TMDB",
       "genres": [
         "Kryminał",
@@ -1563,7 +1652,7 @@
       "posterUrl": "https://image.tmdb.org/t/p/w500/6waCWyjj2jl4cvTVk0Q5mm38bbS.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/6waCWyjj2jl4cvTVk0Q5mm38bbS.jpg",
       "rating": 7.676,
-      "voteCount": 193,
+      "voteCount": 194,
       "ratingSource": "TMDB",
       "genres": [
         "Dramat"
@@ -1649,8 +1738,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/jkGExnXKVaNYgB2icZtHUOKCzrM.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/jkGExnXKVaNYgB2icZtHUOKCzrM.jpg",
-      "rating": 8.0,
-      "voteCount": 19,
+      "rating": 7.9,
+      "voteCount": 21,
       "ratingSource": "TMDB",
       "genres": [
         "Dramat",
@@ -1708,8 +1797,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/8q6BvFQuKM1Rud4E9NQDaMGy9EL.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/8q6BvFQuKM1Rud4E9NQDaMGy9EL.jpg",
-      "rating": 6.2,
-      "voteCount": 28,
+      "rating": 6.382,
+      "voteCount": 34,
       "ratingSource": "TMDB",
       "genres": [
         "Akcja i Przygoda",
@@ -1738,8 +1827,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/ne9a9aYtom68q35HcHXYb4nXAtt.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/ne9a9aYtom68q35HcHXYb4nXAtt.jpg",
-      "rating": 7.6,
-      "voteCount": 5,
+      "rating": 7.5,
+      "voteCount": 6,
       "ratingSource": "TMDB",
       "genres": [
         "Dramat"
@@ -1797,7 +1886,7 @@
       "posterUrl": "https://image.tmdb.org/t/p/w500/zrrRRvavkLQupkC6aEkdA8sX4E8.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/zrrRRvavkLQupkC6aEkdA8sX4E8.jpg",
       "rating": 7.5,
-      "voteCount": 12,
+      "voteCount": 20,
       "ratingSource": "TMDB",
       "genres": [
         "Komedia",
@@ -1826,8 +1915,8 @@
       "year": "2022",
       "posterUrl": "https://image.tmdb.org/t/p/w500/2i3IdggcknnGeiPyn7qajWkGZrU.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/2i3IdggcknnGeiPyn7qajWkGZrU.jpg",
-      "rating": 7.221,
-      "voteCount": 4091,
+      "rating": 7.218,
+      "voteCount": 4102,
       "ratingSource": "TMDB",
       "genres": [
         "Akcja i Przygoda",
@@ -1857,7 +1946,7 @@
       "posterUrl": "https://image.tmdb.org/t/p/w500/15ogF31AyzzL4KmjJq9ozuB0C8l.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/15ogF31AyzzL4KmjJq9ozuB0C8l.jpg",
       "rating": 7.8,
-      "voteCount": 65,
+      "voteCount": 81,
       "ratingSource": "TMDB",
       "genres": [
         "Tajemnica",
@@ -1886,8 +1975,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/eqVuH9hvWtnQzn6wkNgeTbz4oOR.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/eqVuH9hvWtnQzn6wkNgeTbz4oOR.jpg",
-      "rating": 7.5,
-      "voteCount": 7,
+      "rating": 7.95,
+      "voteCount": 11,
       "ratingSource": "TMDB",
       "genres": [
         "Komedia",
@@ -2152,8 +2241,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/u9gPWG5WyeCWBlrsEQWroP813MN.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/u9gPWG5WyeCWBlrsEQWroP813MN.jpg",
-      "rating": 6.917,
-      "voteCount": 12,
+      "rating": 7.0,
+      "voteCount": 13,
       "ratingSource": "TMDB",
       "genres": [
         "Dramat",
@@ -2182,8 +2271,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/oPltcyfWWfVmxB6lV8JZZJV3m7Q.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/oPltcyfWWfVmxB6lV8JZZJV3m7Q.jpg",
-      "rating": 7.8,
-      "voteCount": 39,
+      "rating": 7.875,
+      "voteCount": 40,
       "ratingSource": "TMDB",
       "genres": [
         "Dramat"
@@ -2299,8 +2388,8 @@
       "year": "2024",
       "posterUrl": "https://image.tmdb.org/t/p/w500/srlsyEfIBz2MNWBndVc3opOaNGS.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/srlsyEfIBz2MNWBndVc3opOaNGS.jpg",
-      "rating": 7.0,
-      "voteCount": 496,
+      "rating": 7.1,
+      "voteCount": 498,
       "ratingSource": "TMDB",
       "genres": [
         "Akcja i Przygoda",
@@ -2358,8 +2447,8 @@
       "year": "2025",
       "posterUrl": "https://image.tmdb.org/t/p/w500/nLmMcZxoyGCBy1f521hmgBlpPun.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/nLmMcZxoyGCBy1f521hmgBlpPun.jpg",
-      "rating": 4.983,
-      "voteCount": 88,
+      "rating": 5.039,
+      "voteCount": 89,
       "ratingSource": "TMDB",
       "genres": [
         "Dramat",
@@ -2446,8 +2535,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/rKyjcuSbsDDDcIisa6cx5k5yQNa.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/rKyjcuSbsDDDcIisa6cx5k5yQNa.jpg",
-      "rating": 7.65,
-      "voteCount": 10,
+      "rating": 7.591,
+      "voteCount": 11,
       "ratingSource": "TMDB",
       "genres": [
         "Dokumentalny"
@@ -2505,8 +2594,8 @@
       "year": "2025",
       "posterUrl": "https://image.tmdb.org/t/p/w500/qo6u8apBMNNiNTQyAJSCJaQWIbM.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/qo6u8apBMNNiNTQyAJSCJaQWIbM.jpg",
-      "rating": 7.3,
-      "voteCount": 147,
+      "rating": 7.343,
+      "voteCount": 150,
       "ratingSource": "TMDB",
       "genres": [
         "Komedia",
@@ -2535,8 +2624,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/hu6qhx5Gjzv7nY4OwtQ1q6bNIby.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/hu6qhx5Gjzv7nY4OwtQ1q6bNIby.jpg",
-      "rating": 8.6,
-      "voteCount": 96,
+      "rating": 8.716,
+      "voteCount": 104,
       "ratingSource": "TMDB",
       "genres": [
         "Dramat",
@@ -2565,8 +2654,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/q7eWmFOfdHqm15YrKiYmR8XEVRx.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/q7eWmFOfdHqm15YrKiYmR8XEVRx.jpg",
-      "rating": 7.7,
-      "voteCount": 18,
+      "rating": 7.789,
+      "voteCount": 19,
       "ratingSource": "TMDB",
       "genres": [
         "Animacja",
@@ -2653,8 +2742,8 @@
       "year": "2015",
       "posterUrl": "https://image.tmdb.org/t/p/w500/drRbxYJ3ab8zl036RvKlp6Pi5dL.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/drRbxYJ3ab8zl036RvKlp6Pi5dL.jpg",
-      "rating": 8.069,
-      "voteCount": 4710,
+      "rating": 8.07,
+      "voteCount": 4711,
       "ratingSource": "TMDB",
       "genres": [
         "Akcja i Przygoda",
@@ -2713,8 +2802,8 @@
       "year": "2025",
       "posterUrl": "https://image.tmdb.org/t/p/w500/kFpZmEPX6sQBvjOUxaByssy6jPM.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/kFpZmEPX6sQBvjOUxaByssy6jPM.jpg",
-      "rating": 8.545,
-      "voteCount": 763,
+      "rating": 8.547,
+      "voteCount": 765,
       "ratingSource": "TMDB",
       "genres": [
         "Kryminał",
@@ -2743,7 +2832,7 @@
       "year": "2025",
       "posterUrl": "https://image.tmdb.org/t/p/w500/9TERSwWwKzmnH87rcKcpkTvEvGK.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/9TERSwWwKzmnH87rcKcpkTvEvGK.jpg",
-      "rating": 9.186,
+      "rating": 9.2,
       "voteCount": 43,
       "ratingSource": "TMDB",
       "genres": [
@@ -2803,7 +2892,7 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/tdnHaR0vlKMQbjmaCs2V3LDmzSd.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/tdnHaR0vlKMQbjmaCs2V3LDmzSd.jpg",
-      "rating": 7.571,
+      "rating": 7.6,
       "voteCount": 7,
       "ratingSource": "TMDB",
       "genres": [
@@ -2863,8 +2952,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/yyA9CI8BLNg6LtVRvmVxki4xiGb.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/yyA9CI8BLNg6LtVRvmVxki4xiGb.jpg",
-      "rating": 7.505,
-      "voteCount": 107,
+      "rating": 7.491,
+      "voteCount": 110,
       "ratingSource": "TMDB",
       "genres": [
         "Tajemnica",
@@ -2997,72 +3086,41 @@
       "url": "https://www.themoviedb.org/tv/336241",
       "vodAddedAt": null,
       "vodAdditionVerified": false
-    },
-    {
-      "kind": "tv",
-      "tmdbId": 126027,
-      "title": "Duchy",
-      "originalTitle": "Ghosts",
-      "description": "Sam i Jay, wbrew rozsądkowi i finansowym ograniczeniom, postanawiają przekształcić odziedziczoną posiadłość w pensjonat. Dom jest już jednak zamieszkany – przez duchy, które zmarły na jego terenie w różnych okresach.",
-      "releaseDate": "2021-10-07",
-      "seasonReleaseDate": "2026-10-29",
-      "newnessDate": "2026-10-29",
-      "newnessBasis": "season_release_date",
-      "year": "2021",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/kmTZEmeYl1WeEBwESIo8sxUIY4O.jpg",
-      "artworkUrl": "https://image.tmdb.org/t/p/w780/kmTZEmeYl1WeEBwESIo8sxUIY4O.jpg",
-      "rating": 8.128,
-      "voteCount": 517,
-      "ratingSource": "TMDB",
-      "genres": [
-        "Komedia",
-        "Sci-Fi & Fantasy"
-      ],
-      "trailerYoutubeKey": "kaOCCmwAhGc",
-      "providers": [
-        "Netflix",
-        "Prime Video"
-      ],
-      "availabilityRegion": "PL",
-      "source": "TMDB",
-      "url": "https://www.themoviedb.org/tv/126027",
-      "vodAddedAt": null,
-      "vodAdditionVerified": false
-    },
-    {
-      "kind": "tv",
-      "tmdbId": 292741,
-      "title": "Ukryte w ciemności",
-      "originalTitle": "Nocturne",
-      "description": "Gdy jedna z ofiar seryjnego zabójcy Jurka Waltera niespodziewanie okazuje się żywa, detektyw Jonah Lynn rozpoczyzna wyścig z czasem, by odnaleźć drugą zaginioną osobę, podczas gdy jego podopieczna Saga Bauer działa pod przykrywką, by wyciągnąć informacje bezpośrednio od zabójcy.",
-      "releaseDate": "2026-10-29",
-      "seasonReleaseDate": "2026-10-29",
-      "newnessDate": "2026-10-29",
-      "newnessBasis": "season_release_date",
-      "year": "2026",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/iB5PVhe5T6nDxtN6D6cUTPZXT9M.jpg",
-      "artworkUrl": "https://image.tmdb.org/t/p/w780/iB5PVhe5T6nDxtN6D6cUTPZXT9M.jpg",
-      "rating": 7.463,
-      "voteCount": 54,
-      "ratingSource": "TMDB",
-      "genres": [
-        "Kryminał",
-        "Dramat"
-      ],
-      "trailerYoutubeKey": "AaEy1f2Dgys",
-      "providers": [
-        "Apple TV+"
-      ],
-      "availabilityRegion": "PL",
-      "source": "TMDB",
-      "url": "https://www.themoviedb.org/tv/292741",
-      "vodAddedAt": null,
-      "vodAdditionVerified": false
     }
   ],
   "popularMovies": [],
   "popularSeries": [],
   "movies": [
+    {
+      "kind": "movie",
+      "tmdbId": 1716604,
+      "title": "A Proud Family Wizmas",
+      "originalTitle": "A Proud Family Wizmas",
+      "description": "",
+      "releaseDate": "2026-11-14",
+      "seasonReleaseDate": null,
+      "newnessDate": "2026-11-14",
+      "newnessBasis": "production_release_date",
+      "year": "2026",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/9nFa7GEw9FmZWn3gaFhLvVrhVDY.jpg",
+      "artworkUrl": "https://image.tmdb.org/t/p/w780/9nFa7GEw9FmZWn3gaFhLvVrhVDY.jpg",
+      "rating": 5.5,
+      "voteCount": 10,
+      "ratingSource": "TMDB",
+      "genres": [
+        "Animacja",
+        "Komedia"
+      ],
+      "trailerYoutubeKey": "8NRj-jl7n_E",
+      "providers": [
+        "Disney+"
+      ],
+      "availabilityRegion": "PL",
+      "source": "TMDB",
+      "url": "https://www.themoviedb.org/movie/1716604",
+      "vodAddedAt": null,
+      "vodAdditionVerified": false
+    },
     {
       "kind": "movie",
       "tmdbId": 1314786,
@@ -3076,8 +3134,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/tEFMZGcmxBDCodbLAqmrjdjCTwm.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/tEFMZGcmxBDCodbLAqmrjdjCTwm.jpg",
-      "rating": 6.5,
-      "voteCount": 5,
+      "rating": 6.583,
+      "voteCount": 6,
       "ratingSource": "TMDB",
       "genres": [
         "Dramat",
@@ -3106,8 +3164,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/zhxlzxBlO1sWB1rPn7RmAoeQ2na.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/zhxlzxBlO1sWB1rPn7RmAoeQ2na.jpg",
-      "rating": 6.637,
-      "voteCount": 62,
+      "rating": 6.3,
+      "voteCount": 80,
       "ratingSource": "TMDB",
       "genres": [
         "Thriller",
@@ -3136,8 +3194,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/alhhrpj1PSAn5bfz4Os1k7Bweoj.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/alhhrpj1PSAn5bfz4Os1k7Bweoj.jpg",
-      "rating": 6.863,
-      "voteCount": 40,
+      "rating": 6.628,
+      "voteCount": 47,
       "ratingSource": "TMDB",
       "genres": [
         "Sci-Fi",
@@ -3196,8 +3254,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/k7h5uzeCFBNl802TW2WTvctGYHi.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/k7h5uzeCFBNl802TW2WTvctGYHi.jpg",
-      "rating": 6.656,
-      "voteCount": 48,
+      "rating": 6.377,
+      "voteCount": 57,
       "ratingSource": "TMDB",
       "genres": [
         "Romans",
@@ -3226,8 +3284,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/7gyOjaZ97varqJNbp3P6FjlQZOQ.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/7gyOjaZ97varqJNbp3P6FjlQZOQ.jpg",
-      "rating": 7.033,
-      "voteCount": 15,
+      "rating": 7.417,
+      "voteCount": 18,
       "ratingSource": "TMDB",
       "genres": [
         "Animacja",
@@ -3256,7 +3314,7 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/ihbN6lNDXKe6w9xE6IBFMVF2Rkr.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/ihbN6lNDXKe6w9xE6IBFMVF2Rkr.jpg",
-      "rating": 7.262,
+      "rating": 7.3,
       "voteCount": 21,
       "ratingSource": "TMDB",
       "genres": [
@@ -3286,8 +3344,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/eH7BUSUy3cyzlCTZpMU95U5DKq8.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/eH7BUSUy3cyzlCTZpMU95U5DKq8.jpg",
-      "rating": 7.098,
-      "voteCount": 41,
+      "rating": 7.061,
+      "voteCount": 49,
       "ratingSource": "TMDB",
       "genres": [
         "Akcja",
@@ -3346,8 +3404,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/zjASMxUqsye6BKLbW78FA9d64Yy.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/zjASMxUqsye6BKLbW78FA9d64Yy.jpg",
-      "rating": 7.333,
-      "voteCount": 3,
+      "rating": 6.75,
+      "voteCount": 4,
       "ratingSource": "TMDB",
       "genres": [
         "Komedia"
@@ -3375,8 +3433,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/u77wLiH63UJiwfQsrUmHF4nXq0z.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/u77wLiH63UJiwfQsrUmHF4nXq0z.jpg",
-      "rating": 7.1,
-      "voteCount": 25,
+      "rating": 7.0,
+      "voteCount": 27,
       "ratingSource": "TMDB",
       "genres": [
         "Dramat",
@@ -3435,8 +3493,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/ziyEHM0P1TgvhVXIqqguoMAD0TJ.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/ziyEHM0P1TgvhVXIqqguoMAD0TJ.jpg",
-      "rating": 6.0,
-      "voteCount": 5,
+      "rating": 6.667,
+      "voteCount": 6,
       "ratingSource": "TMDB",
       "genres": [
         "Dokumentalny"
@@ -3495,7 +3553,7 @@
       "posterUrl": "https://image.tmdb.org/t/p/w500/fopmDU345HPkMC9iUaNQEY0uRkk.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/fopmDU345HPkMC9iUaNQEY0uRkk.jpg",
       "rating": 7.2,
-      "voteCount": 55,
+      "voteCount": 58,
       "ratingSource": "TMDB",
       "genres": [
         "Dokumentalny"
@@ -3552,8 +3610,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/lkEQXQ1YpMCzCrLOBxHLGdCHLVb.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/lkEQXQ1YpMCzCrLOBxHLGdCHLVb.jpg",
-      "rating": 7.4,
-      "voteCount": 24,
+      "rating": 7.143,
+      "voteCount": 28,
       "ratingSource": "TMDB",
       "genres": [
         "Romans",
@@ -3640,7 +3698,7 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/zvsNAohDHRWcGvbPSD7r3WojpKb.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/zvsNAohDHRWcGvbPSD7r3WojpKb.jpg",
-      "rating": 7.201,
+      "rating": 7.2,
       "voteCount": 67,
       "ratingSource": "TMDB",
       "genres": [
@@ -3700,8 +3758,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/zstBJatewUcaNVPICaIvLIel10X.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/zstBJatewUcaNVPICaIvLIel10X.jpg",
-      "rating": 6.1,
-      "voteCount": 6,
+      "rating": 5.357,
+      "voteCount": 7,
       "ratingSource": "TMDB",
       "genres": [
         "Dokumentalny",
@@ -3789,7 +3847,7 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/i4nQn6GJznN02EcGOQCetNoU4mt.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/i4nQn6GJznN02EcGOQCetNoU4mt.jpg",
-      "rating": 6.664,
+      "rating": 6.7,
       "voteCount": 131,
       "ratingSource": "TMDB",
       "genres": [
@@ -3819,8 +3877,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/sMPIiaOoyTr5o6s602KIVMJX3P2.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/sMPIiaOoyTr5o6s602KIVMJX3P2.jpg",
-      "rating": 6.323,
-      "voteCount": 110,
+      "rating": 6.3,
+      "voteCount": 111,
       "ratingSource": "TMDB",
       "genres": [
         "Thriller",
@@ -3966,8 +4024,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/eSS5mvSG84UUuvtbHel5Yu3Wik4.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/eSS5mvSG84UUuvtbHel5Yu3Wik4.jpg",
-      "rating": 6.279,
-      "voteCount": 190,
+      "rating": 6.358,
+      "voteCount": 201,
       "ratingSource": "TMDB",
       "genres": [
         "Akcja",
@@ -4056,7 +4114,7 @@
       "posterUrl": "https://image.tmdb.org/t/p/w500/eKeRcZ7otaDAR3uEtM1e4RcqIGy.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/eKeRcZ7otaDAR3uEtM1e4RcqIGy.jpg",
       "rating": 7.6,
-      "voteCount": 183,
+      "voteCount": 184,
       "ratingSource": "TMDB",
       "genres": [
         "Romans",
@@ -4203,7 +4261,7 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/lFaMt4I8LiQAGW9Rb5gfGFXbvOY.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/lFaMt4I8LiQAGW9Rb5gfGFXbvOY.jpg",
-      "rating": 7.447,
+      "rating": 7.4,
       "voteCount": 141,
       "ratingSource": "TMDB",
       "genres": [
@@ -4232,8 +4290,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/ryBlb6XdU02fp0EZWVKDaqFjFvz.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/ryBlb6XdU02fp0EZWVKDaqFjFvz.jpg",
-      "rating": 5.591,
-      "voteCount": 198,
+      "rating": 5.6,
+      "voteCount": 200,
       "ratingSource": "TMDB",
       "genres": [
         "Komedia"
@@ -4341,6 +4399,35 @@
   "series": [
     {
       "kind": "tv",
+      "tmdbId": 97083,
+      "title": "The Circle",
+      "originalTitle": "The Circle",
+      "description": "W tym społecznym eksperymencie ścierają się ze sobą statusy i strategie. Uczestnicy konkursu flirtują, nawiązują przyjaźnie i… kłamią, by wygrać 100 000 dolarów.",
+      "releaseDate": "2020-01-01",
+      "seasonReleaseDate": "2026-11-17",
+      "newnessDate": "2026-11-17",
+      "newnessBasis": "season_release_date",
+      "year": "2020",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/bQRxhfXXsH4ccScOBHs51bgwNe4.jpg",
+      "artworkUrl": "https://image.tmdb.org/t/p/w780/bQRxhfXXsH4ccScOBHs51bgwNe4.jpg",
+      "rating": 6.8,
+      "voteCount": 102,
+      "ratingSource": "TMDB",
+      "genres": [
+        "Reality"
+      ],
+      "trailerYoutubeKey": "4PUKxO4fwSc",
+      "providers": [
+        "Netflix"
+      ],
+      "availabilityRegion": "PL",
+      "source": "TMDB",
+      "url": "https://www.themoviedb.org/tv/97083",
+      "vodAddedAt": null,
+      "vodAdditionVerified": false
+    },
+    {
+      "kind": "tv",
       "tmdbId": 294405,
       "title": "Gdzie zawsze świeci słońce",
       "originalTitle": "Där solen alltid skiner",
@@ -4382,8 +4469,8 @@
       "year": "2019",
       "posterUrl": "https://image.tmdb.org/t/p/w500/nr0r7YTn1l84KLG1iCSO5ofHTvO.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/nr0r7YTn1l84KLG1iCSO5ofHTvO.jpg",
-      "rating": 8.856,
-      "voteCount": 1065,
+      "rating": 8.859,
+      "voteCount": 1072,
       "ratingSource": "TMDB",
       "genres": [
         "Akcja i Przygoda",
@@ -4402,6 +4489,36 @@
     },
     {
       "kind": "tv",
+      "tmdbId": 341602,
+      "title": "Alan's Universe",
+      "originalTitle": "Alan's Universe",
+      "description": "",
+      "releaseDate": "2026-11-14",
+      "seasonReleaseDate": "2026-11-14",
+      "newnessDate": "2026-11-14",
+      "newnessBasis": "season_release_date",
+      "year": "2026",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/sjDSfy47Hafgt8qxj9ebfJtl5AG.jpg",
+      "artworkUrl": "https://image.tmdb.org/t/p/w780/sjDSfy47Hafgt8qxj9ebfJtl5AG.jpg",
+      "rating": 0.0,
+      "voteCount": 0,
+      "ratingSource": "TMDB",
+      "genres": [
+        "Komedia",
+        "Dramat"
+      ],
+      "trailerYoutubeKey": null,
+      "providers": [
+        "Netflix"
+      ],
+      "availabilityRegion": "PL",
+      "source": "TMDB",
+      "url": "https://www.themoviedb.org/tv/341602",
+      "vodAddedAt": null,
+      "vodAdditionVerified": false
+    },
+    {
+      "kind": "tv",
       "tmdbId": 303182,
       "title": "Morderstwo w Galicji",
       "originalTitle": "El crimen de Pazos",
@@ -4413,8 +4530,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/85l3tcxiTlx0TaPFL1DrZeL5KoT.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/85l3tcxiTlx0TaPFL1DrZeL5KoT.jpg",
-      "rating": 6.769,
-      "voteCount": 13,
+      "rating": 6.4,
+      "voteCount": 15,
       "ratingSource": "TMDB",
       "genres": [
         "Kryminał",
@@ -4443,8 +4560,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/cJUMJm96OcnPoDqEtL0FfwZ05ZX.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/cJUMJm96OcnPoDqEtL0FfwZ05ZX.jpg",
-      "rating": 6.8,
-      "voteCount": 5,
+      "rating": 7.875,
+      "voteCount": 8,
       "ratingSource": "TMDB",
       "genres": [
         "Kryminał",
@@ -4621,7 +4738,7 @@
       "posterUrl": "https://image.tmdb.org/t/p/w500/6waCWyjj2jl4cvTVk0Q5mm38bbS.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/6waCWyjj2jl4cvTVk0Q5mm38bbS.jpg",
       "rating": 7.676,
-      "voteCount": 193,
+      "voteCount": 194,
       "ratingSource": "TMDB",
       "genres": [
         "Dramat"
@@ -4707,8 +4824,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/jkGExnXKVaNYgB2icZtHUOKCzrM.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/jkGExnXKVaNYgB2icZtHUOKCzrM.jpg",
-      "rating": 8.0,
-      "voteCount": 19,
+      "rating": 7.9,
+      "voteCount": 21,
       "ratingSource": "TMDB",
       "genres": [
         "Dramat",
@@ -4766,8 +4883,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/8q6BvFQuKM1Rud4E9NQDaMGy9EL.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/8q6BvFQuKM1Rud4E9NQDaMGy9EL.jpg",
-      "rating": 6.2,
-      "voteCount": 28,
+      "rating": 6.382,
+      "voteCount": 34,
       "ratingSource": "TMDB",
       "genres": [
         "Akcja i Przygoda",
@@ -4796,8 +4913,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/ne9a9aYtom68q35HcHXYb4nXAtt.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/ne9a9aYtom68q35HcHXYb4nXAtt.jpg",
-      "rating": 7.6,
-      "voteCount": 5,
+      "rating": 7.5,
+      "voteCount": 6,
       "ratingSource": "TMDB",
       "genres": [
         "Dramat"
@@ -4855,7 +4972,7 @@
       "posterUrl": "https://image.tmdb.org/t/p/w500/zrrRRvavkLQupkC6aEkdA8sX4E8.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/zrrRRvavkLQupkC6aEkdA8sX4E8.jpg",
       "rating": 7.5,
-      "voteCount": 12,
+      "voteCount": 20,
       "ratingSource": "TMDB",
       "genres": [
         "Komedia",
@@ -4884,8 +5001,8 @@
       "year": "2022",
       "posterUrl": "https://image.tmdb.org/t/p/w500/2i3IdggcknnGeiPyn7qajWkGZrU.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/2i3IdggcknnGeiPyn7qajWkGZrU.jpg",
-      "rating": 7.221,
-      "voteCount": 4091,
+      "rating": 7.218,
+      "voteCount": 4102,
       "ratingSource": "TMDB",
       "genres": [
         "Akcja i Przygoda",
@@ -4915,7 +5032,7 @@
       "posterUrl": "https://image.tmdb.org/t/p/w500/15ogF31AyzzL4KmjJq9ozuB0C8l.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/15ogF31AyzzL4KmjJq9ozuB0C8l.jpg",
       "rating": 7.8,
-      "voteCount": 65,
+      "voteCount": 81,
       "ratingSource": "TMDB",
       "genres": [
         "Tajemnica",
@@ -4944,8 +5061,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/eqVuH9hvWtnQzn6wkNgeTbz4oOR.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/eqVuH9hvWtnQzn6wkNgeTbz4oOR.jpg",
-      "rating": 7.5,
-      "voteCount": 7,
+      "rating": 7.95,
+      "voteCount": 11,
       "ratingSource": "TMDB",
       "genres": [
         "Komedia",
@@ -5210,8 +5327,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/u9gPWG5WyeCWBlrsEQWroP813MN.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/u9gPWG5WyeCWBlrsEQWroP813MN.jpg",
-      "rating": 6.917,
-      "voteCount": 12,
+      "rating": 7.0,
+      "voteCount": 13,
       "ratingSource": "TMDB",
       "genres": [
         "Dramat",
@@ -5240,8 +5357,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/oPltcyfWWfVmxB6lV8JZZJV3m7Q.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/oPltcyfWWfVmxB6lV8JZZJV3m7Q.jpg",
-      "rating": 7.8,
-      "voteCount": 39,
+      "rating": 7.875,
+      "voteCount": 40,
       "ratingSource": "TMDB",
       "genres": [
         "Dramat"
@@ -5357,8 +5474,8 @@
       "year": "2024",
       "posterUrl": "https://image.tmdb.org/t/p/w500/srlsyEfIBz2MNWBndVc3opOaNGS.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/srlsyEfIBz2MNWBndVc3opOaNGS.jpg",
-      "rating": 7.0,
-      "voteCount": 496,
+      "rating": 7.1,
+      "voteCount": 498,
       "ratingSource": "TMDB",
       "genres": [
         "Akcja i Przygoda",
@@ -5416,8 +5533,8 @@
       "year": "2025",
       "posterUrl": "https://image.tmdb.org/t/p/w500/nLmMcZxoyGCBy1f521hmgBlpPun.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/nLmMcZxoyGCBy1f521hmgBlpPun.jpg",
-      "rating": 4.983,
-      "voteCount": 88,
+      "rating": 5.039,
+      "voteCount": 89,
       "ratingSource": "TMDB",
       "genres": [
         "Dramat",
@@ -5504,8 +5621,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/rKyjcuSbsDDDcIisa6cx5k5yQNa.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/rKyjcuSbsDDDcIisa6cx5k5yQNa.jpg",
-      "rating": 7.65,
-      "voteCount": 10,
+      "rating": 7.591,
+      "voteCount": 11,
       "ratingSource": "TMDB",
       "genres": [
         "Dokumentalny"
@@ -5563,8 +5680,8 @@
       "year": "2025",
       "posterUrl": "https://image.tmdb.org/t/p/w500/qo6u8apBMNNiNTQyAJSCJaQWIbM.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/qo6u8apBMNNiNTQyAJSCJaQWIbM.jpg",
-      "rating": 7.3,
-      "voteCount": 147,
+      "rating": 7.343,
+      "voteCount": 150,
       "ratingSource": "TMDB",
       "genres": [
         "Komedia",
@@ -5593,8 +5710,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/hu6qhx5Gjzv7nY4OwtQ1q6bNIby.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/hu6qhx5Gjzv7nY4OwtQ1q6bNIby.jpg",
-      "rating": 8.6,
-      "voteCount": 96,
+      "rating": 8.716,
+      "voteCount": 104,
       "ratingSource": "TMDB",
       "genres": [
         "Dramat",
@@ -5623,8 +5740,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/q7eWmFOfdHqm15YrKiYmR8XEVRx.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/q7eWmFOfdHqm15YrKiYmR8XEVRx.jpg",
-      "rating": 7.7,
-      "voteCount": 18,
+      "rating": 7.789,
+      "voteCount": 19,
       "ratingSource": "TMDB",
       "genres": [
         "Animacja",
@@ -5711,8 +5828,8 @@
       "year": "2015",
       "posterUrl": "https://image.tmdb.org/t/p/w500/drRbxYJ3ab8zl036RvKlp6Pi5dL.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/drRbxYJ3ab8zl036RvKlp6Pi5dL.jpg",
-      "rating": 8.069,
-      "voteCount": 4710,
+      "rating": 8.07,
+      "voteCount": 4711,
       "ratingSource": "TMDB",
       "genres": [
         "Akcja i Przygoda",
@@ -5771,8 +5888,8 @@
       "year": "2025",
       "posterUrl": "https://image.tmdb.org/t/p/w500/kFpZmEPX6sQBvjOUxaByssy6jPM.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/kFpZmEPX6sQBvjOUxaByssy6jPM.jpg",
-      "rating": 8.545,
-      "voteCount": 763,
+      "rating": 8.547,
+      "voteCount": 765,
       "ratingSource": "TMDB",
       "genres": [
         "Kryminał",
@@ -5801,7 +5918,7 @@
       "year": "2025",
       "posterUrl": "https://image.tmdb.org/t/p/w500/9TERSwWwKzmnH87rcKcpkTvEvGK.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/9TERSwWwKzmnH87rcKcpkTvEvGK.jpg",
-      "rating": 9.186,
+      "rating": 9.2,
       "voteCount": 43,
       "ratingSource": "TMDB",
       "genres": [
@@ -5861,7 +5978,7 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/tdnHaR0vlKMQbjmaCs2V3LDmzSd.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/tdnHaR0vlKMQbjmaCs2V3LDmzSd.jpg",
-      "rating": 7.571,
+      "rating": 7.6,
       "voteCount": 7,
       "ratingSource": "TMDB",
       "genres": [
@@ -5921,8 +6038,8 @@
       "year": "2026",
       "posterUrl": "https://image.tmdb.org/t/p/w500/yyA9CI8BLNg6LtVRvmVxki4xiGb.jpg",
       "artworkUrl": "https://image.tmdb.org/t/p/w780/yyA9CI8BLNg6LtVRvmVxki4xiGb.jpg",
-      "rating": 7.505,
-      "voteCount": 107,
+      "rating": 7.491,
+      "voteCount": 110,
       "ratingSource": "TMDB",
       "genres": [
         "Tajemnica",
@@ -6053,67 +6170,6 @@
       "availabilityRegion": "PL",
       "source": "TMDB",
       "url": "https://www.themoviedb.org/tv/336241",
-      "vodAddedAt": null,
-      "vodAdditionVerified": false
-    },
-    {
-      "kind": "tv",
-      "tmdbId": 126027,
-      "title": "Duchy",
-      "originalTitle": "Ghosts",
-      "description": "Sam i Jay, wbrew rozsądkowi i finansowym ograniczeniom, postanawiają przekształcić odziedziczoną posiadłość w pensjonat. Dom jest już jednak zamieszkany – przez duchy, które zmarły na jego terenie w różnych okresach.",
-      "releaseDate": "2021-10-07",
-      "seasonReleaseDate": "2026-10-29",
-      "newnessDate": "2026-10-29",
-      "newnessBasis": "season_release_date",
-      "year": "2021",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/kmTZEmeYl1WeEBwESIo8sxUIY4O.jpg",
-      "artworkUrl": "https://image.tmdb.org/t/p/w780/kmTZEmeYl1WeEBwESIo8sxUIY4O.jpg",
-      "rating": 8.128,
-      "voteCount": 517,
-      "ratingSource": "TMDB",
-      "genres": [
-        "Komedia",
-        "Sci-Fi & Fantasy"
-      ],
-      "trailerYoutubeKey": "kaOCCmwAhGc",
-      "providers": [
-        "Netflix",
-        "Prime Video"
-      ],
-      "availabilityRegion": "PL",
-      "source": "TMDB",
-      "url": "https://www.themoviedb.org/tv/126027",
-      "vodAddedAt": null,
-      "vodAdditionVerified": false
-    },
-    {
-      "kind": "tv",
-      "tmdbId": 292741,
-      "title": "Ukryte w ciemności",
-      "originalTitle": "Nocturne",
-      "description": "Gdy jedna z ofiar seryjnego zabójcy Jurka Waltera niespodziewanie okazuje się żywa, detektyw Jonah Lynn rozpoczyzna wyścig z czasem, by odnaleźć drugą zaginioną osobę, podczas gdy jego podopieczna Saga Bauer działa pod przykrywką, by wyciągnąć informacje bezpośrednio od zabójcy.",
-      "releaseDate": "2026-10-29",
-      "seasonReleaseDate": "2026-10-29",
-      "newnessDate": "2026-10-29",
-      "newnessBasis": "season_release_date",
-      "year": "2026",
-      "posterUrl": "https://image.tmdb.org/t/p/w500/iB5PVhe5T6nDxtN6D6cUTPZXT9M.jpg",
-      "artworkUrl": "https://image.tmdb.org/t/p/w780/iB5PVhe5T6nDxtN6D6cUTPZXT9M.jpg",
-      "rating": 7.463,
-      "voteCount": 54,
-      "ratingSource": "TMDB",
-      "genres": [
-        "Kryminał",
-        "Dramat"
-      ],
-      "trailerYoutubeKey": "AaEy1f2Dgys",
-      "providers": [
-        "Apple TV+"
-      ],
-      "availabilityRegion": "PL",
-      "source": "TMDB",
-      "url": "https://www.themoviedb.org/tv/292741",
       "vodAddedAt": null,
       "vodAdditionVerified": false
     }
